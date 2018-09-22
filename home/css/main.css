@@ -133,10 +133,81 @@ section {
   color: #fff;
 }
 
+/*****Image*************/
+.intro {
+  height: 100vh;
+  /* height: 660px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .dotted-background {
+  background-image: url('../pattern.svg');
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 130px;
+  left: 0px;
+  z-index: -20;
+  background-size: 2%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+}
+
+.intro .overlay-background {
+  background-image: linear-gradient(
+    -180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.6) 100%,
+    #ffffff 100%
+  );
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  top: 130px;
+  left: 0px;
+  z-index: -10;
+}
+.intro .introText {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  z-index: -12;
+}
+.intro #introImg {
+  /* padding-top: 30vh; */
+  /* margin-bottom: 16vh; */
+  width: 53%;
+  height: auto;
+}
+
+.IntroImgdiv{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
+}
+
+.IntroImgdiv h2{
+  margin: 33px;
+  /* margin-bottom: 0; */
+  font-size: 40px;
+  font-family: cursive;
+}
+
+
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
-
+/* 
 #mywelcome {
   display: flex;
   justify-content: center;
@@ -145,10 +216,10 @@ section {
 }
 
 #mywelcome img {
-  -ms-transform: translate(0, -20px); /* IE 9 */
-  -webkit-transform: translate(0, -20px); /* Safari */
+  -ms-transform: translate(0, -20px); IE 9
+  -webkit-transform: translate(0, -20px); Safari
   transform: translate(0, -20px);
-}
+} */
 
 /*--------------------*/
 /* ABOUT US */
@@ -246,6 +317,21 @@ section {
   border-radius: 25px;
   margin-top: 30px;
   margin-top: 25px;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+
+  /* width: 100vh;
+  height: 38vh; */
+  /* background-image: url('/assets/NSS/typo.png'); */
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55% 30%; */
 }
 
 /*--------------------*/
