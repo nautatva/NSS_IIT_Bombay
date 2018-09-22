@@ -13,28 +13,132 @@
 	<!-- Theme color -->
 	<link id="switcher" href="./css/theme.css" rel="stylesheet">
 
+	<!-- Remember to put js at the bottom -->
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<!-- Main Style -->
 	<link href="./css/main.css" rel="stylesheet">
+
 	<link href="./css/stickynav.css" rel="stylesheet">
 	<script src="./js/stickynav.js"></script>
 
+	<link href="./css/flip.css" rel="stylesheet">
+	<script src="./js/flip.js"></script>
+
+	<script src="./js/numbers.js"></script>
 </head>
 
-<body onload="stick()">
-	<!-- <div class="intro"> -->
-	<!-- <div class="dotted-background"></div>
-		<div class="overlay-background"></div> -->
-	<table>
-		<td>
-
-		</td>
-		<div class="center">
-			<div class="IntroImgdiv">
-				<img id="introImg" src="../assets/NSS/typo.png" alt="NSS typography with departments">
-				<h2>____. Serve . Repeat</h2>
-			</div>
-		</div>
-	</table>
+<body onload="stick(); flip(); numbers()">
+	<div class="introTable">
+		<table>
+			<tr class="flex">
+				<td class="flex" id="js-flip-1">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/ALP.jpg" alt="img">
+							</div>
+							<div class="face back">
+								<img src="../assets/images/EO/prayog.jpg" alt="img">
+							</div>
+						</div>
+					</div>
+				</td>
+				<td class="flex" id="js-flip-2">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/muskaan.jpg" alt="img">
+							</div>
+							<div class="face back">
+								<img src="../assets/images/EO/neem_school.jpg" alt="img">
+							</div>
+						</div>
+					</div>
+				</td>
+				<td class="flex" id="js-flip-3">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/neem_school.jpg" alt="img">
+							</div>
+							<div class="face back">
+								<img src="../assets/images/EO/OLI.png" alt="img">
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class="flex">
+				<td class="flex" id="js-flip-4">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/NGO.jpeg" alt="img">
+							</div>
+							<div class="face back">
+									<img src="../assets/images/EO/VFP.png" alt="img">
+								</div>
+						</div>
+					</div>
+				</td>
+				<td>
+					<img id="introImg" src="../assets/NSS/typo.png" alt="NSS typography with departments">
+				</td>
+				<td class="flex" id="js-flip-6">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/OLI.png" alt="img">
+							</div>
+							<div class="face back">
+									<img src="../assets/images/EO/neem_school.jpg" alt="img">
+								</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class="flex">
+				<td class="flex" id="js-flip-7">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/prayog.jpg" alt="img">
+							</div>
+							<div class="face back">
+									<img src="../assets/images/EO/neem_school.jpg" alt="img">
+								</div>
+						</div>
+					</div>
+				</td>
+				<td class="flex" id="js-flip-8">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="../assets/images/EO/VFP.png" alt="img">
+							</div>
+							<div class="face back">
+									<img src="../assets/images/EO/ALP.jpg" alt="img">
+								</div>
+						</div>
+					</div>
+				</td>
+				<td class="flex" id="js-flip-9">
+					<div class="flip">
+						<div class="card1">
+							<div class="face front">
+								<img src="" alt="img">
+							</div>
+							<div class="face back">
+									<img src="../assets/images/EO/muskaan.jpg" alt="img">
+								</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
 	<!-- </div> -->
 	<!--START SCROLL TOP BUTTON -->
 	<a class="scrollToTop" href="#">
@@ -61,20 +165,34 @@
 	<!-- Start main content -->
 	<main>
 		<!-- Start About -->
-		<section id="myabout" class="m-fix">
-			<div id="m-fix" style="height:0;"></div>
-			<div class="container myabout">
-				<h2>About us</h2>
-				<p>National Service Scheme, IIT Bombay, being the largest student volunteer body, is the most active and
-					perseverent organization in the campus in the field of social/community service. We provide opportunities to
-					students to contribute their bit in the welfare of the society. NSS has departments spanning all avenues of
-					community service right from educating the underprivileged to innovating solutions to social problems using
-					technology.
+		<section id="myabout">
+			<div id="m-fix"></div>
+			<div class="divider">
+				<img height="50px" src="../assets/images/divider.png">
+			</div>
+			<div id="info">
+				<span style="font-family: 'Great Vibes', cursive; font-size:30px;">About Us</span>
+				<br>
+				<span>
+					National Service Scheme, IIT Bombay, being the largest student volunteer body, is the most active and perseverent
+					organization in the campus in the field of social/community service. We provide opportunities to students to
+					contribute their bit in the welfare of the society. NSS has departments spanning all avenues of community service
+					right from educating the underprivileged to innovating solutions to social problems using technology.
 					<br><br>
 					Spreading happiness through community service has been one of the primary objectives of NSS. With innovative
-					activities across the departments catering to all classes of the campus residents, we try to create small,
-					happy and memorable moments in their lives. And working in NSS itself has been one of the prime sources of
-					happiness for the people associated with us. </p>
+					activities across the departments catering to all classes of the campus residents, we try to create small, happy
+					and memorable moments in their lives. And working in NSS itself has been one of the prime sources of happiness for
+					the people associated with us.
+				</span>
+			</div>
+			<div class="divider" style="margin-top: 12px;">
+				<img class="reverse" height="50px" src="../assets/images/divider.png">
+			</div>
+		</section>
+
+		<section id="reach">
+			<div>
+				<span id="fbReach">20,00,000</span>
 			</div>
 		</section>
 
@@ -84,7 +202,7 @@
 			<div class="cards">
 				<div class="card">
 					<div class="image">
-						<img class=cardImg src="assets/home/cardimg/ecoganesha.jpg" alt="ecofriendly Ganesha">
+						<img class=cardImg src="../assets/home/images/ecoganesha.jpg" alt="ecofriendly Ganesha">
 					</div>
 					<div class="text">
 						<div class="cardTitle">Eco Ganesha Workshop</div>
@@ -98,7 +216,7 @@
 
 				<div class="card">
 					<div class="image">
-						<img class=cardImg src="assets/home/cardimg/biodivmapping.jpg" alt="biodiversity mapping">
+						<img class=cardImg src="../assets/home/images/biodivmapping.jpg" alt="biodiversity mapping">
 					</div>
 					<div class="text">
 						<div class="cardTitle">Eco Ganesha Workshop</div>
@@ -112,7 +230,7 @@
 
 				<div class="card">
 					<div class="image">
-						<img class=cardImg src="assets/home/cardimg/cashless.gif" alt="Go cashless!">
+						<img class=cardImg src="../assets/home/images/cashless.gif" alt="Go cashless!">
 					</div>
 					<div class="text">
 						<div class="cardTitle">Eco Ganesha Workshop</div>
@@ -126,7 +244,7 @@
 
 				<div class="card">
 					<div class="image">
-						<img class=cardImg src="assets/home/cardimg/ecoganesha.jpg" alt="ecofriendly Ganesha">
+						<img class=cardImg src="../assets/home/images/ecoganesha.jpg" alt="ecofriendly Ganesha">
 					</div>
 					<div class="text">
 						<div class="cardTitle">Eco Ganesha Workshop</div>
@@ -141,8 +259,17 @@
 		</section>
 		<!-- End Featured Tours -->
 
-		<section id="memoirs">
-			<h2>ADD memoirs here</h2>
+		<section id="collaboration">
+			<h2>Collaborations</h2>
+			<div class="collabs">
+				<img class="elems" src="../assets/">
+				<img class="elems" src="../assets/">
+				<img class="elems" src="../assets/">
+				<img class="elems" src="../assets/">
+				<img class="elems" src="../assets/">
+				<img class="elems" src="../assets/">
+
+			</div>
 		</section>
 		<!-- Start Call to Action -->
 		<section id="departments">
@@ -163,13 +290,10 @@
 		<!-- End Google Map -->
 
 	</main>
-
 	<!-- End main content -->
 
 
 	<!-- JavaScript -->
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<!-- Custom js -->
 	<script type="text/javascript" src="./js/custom.js"></script>

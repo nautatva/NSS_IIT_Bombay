@@ -133,78 +133,39 @@ section {
   color: #fff;
 }
 
-/*****Image*************/
-.intro {
+/* intro */
+.introTable {
   height: 100vh;
-  /* height: 660px; */
+}
+
+.introTable img {
+  object-fit: cover;
+  width: 33vw;
+  height: 33vh;
+}
+
+.introTable td {
+  width: 33vw;
+  height: 33vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.intro .dotted-background {
-  background-image: url('../pattern.svg');
-  position: absolute;
-  height: 70%;
-  width: 100%;
-  top: 130px;
-  left: 0px;
-  z-index: -20;
-  background-size: 2%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-}
-
-.intro .overlay-background {
-  background-image: linear-gradient(
-    -180deg,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 0.6) 100%,
-    #ffffff 100%
-  );
-  position: absolute;
-  height: 70%;
-  width: 100%;
-  top: 130px;
-  left: 0px;
-  z-index: -10;
-}
-.intro .introText {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  z-index: -12;
-}
-.intro #introImg {
-  /* padding-top: 30vh; */
-  /* margin-bottom: 16vh; */
+#introImg {
   width: 53%;
   min-width: 300px;
   height: auto;
 }
-
-.IntroImgdiv{
-  display: flex;
-  flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: -webkit-fill-available;
-}
-
-.IntroImgdiv h2{
+.introImgdiv h2 {
   margin: 33px;
-  /* margin-bottom: 0; */
   font-size: 5vw;
   font-family: cursive;
 }
-@media(min-width:768px){
-  font-size: 42px;
+@media (min-width: 768px) {
+  .introImgdiv h2 {
+    font-size: 42px;
+  }
 }
 
 /*--------------------*/
@@ -229,22 +190,34 @@ section {
 /*--------------------*/
 
 #myabout {
+  /* width: 100%; */
+  max-height: 1000px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  background-color: #fff;
-  /* width: 70%; */
-  margin: 20px 0;
-  margin-bottom: 80px;
+  align-items: center;
 }
-
-.myabout {
-  padding: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.divider {
+  margin: auto;
+}
+#info {
+  margin: auto;
+  text-align: center;
+  max-width: 1024px;
+}
+.reverse {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 /*--------------------*/
-/* COLLABORATORS */
+/* Reach */
+/*--------------------*/
+#reach {
+  background-color: lightgrey;
+}
+
+/*--------------------*/
+/* Activities */
 /*--------------------*/
 
 .activities {
@@ -261,15 +234,41 @@ section {
 .card {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 25%;
   min-width: 300px;
   margin: 3rem 1rem 0 1rem;
   border: 1px solid #f1f1f1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
+  color: white;
 }
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .text {
+  display: flex;
+  flex-direction: column;
+}
+.card:hover > .image {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.text {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card > .image > .cardImg {
+  /* border-radius: 4px 4px 0 0; */
+  width: 100%;
+  padding: 11px 11px 0px 11px;
+  height: 255px;
 }
 
 .card > .text {
@@ -283,13 +282,6 @@ section {
 
 .card > .cardDescription {
   margin-top: 0;
-}
-
-.card > .image > .cardImg {
-  /* border-radius: 4px 4px 0 0; */
-  width: 100%;
-  padding: 11px 11px 0px 11px;
-  height: 255px;
 }
 
 /*--------------------*/
@@ -321,20 +313,29 @@ section {
   margin-top: 30px;
   margin-top: 25px;
 }
-
-
-.center {
+#collaboration {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-
-  /* width: 100vh;
-  height: 38vh; */
-  /* background-image: url('/assets/NSS/typo.png'); */
-  /* Create the parallax scrolling effect */
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 55% 30%; */
+  align-items: center;
+}
+.collabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  min-width: 320px;
+}
+.elems {
+  flex-basis: 120px;
+  filter: grayscale(100%);
+  margin: 40px;
+}
+.elems:hover {
+  filter: grayscale(0%);
 }
 
 /*--------------------*/
