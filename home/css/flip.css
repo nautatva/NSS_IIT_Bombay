@@ -23,7 +23,7 @@ body {
   -webkit-perspective: 800;
   perspective: 800;
   width: 33vw;
-  height: 33vh;
+  height: calc(33vh - 17px);
   position: relative;
 }
 .flip .card1.flipped {
