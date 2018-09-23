@@ -57,7 +57,6 @@ h6 {
 
 img {
   border: none;
-  max-width: 100%;
 }
 
 code {
@@ -265,12 +264,15 @@ section {
   top: 0;
   left: 0;
 }
-
+.card > .image{
+  height: 255px;
+  padding: 6px;
+}
 .card > .image > .cardImg {
   /* border-radius: 4px 4px 0 0; */
   width: 100%;
   /* padding: 11px 11px 0px 11px; */
-  height: 259px;
+  height: 255px;
 }
 
 .card > .text {
