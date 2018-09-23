@@ -13,7 +13,7 @@ function flip() {
     setInterval(function() {
       $('#js-flip-1 .card1').toggleClass('flipped');
     }, 3000);
-  }, 2000);
+  }, 2300);
 
   setTimeout(() => {
     setInterval(function() {
@@ -42,7 +42,7 @@ function flip() {
     setInterval(function() {
       $('#js-flip-6 .card1').toggleClass('flipped');
     }, 3000);
-  }, 1340);
+  }, 2700);
 
   // row 3
   setTimeout(() => {
@@ -55,13 +55,13 @@ function flip() {
     setInterval(function() {
       $('#js-flip-8 .card1').toggleClass('flipped');
     }, 3000);
-  }, 2400);
+  }, 1340);
 
   setTimeout(() => {
     setInterval(function() {
       $('#js-flip-9 .card1').toggleClass('flipped');
     }, 3000);
-  }, 3000);
+  }, 0);
 
   // $('#js-flip-3').bind({
   //   click: function() {

@@ -15,7 +15,7 @@ function increaseNumber() {
   if (i < 200000) {
     $('#fbReach').text(i);
     // console.log(i);
-    i=i+5041;
+    i = i + 5041;
   }
   // else {clearInterval};
   // setTimeout(2000);
@@ -25,5 +25,9 @@ element = '#fbReach';
 finalNumber = 4;
 var nextIn;
 function numbers() {
-  setInterval(increaseNumber, 20 );
+  setInterval(increaseNumber, 20);
 }
+
+// jQuery(function($) {
+  
+// });

@@ -2,6 +2,19 @@ function stick() {
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {
     myFunction();
+    console.log($("#fbReach").offset().top);
+    console.log($(window).scrollTop());
+    
+    
+    // console.log('$("reach").scrollHeight: ', $('reach').scrollHeight);
+    // console.log(
+    //   "$('reach').scrollTop() + $('reach').innerHeight(): ",
+    //   $('reach').scrollTop()
+    // );
+
+    // if ($('reach').scrollTop() >= $('reach').scrollHeight) {
+    //   alert('end reached');
+    // }
   };
 
   // Get the navbar
@@ -19,4 +32,18 @@ function stick() {
       mfix.style.height = '0';
     }
   }
+
+  // $('#reach').bind('scroll', function() {
+  //   console.log('$(this)[0].scrollHeight: ', $(this)[0].scrollHeight);
+  //   console.log(
+  //     '$(this).scrollTop() + $(this).innerHeight(): ',
+  //     $(this).scrollTop() + $(this).innerHeight() );
+
+  // if (
+  //   $(this).scrollTop() + $(this).innerHeight() >=
+  //   $(this)[0].scrollHeight
+  // ) {
+  //   alert('end reached');
+  // }
+  // });
 }
