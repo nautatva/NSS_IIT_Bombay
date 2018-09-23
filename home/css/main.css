@@ -269,8 +269,8 @@ section {
 .card > .image > .cardImg {
   /* border-radius: 4px 4px 0 0; */
   width: 100%;
-  padding: 11px 11px 0px 11px;
-  height: 255px;
+  /* padding: 11px 11px 0px 11px; */
+  height: 259px;
 }
 
 .card > .text {
