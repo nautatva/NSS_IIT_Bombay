@@ -11,22 +11,31 @@ function addCommas(nStr) {
 }
 
 function increaseNumber() {
-  // let element = document.getElementById(id);
-  if (i < 200000) {
-    $('#fbReach').text(i);
-    // console.log(i);
-    i = i + 5041;
+  if (i < 201000) {
+    $('#fbReach').text(addCommas(i));
+    i = i + 1544;
   }
-  // else {clearInterval};
-  // setTimeout(2000);
 }
-var i = 1;
+var i = 0;
 element = '#fbReach';
 finalNumber = 4;
 var nextIn;
 function numbers() {
-  setInterval(increaseNumber, 20);
+  setInterval(increaseNumber, 25);
 }
+
+$(window).scroll(function() {
+  var hT = $('#fbReach').offset().top,
+      hH = $('#fbReach').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+  if (wS > (hT+hH-wH)){
+  
+   numbers();
+  }
+});
+
+
 
 // jQuery(function($) {
   
