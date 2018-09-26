@@ -14,17 +14,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="./jquery.scrollify.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: ".slide",
+      });
+    });            
+  </script>
 </head>
 
 <body>
-  <div class="all flex column full">
+  <div id="start" class="all flex column full slide">
     <img src="../assets/NSS/typo.png">
     <span> presents </span>
     <a href="#EO">EO</a>
     <a href="#SSD">SSD</a>
     <a href="#GC">GC</a>
   </div>
-  <section id="EO" class="full department flex">
+  <section id="EO" class="full department flex slide">
     <h1>Educational Outreach</h1>
     <!-- <div class="intro"> -->
 
@@ -122,10 +130,10 @@
 
     <!-- </div> -->
   </section>
-  <div id="SSD" class="full department flex">
+  <div id="SSD" class="full department flex slide">
 
   </div>
-  <div id="GC" class="full department flex">
+  <div id="GC" class="full department flex slide">
   </div>
 
   <!-- <script>window.jQuery || document.write('<script src="./jquery-slim.min.js"><\/script>')</script> -->
