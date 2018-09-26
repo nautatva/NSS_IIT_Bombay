@@ -6,7 +6,6 @@ body,
 html {
   overflow-x: hidden;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -264,7 +263,7 @@ section {
   top: 0;
   left: 0;
 }
-.card > .image{
+.card > .image {
   height: 255px;
   padding: 6px;
 }

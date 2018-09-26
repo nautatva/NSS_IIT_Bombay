@@ -29,4 +29,11 @@
       jQuery('.scrollToTop').fadeOut();
     }
   });
+
+  //Click event to scroll to top
+
+  jQuery('.scrollToTop').click(function() {
+    jQuery('html, body').animate({ scrollTop: 0 }, 800);
+    return false;
+  });
 })(jQuery);
