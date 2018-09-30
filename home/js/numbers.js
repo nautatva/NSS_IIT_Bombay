@@ -13,7 +13,7 @@ function addCommas(nStr) {
 function increaseNumber() {
   if (i < 201000) {
     $('#fbReach').text(addCommas(i));
-    i = i + 5041;
+    i = i + 1041;
   }
 }
 var i = 0;
