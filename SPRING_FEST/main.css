@@ -1,31 +1,160 @@
-
-*, *::after, *::before, h1 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-*, *::after, *::before, h1 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+.containers{
+    display: flex;
+    flex-direction: column;
 }
 .containerOne{
-    display: flex;
+    height: 90vh;
+    text-align: center;
+    font-family: GreatVibes, cursive;
 }
-body{
+.containerOneTitleOne{
+    margin-top: 10rem;
+    font-size: 1rem;
+}
+.containerOneTitleTwo{
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerOneTitleThree{
+    font-size: 2rem;
+}
+.containerTwo{
+    width: 50%;
+    float: center;
+    margin: 0 auto;
+    height: 90vh;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+}
+.containerTwoTitleOne{
+    margin: 5rem;
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerTwoContent{
+    font-size: 1.3rem;
+}
+.containerThree{
+    width: 40%;
+    float: right;
+    margin: 0 auto;
+    height: 90vh;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+}
+.containerThreeTitle{
+    margin: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerThreeContentDetails{
+    font-size: 1.3rem;
+}
+.containerThreeButton{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerThreeButtonOne > a{
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+    text-align: left;
+}
+.containerThreeButtonTwo > a{
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+    text-align: right;
+}
+.containerThreeButtonOne{
+    border-style: solid;
+}
+.containerThreeButtonTwo{
+    border-style: solid;
+}
+.containerThreeButtonOne:hover{
     background-color: black;
 }
-.containerTitle{
+.containerThreeButtonOne>a:hover{
     color: white;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Carson, 'Trebuchet MS', sans-serif;
-    position: relative;
-    margin-top: 3.875rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 3em; 
-    font-style: italic;
 }
+.containerThreeButtonTwo:hover{
+    background-color: black;
+}
+.containerThreeButtonTwo>a:hover{
+    color: white;
+}
+.containerFour{
+    height: 90vh;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+}
+.containerFourTitleOne{
+    margin: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFourCards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerFourLeftCard>img{
+    justify-content: right;
+    width: 45%;
+    float: left;
+    height: 50vh;
+    margin: 1rem;
+}
+.containerFourRightCard{
+    width: 50%;
+    float: right;
+    margin: 0 auto;
+    height: 90vh;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+}
+.containerFourTitleTwo{
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFourTitleTwoMini{
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFourContent{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    width: 60%;
+}
+.containerFive{
+    height: 90vh;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+}
+.containerFiveTitle{
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFiveHeadingOne{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFiveContentOne{
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+.containerFiveHeadingTwo{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFiveContainTwo{
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
