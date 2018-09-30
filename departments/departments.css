@@ -24,12 +24,12 @@
 }
 
 #EO {
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     127deg,
     rgb(177, 110, 34),
     rgb(204, 165, 68)
   );
-  background: linear-gradient(127deg, rgb(177, 110, 34), rgb(204, 165, 68));
+  background: linear-gradient(127deg, rgb(177, 110, 34), rgb(204, 165, 68)); */
 }
 #SSD {
   background-color: azure;
@@ -60,17 +60,23 @@
   object-fit: cover;
   width: 100vw;
   height: 93vh;
+  filter: brightness(40%);
 }
 
-.description{
+.description {
   position: absolute;
   top: 100px;
   left: 5%;
-  right: 5%;
-  background: rgb(0,0,0,0.5);
-  
-
+  right: 70%;
+  /* background: rgb(0,0,0,0.5); */
+  color: white;
 }
+
+.carousel-caption {
+  top: 100px;
+  left: 65% !important;
+}
+
 /* .sidebar {
   display: flex;
   flex: 2 0 0;
