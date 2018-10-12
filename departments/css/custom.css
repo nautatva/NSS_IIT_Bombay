@@ -1,27 +1,40 @@
-section .full, #portfolio{
+section .full,
+#portfolio {
   padding: 50px 0 !important;
 }
-.nav-distribute{
+.nav-distribute {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.full{
-  height: 100vh;
+.intro {
+  text-align: center;
+}
+.full {
+  min-height: 100vh;
   background-color: bisque;
 }
-.perfect-center{
+.perfect-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.restrict600{
+.restrict600 {
   max-width: 600px;
+  padding: 0 40px;
+  flex-wrap: wrap;
 }
-.space-between{
+.space-between {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.team{
+.restrict600 a {
+  margin: 15px;
+  flex: 1 0 0;
+  min-width: 200px;
+  max-width: 200px;
+}
+.team {
   padding: 50px 0 !important;
 }
