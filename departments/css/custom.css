@@ -1,0 +1,27 @@
+section .full, #portfolio{
+  padding: 50px 0 !important;
+}
+.nav-distribute{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.full{
+  height: 100vh;
+  background-color: bisque;
+}
+.perfect-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restrict600{
+  max-width: 600px;
+}
+.space-between{
+  display: flex;
+  justify-content: space-between;
+}
+.team{
+  padding: 50px 0 !important;
+}
