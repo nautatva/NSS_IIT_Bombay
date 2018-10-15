@@ -1,0 +1,60 @@
+section .full,
+#portfolio {
+  padding: 50px 0 !important;
+}
+.nav-distribute {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.intro {
+  text-align: center;
+}
+.flex-wrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.full {
+  min-height: 100vh;
+  background-color: bisque;
+}
+.perfect-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restrict600 {
+  max-width: 600px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+.space-between {
+  display: flex;
+  justify-content: space-around;
+}
+.restrict600 a {
+  margin: 15px;
+  flex: 1 0 0;
+  min-width: 200px;
+  max-width: 200px;
+}
+.team {
+  padding: 50px 0 !important;
+}
+.initiatives {
+  width: 100%;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#EO{
+  padding: 0;
+}

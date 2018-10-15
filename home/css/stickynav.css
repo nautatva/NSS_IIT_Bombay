@@ -1,6 +1,6 @@
 @media (max-width: 760px) {
   #sticky-navbar {
-    display: none;
+    /* display: none; */
   }
   .mobile-fix {
     height: 65px;
@@ -15,7 +15,8 @@
   -webkit-transform: translate(0, -47px ); /* Safari */
   transform: translate(0, -47px);
   max-height: 79px;
-  /* height: 0; */
+  display: flex;
+  justify-content: center;
 }
 
 /* sticky-navbar links */

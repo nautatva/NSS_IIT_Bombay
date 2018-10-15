@@ -14,6 +14,7 @@ function flip() {
       $('#js-flip-1 .card1').toggleClass('flipped');
     }, 3000);
   }, 2300);
+  
 
   setTimeout(() => {
     setInterval(function() {

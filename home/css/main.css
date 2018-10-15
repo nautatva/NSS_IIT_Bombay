@@ -6,7 +6,7 @@ body,
 html {
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Montserrat',fantasy;
+  font-family: 'Montserrat', fantasy;
 }
 
 a {
@@ -168,6 +168,17 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .side {
+    display: none !important;
+  }
+  #introimg {
+    width: 100% !important;
+  }
+  .main{
+    justify-content: center;
+  }
+}
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
@@ -247,7 +258,8 @@ section {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.card, .text{
+.card,
+.text {
   transition: opacity 0.1s linear;
 }
 .card:hover .text {
