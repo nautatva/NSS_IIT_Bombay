@@ -7,8 +7,9 @@ section .full,
   display: flex;
   justify-content: space-between;
 }
-.intro {
+#intro {
   text-align: center;
+  padding: 0;
 }
 .flex-wrap-center {
   display: flex;

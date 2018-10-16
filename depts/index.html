@@ -16,10 +16,10 @@
 
   <!-- Custom Fonts -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> -->
 
   <!-- Theme CSS -->
   <link href="css/agency.css" rel="stylesheet">
@@ -77,14 +77,14 @@
   </nav>
 
   <!-- Header -->
-  <header>
+  <header id="welcome" class="scrollify">
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Welcome To Our Studio!</div>
         <div class="intro-heading">
           <div id="typed-strings"> <span>Educational Outreach</span>
           </div>
-          <span id="typed" style="white-space:pre;"></span>
+          <span id="typed"></span>
         </div>
 
         <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
@@ -93,7 +93,7 @@
   </header>
 
   <!-- EO -->
-  <section id="EO">
+  <section id="intro" class="scrollify">
     <div id="intro-EO" class="intro full perfect-center">
       <h1 class="section-heading">Educational Outreach</h1>
       <h3 class="section-subheading text-muted restrict600">"Education is our birthright, but not all
@@ -113,6 +113,9 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="team" class="scrollify">
     <div id="team-EO" class="team">
       <div class="container">
         <div class="row">
@@ -147,44 +150,45 @@
             </div>
           </div>
         </div>
-
-        <div>
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-              <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-                Aut
-                eaque,
-                laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias
-                ut
-                unde.</p>
-            </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+              Aut
+              eaque,
+              laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias
+              ut
+              unde.</p>
           </div>
         </div>
       </div>
-      <div id="initiatives-EO" class="initiatives">
-        <div id="portfolio" class="bg-light-gray">
-          <div class="container">
-            <div class="row flex-wrap-center">
-              <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fa fa-plus fa-3x"></i>
-                    </div>
+    </div>
+  </section>
+
+  <section id="initiatives" class="scrollify">
+    <div id="initiatives-EO" class="initiatives">
+      <div id="portfolio" class="bg-light-gray">
+        <div class="container">
+          <div class="row flex-wrap-center">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
                   </div>
-                  <img src="./EO/OLI/edu%201.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                  <h4>Open Learning Initiative (OLI)</h4>
-                  <p class="text-muted"> Educational videos are recorded in regional languages (because language should
-                    not be a barrier) and are available online to reach out to remote areas</p>
                 </div>
+                <img src="./EO/OLI/edu%201.png" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Open Learning Initiative (OLI)</h4>
+                <p class="text-muted"> Educational videos are recorded in regional languages (because language should
+                  not be a barrier) and are available online to reach out to remote areas</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
 
 
@@ -266,6 +270,16 @@
   <!-- Theme JavaScript -->
   <script src="js/agency.min.js"></script>
 
+  <!-- scrollify -->
+  <script src="./js/jquery.scrollify.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: ".scrollify",
+        setHeights: false,
+      });
+    });
+  </script>
 
   <!-- Typed JS -->
   <script src="js/typed.js" type="text/javascript"></script>
@@ -277,7 +291,7 @@
         typeSpeed: 30,
         backDelay: 500,
         loop: false,
-        contentType: 'html', // or text
+        contentType: 'text', // or text
         // defaults to null for infinite loop
         loopCount: null,
         callback: function () { foo(); },
