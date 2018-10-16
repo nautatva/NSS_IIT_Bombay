@@ -18,7 +18,7 @@ section .full,
 }
 .full {
   min-height: 100vh;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .perfect-center {
   display: flex;
@@ -41,21 +41,49 @@ section .full,
   min-width: 200px;
   max-width: 200px;
 }
-.team {
+#team {
   padding: 50px 0 !important;
-}
-.initiatives {
-  width: 100%;
-}
-.team {
   display: flex;
   flex-direction: row;
   flex: 1 0 0;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  min-height: 100vh;
+}
+#team .team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.team .heads, .AA {
+  flex: 1 0 200px;
+}
+#initiatives {
+  width: 100%;
+}
+#EO {
+  padding: 0;
 }
 
-#EO{
-  padding: 0;
+.EO {
+  /* background-color: bisque; */
+  background: -webkit-linear-gradient(
+    137deg,
+    rgb(246, 147, 98),
+    rgb(250, 248, 112)
+  );
+  background: linear-gradient(137deg, rgb(246, 147, 98), rgb(250, 248, 112));
+}
+.SSD {
+  /* background-color: azure; */
+  background: -webkit-linear-gradient(
+    158deg,
+    rgb(126, 141, 235),
+    rgb(71, 217, 246)
+  );
+  background: linear-gradient(158deg, rgb(126, 141, 235), rgb(71, 217, 246));
+}
+.GC {
+  background-color: beige;
 }
