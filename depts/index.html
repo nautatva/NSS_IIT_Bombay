@@ -33,38 +33,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
-  <!-- Typed JS -->
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      Typed.new("#typed", {
-        stringsElement: document.getElementById('typed-strings'),
-        typeSpeed: 30,
-        backDelay: 500,
-        loop: false,
-        contentType: 'html', // or text
-        // defaults to null for infinite loop
-        loopCount: null,
-        callback: function () { foo(); },
-        resetCallback: function () { newTyped(); }
-      });
-
-      var resetElement = document.querySelector('.reset');
-      if (resetElement) {
-        resetElement.addEventListener('click', function () {
-          document.getElementById('typed')._typed.reset();
-        });
-      }
-
-    });
-
-    function newTyped() { /* A new typed object */ }
-
-    function foo() { console.log("Callback"); }
-
-  </script>
 </head>
 
 <body id="page-top" class="index">
@@ -299,7 +267,37 @@
   <script src="js/agency.min.js"></script>
 
 
+  <!-- Typed JS -->
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
+      Typed.new("#typed", {
+        stringsElement: document.getElementById('typed-strings'),
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: false,
+        contentType: 'html', // or text
+        // defaults to null for infinite loop
+        loopCount: null,
+        callback: function () { foo(); },
+        resetCallback: function () { newTyped(); }
+      });
+
+      var resetElement = document.querySelector('.reset');
+      if (resetElement) {
+        resetElement.addEventListener('click', function () {
+          document.getElementById('typed')._typed.reset();
+        });
+      }
+
+    });
+
+    function newTyped() { /* A new typed object */ }
+
+    function foo() { console.log("Callback"); }
+
+  </script>
 
 </body>
 
