@@ -10,27 +10,41 @@ function addCommas(nStr) {
   return x1 + x2;
 }
 
-function increaseNumber() {
-  if (i < 201000) {
-    $('.statistics-count').text(addCommas(i));
-    i = i + 1041;
-  }
+function increaseNumber(str, number,increament) {
+  let variable = 0;
+  setInterval(function() {
+    if (variable < number) {
+      $(str).text(addCommas(variable));
+      variable = variable + increament;
+    }
+  }, 25);
 }
-var i = 0;
-element = '.statistics-count';
-finalNumber = 4;
-var nextIn;
+
+// var volunteer = 0;
+// var children = 0;
+// var reach = 0;
+let once = 0;
+// element = '.statistics-count';
+// finalNumber = 4;
+// var nextIn;
 function numbers() {
-  setInterval(increaseNumber, 25);
+  if (once==0) {
+    once = 1;
+    increaseNumber('.volunteers', 20133,1043);
+    increaseNumber('.children', 3230, 233);
+    increaseNumber('.reach',50000,1233);
+    increaseNumber('.initiatives',30,1);
+    increaseNumber('.subscribers',13000,234)
+  }
 }
 
 $(window).scroll(function() {
   var hT = $('.statistics-count').offset().top,
-      hH = $('.statistics-count').outerHeight(),
-      wH = $(window).height(),
-      wS = $(this).scrollTop();
-  if (wS > (hT+hH-wH)){
-   numbers();
+    hH = $('.statistics-count').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > hT + hH - wH) {
+    numbers();
   }
 });
 

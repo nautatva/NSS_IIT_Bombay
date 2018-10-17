@@ -2,11 +2,11 @@
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
-body,
-html {
+body{
   overflow-x: hidden;
   margin: 0;
   font-family: 'Montserrat', fantasy;
+  text-align: center;
 }
 
 a {
@@ -117,7 +117,7 @@ section {
   line-height: 50px;
   position: fixed;
   right: 20px;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
   width: 55px;
   z-index: 999;
@@ -168,7 +168,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .side {
     display: none !important;
   }
@@ -212,7 +212,7 @@ section {
 }
 #info {
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   max-width: 1024px;
 }
 .reverse {
@@ -233,7 +233,7 @@ section {
 
 .activities {
   background-color: #f6f6f6;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .cards {
