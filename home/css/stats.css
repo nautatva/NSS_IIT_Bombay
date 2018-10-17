@@ -53,7 +53,7 @@
   background-color: gray;
 }
 
-.statistics-center{
+.statistics-center {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -66,16 +66,22 @@
 }
 
 .statistics.block .statistics-icon,
-.statistics.block .statistics-content {
+.statistics.block .statistics-content,
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
 }
 
-.statistics-icon {
-  
+.statistics-icon img {
+  width: 20px;
+  height: auto;
 }
 
 .statistics-content {
-  
 }
 
 .statistics-content > h5 {
@@ -83,5 +89,4 @@
 }
 
 .statistics-content > span {
-  
 }
