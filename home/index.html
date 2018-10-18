@@ -31,9 +31,10 @@
 	<script src="./js/flip.js"></script>
 	<!-- <script src="./js/plugin.js"></script> -->
 	<script src="./js/numbers.js"></script>
+	<script src="./js/carousal.js"></script>
 </head>
 
-<body onload="stick(); flip();">
+<body onload="stick(); flip(); changeImg()">
 	<div class="introTable">
 		<table>
 			<tr class="flex">
@@ -41,7 +42,7 @@
 					<div class="flip">
 						<div class="card1">
 							<div class="face front">
-								<img src="../assets/images/EO/ALP.jpg" alt="img">
+								<img id="flip1f" src="../assets/images/EO/ALP.jpg" alt="img">
 							</div>
 							<div class="face back">
 								<img src="../assets/images/EO/prayog.jpg" alt="img">
