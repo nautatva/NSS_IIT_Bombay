@@ -2,7 +2,7 @@
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
-body{
+body {
   overflow-x: hidden;
   margin: 0;
   font-family: 'Montserrat', fantasy;
@@ -119,12 +119,14 @@ section {
   right: 20px;
   /* text-align: center; */
   text-decoration: none;
-  width: 55px;
+  width: 37px;
   z-index: 999;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   height: 55px;
   border-radius: 10px;
+  -webkit-transform: scale(1.5, 1);
+  transform: scale(1.5, 1);
 }
 
 .scrollToTop:hover,
@@ -175,7 +177,7 @@ section {
   #introimg {
     width: 100% !important;
   }
-  .main{
+  .main {
     justify-content: center;
   }
 }
