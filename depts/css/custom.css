@@ -1,16 +1,13 @@
-section .full,
-#portfolio {
-  padding: 50px 0 !important;
-}
-.nav-distribute {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#intro {
-  text-align: center;
-  padding: 0;
-}
+/* Key 
+  # Utils
+  # Navbar
+  # Dept Introduction - (#aboutdept)
+  # Team
+  # Initiatives - (#portfolio)
+  # Department specific colors
+*/
+
+/* Utils */
 .flex-wrap-center {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +15,6 @@ section .full,
 }
 .full {
   min-height: 100vh;
-  /* background-color: bisque; */
 }
 .perfect-center {
   display: flex;
@@ -41,6 +37,21 @@ section .full,
   min-width: 200px;
   max-width: 200px;
 }
+
+/* Navbar */
+.nav-distribute {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dept introduction */
+#aboutdept {
+  text-align: center;
+  padding: 0;
+}
+
+/* Team */
 #team {
   padding: 50px 0 !important;
   display: flex;
@@ -56,16 +67,20 @@ section .full,
   flex-direction: row;
   flex-wrap: wrap;
 }
-.team .heads, .AA {
+.team .heads,
+.AA {
   flex: 1 0 200px;
+}
+
+/* Initiatives  */
+#portfolio {
+  padding: 50px 0;
 }
 #initiatives {
   width: 100%;
 }
-#EO {
-  padding: 0;
-}
 
+/* Department specific colors */
 .EO {
   /* background-color: bisque; */
   background: -webkit-linear-gradient(
