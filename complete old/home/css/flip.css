@@ -1,29 +1,11 @@
-/* .flip {
-  visibility: hidden;
-}
-.flipped {
-  visibility: visible !important;
-}
-.face img{
-  height: 33vh;
-  width: 33vw;
-}
-td{
-  margin: 0;
-  padding: 0;
-} */
-/* 
-body {
-  background: #ccc;
-} */
 .flex{
   display: flex;
 }
 .flip {
   -webkit-perspective: 800;
   perspective: 800;
-  width: 33vw;
-  height: calc(33vh - 17px);
+  width: 32vw;
+  height: calc(32vh - 17px);
   position: relative;
 }
 .flip .card1.flipped {

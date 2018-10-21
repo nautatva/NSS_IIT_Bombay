@@ -145,12 +145,12 @@ section {
 .introTable img {
   object-fit: cover;
   width: 32vw;
-  height: calc(33vh - 18px);
+  height: calc(32vh - 18px);
 }
 
 .introTable td {
   width: 32vw;
-  height: calc(33vh - 17px);
+  height: calc(32vh - 17px);
   display: flex;
   flex-direction: column;
   justify-content: center;
