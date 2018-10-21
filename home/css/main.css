@@ -136,18 +136,20 @@ section {
 
 /* intro */
 .introTable {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   background-color: black;
 }
 
 .introTable img {
   object-fit: cover;
-  width: 33vw;
+  width: 32vw;
   height: calc(33vh - 18px);
 }
 
 .introTable td {
-  width: 33vw;
+  width: 32vw;
   height: calc(33vh - 17px);
   display: flex;
   flex-direction: column;

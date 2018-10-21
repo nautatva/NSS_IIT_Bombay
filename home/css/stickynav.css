@@ -1,6 +1,6 @@
 @media (max-width: 760px) {
   #sticky-navbar {
-    /* display: none; */
+    display: none !important;
   }
   .mobile-fix {
     height: 65px;
