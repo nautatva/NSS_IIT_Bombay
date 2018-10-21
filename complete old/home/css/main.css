@@ -140,13 +140,13 @@ section {
 
 .introTable img {
   object-fit: cover;
-  width: 33vw;
-  height: calc(33vh - 18px);
+  width: 32vw;
+  height: calc(32vh - 18px);
 }
 
 .introTable td {
-  width: 33vw;
-  height: calc(33vh - 17px);
+  width: 32vw;
+  height: calc(32vh - 17px);
   display: flex;
   flex-direction: column;
   justify-content: center;
