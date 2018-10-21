@@ -1,0 +1,257 @@
+.containers{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 5em;
+    border: 8px solid yellow;
+    border-radius: 10px; 
+    background: linear-gradient(to right,rgb(203, 180, 212), rgb(32, 0, 44));
+}
+.containerOne{
+    margin-top: 5em;
+    padding-bottom: 2em;
+    margin-left: 12em;
+    margin-right: 12em;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 1px rgb(203, 180, 212);
+    border-radius: 20px; 
+}
+.containerOne:hover{
+    border: 2px solid white;
+}
+.containerOneTitleOne{
+    margin-top:5rem;
+    font-size: 1rem;
+}
+.containerOneTitleTwo{
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerOneTitleThree{
+    font-size: 2rem;
+}
+.containerTwo{
+    width: 50%;
+    float: center;
+    margin: 0 auto;
+    margin-top: 15rem;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 2px solid white;
+    padding-left: 6em;
+    padding-right: 6em;
+    border-radius: 20px; 
+}
+.containerTwo:hover{
+    box-shadow: 8px 4px 8px rgba(0,0,0,0.12), 0px 4px 8px rgba(0,0,0,0.5);
+}
+.containerTwoTitleOne{
+    margin: 5rem;
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerTwoContent{
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+}
+.containerThree{
+    width: 40%;
+    float: right;
+    margin: 0 auto;
+    margin-top: 15rem;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.containerThree:hover{
+    box-shadow: 8px 4px 8px rgba(0,0,0,0.12), 0px 4px 8px rgba(0,0,0,0.5);
+}
+.containerThreeTitle{
+    margin: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerThreeContentDetails{
+    font-size: 1.3rem;
+}
+.containerThreeButton{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+.containerThreeButtonOne > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+}
+.containerThreeButtonTwo > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: right;
+}
+.containerThreeButtonOne{
+    border-style: solid;
+    border-radius: 10px;
+}
+.containerThreeButtonTwo{
+    border-style: solid;
+    border-radius: 10px;
+}
+.containerThreeButtonOne>a:hover{
+    background-color: #ffffff;
+    color: #33b5e5;
+}
+.containerThreeButtonTwo>a:hover{
+    background-color: #ffffff;
+    color: #33b5e5
+}
+.containerFour{
+    margin-top: 15rem;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+    position: relative;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 2px solid white;
+    margin-left: 6em;
+    margin-right: 6em;
+    border-radius: 20px; 
+}
+.containerFour:hover{
+    box-shadow: 8px 4px 8px rgba(0,0,0,0.12), 0px 4px 8px rgba(0,0,0,0.5);
+}
+.containerFourTitleOne{
+    margin: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFourCards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.containerFourLeftCard>img{
+    justify-content: right;
+    width: 35%;
+    float: left;
+    height: 50vh;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    position: relative;
+    bottom: 0;
+    background-color: white;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 2px solid white;
+    border-radius: 10px; 
+}
+.containerFourRightCard{
+    width: 50%;
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+}
+.containerFourTitleTwo{
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFourTitleTwoMini{
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFourContent{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    font-size: 1.3rem;
+}
+.containerFive{
+    margin-top: 15rem;
+    margin-bottom: 2em;
+    text-align: center;
+    font-family: GreatVibes, cursive;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 2px solid white;
+    border-radius: 20px; 
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.containerFive:hover{
+    box-shadow: 8px 4px 8px rgba(0,0,0,0.12), 0px 4px 8px rgba(0,0,0,0.5);
+}
+.containerFiveTitle{
+    font-size: 3.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFiveContents{
+    display: flex;
+    justify-content: space-evenly
+}
+.containerFiveHeadingOne{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFiveContentOne{
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+.containerFiveHeadingTwo{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.containerFiveContentTwo{
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width : 640px) {
+    .containerFourTitleOne{
+
+    }
+    .containerFourCards{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerFourLeftCard>img{
+
+    }
+    .containerFourRightCard{
+
+    }
+    .containerFourTitleTwo{
+
+    }
+    .containerFourTitleTwoMini{
+
+    }
+    .containerFourContent{
+
+    }
+}
