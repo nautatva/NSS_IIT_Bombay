@@ -1,11 +1,5 @@
 <?php
-
-$host ="localhost";
-$username = "root";
-$password = "password";
-$db = "nss";
-$conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
-
+include('../server.php');
 $sql="SELECT * FROM department_data WHERE department = 'EO'" ;
 $result = $conn->query($sql);
 ?>
