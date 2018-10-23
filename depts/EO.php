@@ -1,10 +1,11 @@
 <?php
-$host ="10.105.177.5";
-$username = "nss";
-$password = "nssiitb@2015";
-$db = "nss";
 
+$host ="localhost";
+$username = "root";
+$password = "password";
+$db = "nss";
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
+
 $sql="SELECT * FROM department_data WHERE department = 'EO'" ;
 $result = $conn->query($sql);
 ?>
@@ -33,12 +34,8 @@ $result = $conn->query($sql);
     <!-- custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-    <![endif]-->
+    <!-- caroual CSS -->
+    <link href="css/slideshow.css" rel="stylesheet">
 
 </head>
 
@@ -65,16 +62,13 @@ $result = $conn->query($sql);
                         <a class="page-scroll" href="#EO">Educational Outreach</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#SSD">Sustainable Social Development</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#GC">Green Campus</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#DnM">Design and Media</a>
+                        <a class="page-scroll" href="#SSD">Sustainable Social Development</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Web">Web</a>
+                        <a class="page-scroll" href="#DnM">Technicals</a>
                     </li>
                 </ul>
             </div>
@@ -84,19 +78,24 @@ $result = $conn->query($sql);
     </nav>
 
     <!-- Header -->
-    <header>
+    <header id="welcome" class="scrollify">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">Educational Outreach</div>
+                <div class="intro-heading">
+                    <div id="typed-strings"> <span>Educational Outreach</span>
+                    </div>
+                    <span id="typed"></span>
+                </div>
+
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
 
-    <!-- EO -->
-    <section id="EO">
-        <div id="intro-EO" class="intro full perfect-center">
+    <!-- About -->
+    <section id="aboutdept" class="full scrollify">
+        <div class=" EO full perfect-center">
             <h1 class="section-heading">Educational Outreach</h1>
             <h3 class="section-subheading text-muted restrict600">"Education is our birthright, but not all
                 have the
@@ -110,70 +109,65 @@ $result = $conn->query($sql);
                     Know more...
                 </div>
                 <div class="space-between restrict600">
-                    <a href="#initiatives-EO" class="page-scroll btn btn-xl">Initiatives</a>
-                    <a href="#team-EO" class="page-scroll btn btn-xl">Team</a>
+                    <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
+                    <a href="#team" class="page-scroll btn btn-xl">Team</a>
                 </div>
             </div>
         </div>
-        <div id="team-EO" class="team">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Meet our page</h2>
-                        <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
-                    </div>
-                </div>
-                <div class="team">
-                    <div class="heads">
-                        <div class="team-member">
-                            <!-- <img src="img/team/1.jpg" class="img-responsive img-circle" alt=""> -->
-                            <h4>Aditya Saurabh</h4>
-                            <p class="text-muted">Department Head</p>
-                        </div>
-                        <div class="team-member">
-                            <!-- <img src="img/team/2.jpg" class="img-responsive img-circle" alt=""> -->
-                            <h4>Yash Kadam</h4>
-                            <p class="text-muted">Department Head</p>
-                        </div>
-                    </div>
-                    <div class="AA">
-                        <div class="team-member">
-                            <!-- <img src="img/team/1.jpg" class="img-responsive img-circle" alt=""> -->
-                            <h4>Aditya Saurabh</h4>
-                            <p class="text-muted">Department Head</p>
-                        </div>
-                        <div class="team-member">
-                            <!-- <img src="img/team/2.jpg" class="img-responsive img-circle" alt=""> -->
-                            <h4>Yash Kadam</h4>
-                            <p class="text-muted">Department Head</p>
-                        </div>
-                    </div>
-                </div>
+    </section>
 
-                <div>
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 text-center">
-                            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit.
-                                Aut
-                                eaque,
-                                laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias
-                                ut
-                                unde.</p>
-                        </div>
+    <section id="team" class="scrollify">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">Meet our team</h2>
+            </div>
+            <div class="team">
+                <div class="heads">
+                    <div class="team-member">
+                        <!-- <img src="img/team/1.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4>Aditya Saurabh</h4>
+                        <p class="text-muted">Department Head</p>
+                    </div>
+                    <div class="team-member">
+                        <!-- <img src="img/team/2.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4>Yash Kadam</h4>
+                        <p class="text-muted">Department Head</p>
+                    </div>
+                </div>
+                <div class="AA">
+                    <div class="team-member">
+                        <!-- <img src="img/team/1.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4>Aditya Saurabh</h4>
+                        <p class="text-muted">Department Head</p>
+                    </div>
+                    <div class="team-member">
+                        <!-- <img src="img/team/2.jpg" class="img-responsive img-circle" alt=""> -->
+                        <h4>Yash Kadam</h4>
+                        <p class="text-muted">Department Head</p>
                     </div>
                 </div>
             </div>
-                <div id="initiatives-EO" class="initiatives">
-                    <div id="portfolio" class="bg-light-gray">
-                        <div class="container">
-                            <div class="row flex-wrap-center">
-                                <?php
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+                Aut
+                eaque,
+                laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias
+                ut
+                unde.</p>
+        </div>
+    </section>
+
+    <section id="initiatives" class="scrollify">
+        <div id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row flex-wrap-center">
+                    <!-- portfolio item is to be repeated -->
+                    <?php
                     $a = "";
                     $i=0;
                         while( $row = mysqli_fetch_assoc( $result ) ){
                             $i = $i+1;
-                            echo('<div class="col-md-4 col-sm-6 portfolio-item">
+                            echo('<div class="portfolio-item">
                             <a href="#portfolioModal'.$i.'" class="portfolio-link" data-toggle="modal">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content">
@@ -217,10 +211,10 @@ $result = $conn->query($sql);
                         </div>';
                         }
                     ?>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- portfolio item closed -->
                 </div>
+            </div>
+        </div>
     </section>
 
 
@@ -229,7 +223,7 @@ $result = $conn->query($sql);
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; NSS, IIT Bombay, 2018</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -254,30 +248,50 @@ $result = $conn->query($sql);
     </footer>
 
 
+
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
     <?php echo($a) ?>
 
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/easing/easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
-
-
-
 </body>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Custom Javascript -->
+<script src="./js/custom.js"></script>
+
+<!-- Plugins == (Easing.js, Bootstrap.min.js, Theme javascript, typed.min.js, Scrollify) -->
+<script src="./js/plugins.js"></script>
+
+<!-- javascript for slideshow -->
+<script src="js/slideshow.js"></script>
+
+<script>
+    // scrollify config
+    $(function () {
+        $.scrollify({
+            section: ".scrollify",
+            setHeights: false,
+        });
+    });
+
+    // Typed JS config
+    document.addEventListener('DOMContentLoaded', function () {
+
+        var typed = new Typed("#typed", {
+            stringsElement: '#typed-strings',
+            typeSpeed: 90,
+            backSpeed: 500,
+            backDelay: 500,
+            startDelay: 1000,
+            loop: false,
+            contentType: 'text', // or text
+            loopCount: null,
+            callback: function () { foo(); },
+            resetCallback: function () { newTyped(); }
+        });
+    });
+</script>
 
 </html>
