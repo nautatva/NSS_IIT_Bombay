@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/stylesheets/navbar.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/stylesheets/sidenav.css" />
+  <!-- Favicons -->
+  <!-- <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+<link rel="manifest" href="./images/favicons/manifest.json">
+<link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff"> -->
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
+  <!-- <script src="main.js"></script> -->
+  <script>
+    function openNav() {
+      cssString =
+        "width: 18.75rem; box-shadow: -1px 0px 1px 1px rgba(0, 0, 0, 0.2);";
+      document.getElementById("mySidenav").style.cssText = cssString;
+    }
+    function closeNav() {
+      cssString = "width: 0rem; box-shadow: none;";
+      document.getElementById("mySidenav").style.cssText = cssString;
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Side navbar -->
+  <div class="nav-container">
+    <div class="container ">
+      <nav class="navbar navbar-expand-lg navbar-light flexrow">
+        <a class="navbar-brand" href="/">
+          <img src="./assets/NSS/logo128.png" height="55px" width="55px" alt="NSS logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="openNav()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn side-link" onclick="closeNav()">&times;</a>
+        <a href="/" class="sidenav-menu side-link">Home</a>
+        <a href="/departments/" class="sidenav-menu side-link">Departments</a>
+        <a href="/gallery" class="sidenav-menu side-link">Gallery</a>
+        <a target="_blank" href="https://nssiitbblog.wordpress.com/" class="sidenav-menu side-link">Blog</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="nav-mycontainer">
+    <div class="container desktop">
+      <a href="/">
+        <div class="identity">
+          <img src="../assets/NSS/logo128.png" height="55px" width="55px" alt="NSS">
+          <p>NSS IIT BOMBAY</p>
+        </div>
+      </a>
+      <div class="navbar-right" id="navbarSupportedContent">
+        <ul class="navbar-contents">
+          <li><a class="active">Home</a></li>
+          <li><a href="/departments/">Departments</a></li>
+          <li><a href="gallery"> Gallery</a></li>
+          <li><a target="_blank" href="https://nssiitbblog.wordpress.com/">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+</html>

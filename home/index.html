@@ -9,26 +9,32 @@
 	<!-- Favicon -->
 	<!-- <link rel="shortcut icon" type="image/icon" href="assets/images/favico.ico" /> -->
 	<!-- Font Awesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- Theme color -->
 	<link id="switcher" href="./css/theme.css" rel="stylesheet">
 
 	<!-- Remember to put js at the bottom -->
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" defer="">
+
 	<!-- Main Style -->
 	<link href="./css/main.css" rel="stylesheet">
+	<link href="./css/stats.css" rel="stylesheet">
 
 	<link href="./css/stickynav.css" rel="stylesheet">
 	<script src="./js/stickynav.js"></script>
-	
+
 	<link href="./css/flip.css" rel="stylesheet">
 	<script src="./js/flip.js"></script>
-
+	<!-- <script src="./js/plugin.js"></script> -->
 	<script src="./js/numbers.js"></script>
+	<script src="./js/carousal.js"></script>
 </head>
 
-<body onload="stick(); flip();">
+<body onload="stick(); flip(); changeImg()">
 	<div class="introTable">
 		<table>
 			<tr class="flex">
@@ -36,7 +42,7 @@
 					<div class="flip">
 						<div class="card1">
 							<div class="face front">
-								<img src="../assets/images/EO/ALP.jpg" alt="img">
+								<img id="flip1f" src="../assets/images/EO/ALP.jpg" alt="img">
 							</div>
 							<div class="face back">
 								<img src="../assets/images/EO/prayog.jpg" alt="img">
@@ -69,8 +75,8 @@
 					</div>
 				</td>
 			</tr>
-			<tr class="flex">
-				<td class="flex" id="js-flip-4">
+			<tr class="flex main">
+				<td class="flex side" id="js-flip-4">
 					<div class="flip">
 						<div class="card1">
 							<div class="face front">
@@ -85,7 +91,7 @@
 				<td>
 					<img id="introImg" src="../assets/NSS/typo-alpha.png" alt="NSS typography with departments">
 				</td>
-				<td class="flex" id="js-flip-6">
+				<td class="flex side" id="js-flip-6">
 					<div class="flip">
 						<div class="card1">
 							<div class="face front">
@@ -140,8 +146,8 @@
 	</div>
 	<!-- </div> -->
 	<!--START SCROLL TOP BUTTON -->
-	<a class="scrollToTop" href="#">
-		<i class="fa fa-angle-up"></i>
+	<a class="scrollToTop" href="#"><span>^</span>
+		<!-- <i class="fa fa-angle-up"></i> -->
 	</a>
 	<!-- END SCROLL TOP BUTTON -->
 
@@ -158,6 +164,9 @@
 		<a class="navhead">Educational Outreach</a>
 		<a class="navhead">Sustainable Social Development</a>
 		<a href="#contact">Contact</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<!-- <i class="fa fa-bars"></i>More -->
+		</a>
 	</nav>
 
 	<div class="mobile-fix" style="height: 0"></div>
@@ -189,11 +198,62 @@
 			</div>
 		</section>
 
+
+		<!-- statistics -->
+		<section class="statistics-section section-space-padding bg-cover text-center" data-stellar-background-ratio="0.3">
+			<div class="statistics-center">
+
+				<div class="statistics">
+					<div class="statistics-icon">
+						<img src="../assets/home/stats/Volunteers.png">
+					</div>
+					<div class="statistics-content">
+						<h5><span data-count="2025" class="statistics-count volunteers">2025</span></h5><span> Total Volunteers </span>
+					</div>
+				</div>
+
+				<div class="statistics">
+					<div class="statistics-icon">
+						<img src="../assets/home/stats/Children.png">
+					</div>
+					<div class="statistics-content">
+						<h5> <span data-count="1200" class="statistics-count children">1200</span></h5><span>Happy Children</span>
+					</div>
+				</div>
+
+				<div class="statistics">
+					<div class="statistics-icon">
+						<img src="../assets/home/stats/Reach.png">
+					</div>
+					<div class="statistics-content">
+						<h5><span data-count="8000" class="statistics-count reach">8000</span></h5><span> Reach </span>
+					</div>
+				</div>
+				<div class="statistics">
+					<div class="statistics-icon">
+						<img src="../assets/home/stats/Initiative.png">
+					</div>
+					<div class="statistics-content">
+						<h5><span data-count="4000" class="statistics-count initiatives">4000</span></h5><span> Initiatives </span>
+					</div>
+				</div>
+				<div class="statistics">
+					<div class="statistics-icon">
+						<img src="../assets/home/stats/Subscribers.png">
+					</div>
+					<div class="statistics-content">
+						<h5><span data-count="4000" class="statistics-count subscribers">4000</span></h5><span> Total Subscribers </span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- statistics end -->
+		<!--  
 		<section id="reach">
 			<div>
 				<span id="fbReach">2,00,000</span>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Start activities -->
 		<section class="activities">
@@ -274,7 +334,7 @@
 		<section id="departments">
 			<!-- <div class="mycallto-action-area"> -->
 			<h2>Let's explore the departments</h2>
-			<a href="#">Departments</a>
+			<a href="../depts/">Departments</a>
 			<!-- </div> -->
 		</section>
 		<!-- Start Call to Action -->
@@ -296,7 +356,7 @@
 
 	<!-- Custom js -->
 	<script type="text/javascript" src="./js/custom.js"></script>
-	
+
 </body>
 
 </html>

@@ -2,10 +2,11 @@
 /* BASIC TYPOGRAPHY */
 /*--------------------*/
 
-body,
-html {
+body {
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Montserrat', fantasy;
+  text-align: center;
 }
 
 a {
@@ -116,14 +117,16 @@ section {
   line-height: 50px;
   position: fixed;
   right: 20px;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
-  width: 55px;
+  width: 37px;
   z-index: 999;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   height: 55px;
   border-radius: 10px;
+  -webkit-transform: scale(1.5, 1);
+  transform: scale(1.5, 1);
 }
 
 .scrollToTop:hover,
@@ -133,19 +136,21 @@ section {
 
 /* intro */
 .introTable {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   background-color: black;
 }
 
 .introTable img {
   object-fit: cover;
-  width: 33vw;
-  height: calc(33vh - 18px);
+  width: 32vw;
+  height: calc(32vh - 18px);
 }
 
 .introTable td {
-  width: 33vw;
-  height: calc(33vh - 17px);
+  width: 32vw;
+  height: calc(32vh - 17px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +172,17 @@ section {
   }
 }
 
+@media (max-width: 1000px) {
+  .side {
+    display: none !important;
+  }
+  #introimg {
+    width: 100% !important;
+  }
+  .main {
+    justify-content: center;
+  }
+}
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
@@ -200,7 +216,7 @@ section {
 }
 #info {
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   max-width: 1024px;
 }
 .reverse {
@@ -221,7 +237,7 @@ section {
 
 .activities {
   background-color: #f6f6f6;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .cards {
@@ -240,17 +256,20 @@ section {
   margin: 3rem 1rem 0 1rem;
   border: 1px solid #f1f1f1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.1s;
   color: white;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
+.card,
+.text {
+  transition: opacity 0.1s linear;
+}
 .card:hover .text {
   display: flex;
   flex-direction: column;
+  transition: 0.1s;
 }
 .card:hover > .image {
   -webkit-filter: brightness(50%);
@@ -272,20 +291,10 @@ section {
   width: 100%;
   /* padding: 11px 11px 0px 11px; */
   height: 255px;
-  transition: transform 1s;
-}
-.card > .image > .cardImg:hover{
-  padding: 0;
-  transform: scale(1.3);
 }
 
 .card > .text {
   padding: 2px 16px;
-  transition: transform 1s;
-}
-.card > .text:hover{
-  padding: 0;
-  transform: scale(1.3);
 }
 
 .card > .text > .cardTitle {
