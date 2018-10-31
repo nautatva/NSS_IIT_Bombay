@@ -33,22 +33,22 @@ $AAs = $conn->query($sql3);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>departments - NSS, IIT Bombay</title>
+    <title>Educational Outreach - NSS, IIT Bombay</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../statics/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../statics/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../statics/css/agency.css" rel="stylesheet">
 
     <!-- custom CSS -->
-    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../statics/css/custom.css" rel="stylesheet">
 
     <!-- caroual CSS -->
-    <link href="../css/slideshow.css" rel="stylesheet">
+    <link href="../statics/css/slideshow.css" rel="stylesheet">
     <!-- Colors -->
     
 </head>
@@ -280,16 +280,16 @@ $AAs = $conn->query($sql3);
 </body>
 
 <!-- jQuery -->
-<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../statics/vendor/jquery/jquery.min.js"></script>
 
 <!-- Custom Javascript -->
-<script src="../js/custom.js"></script>
+<script src="../statics/js/custom.js"></script>
 
 <!-- Plugins == (Easing.js, Bootstrap.min.js, Theme javascript, typed.min.js, Scrollify) -->
-<script src="../js/plugins.js"></script>
+<script src="../statics/js/plugins.js"></script>
 
 <!-- javascript for slideshow -->
-<script src="../js/slideshow.js"></script>
+<script src="../statics/js/slideshow.js"></script>
 
 <script>
     // scrollify config
