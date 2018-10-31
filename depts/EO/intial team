@@ -1,0 +1,38 @@
+
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading">Meet our team</h2>
+            </div>
+            <div class="team">
+                <div class="heads">
+                    <?php
+                    $head = mysqli_fetch_assoc( $heads );
+                    while ($head) {
+                        echo('
+                        <div class="team-member">
+                        <h4>' . $head['COL 1'] . '</h4>
+                       
+                    </div>
+                        ');
+                    $head = mysqli_fetch_assoc( $heads );
+                        
+                    }                
+                    ?>
+                </div>
+                <div class="AA">
+                    <?php
+                    $aa = mysqli_fetch_assoc( $AAs );
+                    while ($aa) {
+                        echo('
+                        <div class="team-member">
+                        <h4>' . $aa['name'] . '</h4>
+                       
+                    </div>
+                        ');
+                    $aa = mysqli_fetch_assoc( $AAs );
+                        
+                    }                
+                    ?>
+                </div>
+            </div>
+        </div>
