@@ -1,9 +1,4 @@
 <?php
-// $host ="localhost";
-// $username = "root";
-// $password = "password";
-// $db = "nss";
-// $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $host ="10.105.177.5";
 $username = "nss";
 $password = "nssiitb@2015";
@@ -18,7 +13,7 @@ $sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept'" ;
 $sql3="SELECT * FROM AA1819 WHERE dept = '$dept'" ;
 
 $result = $conn->query($sql);
-$background = $conn->query($sql1);
+$basic = $conn->query($sql1);
 $heads = $conn->query($sql2);
 $AAs = $conn->query($sql3);
 ?>
@@ -33,24 +28,24 @@ $AAs = $conn->query($sql3);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>departments - NSS, IIT Bombay</title>
+    <title>Sustainable Social Development - NSS, IIT Bombay</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../statics/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../statics/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../statics/css/agency.css" rel="stylesheet">
 
     <!-- custom CSS -->
-    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../statics/css/custom.css" rel="stylesheet">
 
     <!-- caroual CSS -->
-    <link href="../css/slideshow.css" rel="stylesheet">
+    <link href="../statics/css/slideshow.css" rel="stylesheet">
     <!-- Colors -->
-    
+
 </head>
 
 <body id="page-top" class="index">
@@ -95,89 +90,99 @@ $AAs = $conn->query($sql3);
     <header id="welcome" class="scrollify">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">
-                    <div id="typed-strings"> <span>Educational Outreach</span>
-                    </div>
-                    <span id="typed"></span>
-                </div>
-
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <?php
+                    $department = mysqli_fetch_assoc( $basic );
+                    echo('
+                    <div class="intro-lead-in">' . $department['name'] . '</div>
+                    <div class="intro-heading">
+                        <div id="typed-strings"> <span>' . $department['one_liner'] . '</span>');
+                ?>
             </div>
+            <span id="typed"></span>
+        </div>
+
+        <!-- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
+        </div>
         </div>
     </header>
 
     <!-- About -->
-    <section id="aboutdept" class="full scrollify" >
-        <?php
-            $color = mysqli_fetch_assoc( $background );
-            echo('<div class=" full perfect-center" style="' . $color['color'] . '">');
-            
-        ?>            
-            <h1 class="section-heading" >Educational Outreach</h1>
-            <h3 class="section-subheading text-muted restrict600">"Education is our birthright, but not all
-                have the
-                privilege. We teach the underprivileged and also let them inculcate cultural skills and sound
-                morals.
-                You get to interact with children and relive your childhood. You leave a positive impact on
-                someone's life and be their role model"
-            </h3>
-            <div>
-                <div class="h3 text-center">
-                    Know more...
-                </div>
-                <div class="space-between restrict600">
-                    <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
-                    <a href="#team" class="page-scroll btn btn-xl">Team</a>
-                </div>
+    <section id="aboutdept" class="full scrollify">
+        <?php    
+        echo('<div class=" full perfect-center" style="' . $department['color'] . '">
+    
+        <h1 class="section-heading">' . $department['name'] . '</h1>
+        <h3 class="section-subheading text-muted restrict600">' . $department['description'] . '
+        </h3>');
+        ?>
+        <div>
+            <!-- <div class="h3 text-center">
+                Know more...
+            </div> -->
+            <div class="space-between restrict600">
+                <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
+                <a href="#team" class="page-scroll btn btn-xl">Team</a>
             </div>
+        </div>
         </div>
     </section>
 
     <section id="team" class="scrollify">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading">Meet our team</h2>
-            </div>
-            <div class="team">
-                <div class="heads">
-                    <?php
+        <div class="mbr-section article mbr-section__container" id="EO-content6-1" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Meet our team</h2>
+                </div>
+                <div class="team" style="font-family: 'Droid Sans', Sans-serif;">
+                    <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
+
+                        <h4>Department Heads</h4>
+                        <table>
+                            <?php
                     $head = mysqli_fetch_assoc( $heads );
                     while ($head) {
                         echo('
-                        <div class="team-member">
-                        <h4>' . $head['COL 1'] . '</h4>
-                        <p class="text-muted">Department Head</p>
-                    </div>
+                        <tr>
+                                    <td><span style="font-size: 1.37rem;   line-height: 1.5;">
+                                            <li>' . $head['COL 1'] . '</li>
+                                        </span></td>
+                                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                                        &nbsp;</td>
+                                    
+                                    <td><span style="font-size: 1.37rem; line-height: 1.5; "><a href="tel: +91-' . $head['COL 7'] . '">' . $head['COL 7'] . '</a></span></td>
+                              </tr>
                         ');
                     $head = mysqli_fetch_assoc( $heads );
                         
                     }                
                     ?>
-                </div>
-                <div class="AA">
-                <?php
-                    $aa = mysqli_fetch_assoc( $AAs );
-                    while ($aa) {
-                        echo('
-                        <div class="team-member">
-                        <h4>' . $aa['name'] . '</h4>
-                        <p class="text-muted">Activity Associate</p>
+                        </table>
                     </div>
-                        ');
-                    $aa = mysqli_fetch_assoc( $AAs );
-                        
-                    }                
-                    ?>
+
+                    <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
+                        <h4>Activity Associates</h4>
+                        <table>
+
+                            <?php
+                        $aa = mysqli_fetch_assoc( $AAs );
+                        while ($aa) {
+        $name=$aa['name'];
+        $contact=$aa['contact'];
+        echo
+        (
+          "<tr>
+              <td><span style='font-size: 1.37rem;   line-height: 1.5;'><li>$name</span></td>
+             
+              <td><span style='font-size: 1.37rem; line-height: 1.5; '><a href='tel: +91-$contact'>$contact</a></span></td></li>
+            </tr>"
+        );
+        $aa = mysqli_fetch_assoc( $AAs );
+      }
+?>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-                Aut
-                eaque,
-                laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias
-                ut
-                unde.</p>
         </div>
     </section>
 
@@ -221,9 +226,9 @@ $AAs = $conn->query($sql3);
                                                 <div class="modal-body">
                                                     <!-- Project Details Go Here -->
                                                     <h2>' . $row['initiative'] . '</h2>
-                                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
                                                     <img class="img-responsive img-centered" src='. $row['thumbnail'] .' alt="">
-                                                    <p>' . $row['des_short'] . '</p>
+                                                    <p>' . $row['des_long'] . '</p>
                                                     <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
                                                         Close Project</button>
                                                 </div>
@@ -280,16 +285,16 @@ $AAs = $conn->query($sql3);
 </body>
 
 <!-- jQuery -->
-<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../statics/vendor/jquery/jquery.min.js"></script>
 
 <!-- Custom Javascript -->
-<script src="../js/custom.js"></script>
+<script src="../statics/js/custom.js"></script>
 
 <!-- Plugins == (Easing.js, Bootstrap.min.js, Theme javascript, typed.min.js, Scrollify) -->
-<script src="../js/plugins.js"></script>
+<script src="../statics/js/plugins.js"></script>
 
 <!-- javascript for slideshow -->
-<script src="../js/slideshow.js"></script>
+<script src="../statics/js/slideshow.js"></script>
 
 <script>
     // scrollify config
