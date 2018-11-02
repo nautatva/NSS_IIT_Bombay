@@ -233,6 +233,7 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-color: chocolate;
+  background-image: url('./main.jpg');
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
@@ -310,7 +311,7 @@ section h3.section-subheading {
   max-width: 300px;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link img{
+#portfolio .portfolio-item .portfolio-link img {
   height: 225px;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {

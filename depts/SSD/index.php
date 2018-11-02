@@ -28,7 +28,7 @@ $AAs = $conn->query($sql3);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sustainable Social Development - NSS, IIT Bombay</title>
+    <title>Educational Outreach - NSS, IIT Bombay</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../statics/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,24 +87,24 @@ $AAs = $conn->query($sql3);
     </nav>
 
     <!-- Header -->
-    <header id="welcome" class="scrollify">
-        <div class="container">
-            <div class="intro-text">
-                <?php
+    <?php
                     $department = mysqli_fetch_assoc( $basic );
                     echo('
+    <header id="welcome" class="scrollify" style="background-image:url('.$department['main_image'].')">
+        <div class="container">
+            <div class="intro-text">
+                
                     <div class="intro-lead-in">' . $department['name'] . '</div>
                     <div class="intro-heading">
-                        <div id="typed-strings"> <span>' . $department['one_liner'] . '</span>');
-                ?>
-            </div>
-            <span id="typed"></span>
-        </div>
-
-        <!-- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
-        </div>
+                        <div id="typed-strings"> <span>' . $department['one_liner'] . '</span>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
+                 </div>
         </div>
     </header>
+    ');
+    ?>
 
     <!-- About -->
     <section id="aboutdept" class="full scrollify">
@@ -124,6 +124,67 @@ $AAs = $conn->query($sql3);
                 <a href="#team" class="page-scroll btn btn-xl">Team</a>
             </div>
         </div>
+        </div>
+    </section>
+
+
+    <section id="initiatives" class="scrollify">
+        <div id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row flex-wrap-center">
+                    <!-- portfolio item is to be repeated -->
+                    <?php
+                    $a = "";
+                    $i=0;
+                        while( $row = mysqli_fetch_assoc( $result ) ){
+                            $i = $i+1;
+                            echo('<div class="portfolio-item">
+                            <a href="#portfolioModal'.$i.'" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="' . $row['thumbnail'] . '" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>' . $row['initiative'] . '</h4>
+                                <p class="text-muted"> ' . $row['des_short'] . '</p>
+                            </div>
+                        </div>'); 
+                        
+                        $a=$a.'<div class="portfolio-modal modal fade" id="portfolioModal'.$i.'" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="close-modal" data-dismiss="modal">
+                                        <div class="lr">
+                                            <div class="rl">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-8 col-lg-offset-2">
+                                                <div class="modal-body">
+                                                    <!-- Project Details Go Here -->
+                                                    <h2>' . $row['initiative'] . '</h2>
+                                                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                                                    <img class="img-responsive img-centered" src='. $row['thumbnail'] .' alt="">
+                                                    <p>' . $row['des_short'] . '</p>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
+                                                        Close Project</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>';
+                        }
+                    ?>
+                    <!-- portfolio item closed -->
+                </div>
+            </div>
         </div>
     </section>
 
@@ -185,67 +246,6 @@ $AAs = $conn->query($sql3);
             </div>
         </div>
     </section>
-
-    <section id="initiatives" class="scrollify">
-        <div id="portfolio" class="bg-light-gray">
-            <div class="container">
-                <div class="row flex-wrap-center">
-                    <!-- portfolio item is to be repeated -->
-                    <?php
-                    $a = "";
-                    $i=0;
-                        while( $row = mysqli_fetch_assoc( $result ) ){
-                            $i = $i+1;
-                            echo('<div class="portfolio-item">
-                            <a href="#portfolioModal'.$i.'" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="' . $row['thumbnail'] . '" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>' . $row['initiative'] . '</h4>
-                                <p class="text-muted"> ' . $row['des_short'] . '</p>
-                            </div>
-                        </div>'); 
-                        
-                        $a=$a.'<div class="portfolio-modal modal fade" id="portfolioModal'.$i.'" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="close-modal" data-dismiss="modal">
-                                        <div class="lr">
-                                            <div class="rl">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-8 col-lg-offset-2">
-                                                <div class="modal-body">
-                                                    <!-- Project Details Go Here -->
-                                                    <h2>' . $row['initiative'] . '</h2>
-                                                    <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                                                    <img class="img-responsive img-centered" src='. $row['thumbnail'] .' alt="">
-                                                    <p>' . $row['des_long'] . '</p>
-                                                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
-                                                        Close Project</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>';
-                        }
-                    ?>
-                    <!-- portfolio item closed -->
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
     <footer>

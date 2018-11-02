@@ -28,7 +28,7 @@ $AAs = $conn->query($sql3);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Green Campus - NSS, IIT Bombay</title>
+    <title>Educational Outreach - NSS, IIT Bombay</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../statics/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,24 +87,24 @@ $AAs = $conn->query($sql3);
     </nav>
 
     <!-- Header -->
-    <header id="welcome" class="scrollify">
-        <div class="container">
-            <div class="intro-text">
-                <?php
+    <?php
                     $department = mysqli_fetch_assoc( $basic );
                     echo('
+    <header id="welcome" class="scrollify" style="background-image:url('.$department['main_image'].')">
+        <div class="container">
+            <div class="intro-text">
+                
                     <div class="intro-lead-in">' . $department['name'] . '</div>
                     <div class="intro-heading">
-                        <div id="typed-strings"> <span>' . $department['one_liner'] . '</span>');
-                ?>
-            </div>
-            <span id="typed"></span>
-        </div>
-
-        <!-- <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a> -->
-        </div>
+                        <div id="typed-strings"> <span>' . $department['one_liner'] . '</span>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
+                 </div>
         </div>
     </header>
+    ');
+    ?>
 
     <!-- About -->
     <section id="aboutdept" class="full scrollify">
@@ -127,64 +127,6 @@ $AAs = $conn->query($sql3);
         </div>
     </section>
 
-    <section id="team" class="scrollify">
-        <div class="mbr-section article mbr-section__container" id="EO-content6-1" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading">Meet our team</h2>
-                </div>
-                <div class="team" style="font-family: 'Droid Sans', Sans-serif;">
-                    <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
-
-                        <h4>Department Heads</h4>
-                        <table>
-                            <?php
-                    $head = mysqli_fetch_assoc( $heads );
-                    while ($head) {
-                        echo('
-                        <tr>
-                                    <td><span style="font-size: 1.37rem;   line-height: 1.5;">
-                                            <li>' . $head['COL 1'] . '</li>
-                                        </span></td>
-                                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-                                        &nbsp;</td>
-                                    
-                                    <td><span style="font-size: 1.37rem; line-height: 1.5; "><a href="tel: +91-' . $head['COL 7'] . '">' . $head['COL 7'] . '</a></span></td>
-                              </tr>
-                        ');
-                    $head = mysqli_fetch_assoc( $heads );
-                        
-                    }                
-                    ?>
-                        </table>
-                    </div>
-
-                    <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
-                        <h4>Activity Associates</h4>
-                        <table>
-
-                            <?php
-                        $aa = mysqli_fetch_assoc( $AAs );
-                        while ($aa) {
-        $name=$aa['name'];
-        $contact=$aa['contact'];
-        echo
-        (
-          "<tr>
-              <td><span style='font-size: 1.37rem;   line-height: 1.5;'><li>$name</span></td>
-             
-              <td><span style='font-size: 1.37rem; line-height: 1.5; '><a href='tel: +91-$contact'>$contact</a></span></td></li>
-            </tr>"
-        );
-        $aa = mysqli_fetch_assoc( $AAs );
-      }
-?>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="initiatives" class="scrollify">
         <div id="portfolio" class="bg-light-gray">
@@ -246,6 +188,64 @@ $AAs = $conn->query($sql3);
         </div>
     </section>
 
+    <section id="team" class="scrollify">
+        <div class="mbr-section article mbr-section__container" id="EO-content6-1" style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading">Meet our team</h2>
+                </div>
+                <div class="team" style="font-family: 'Droid Sans', Sans-serif;">
+                    <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
+
+                        <h4>Department Heads</h4>
+                        <table>
+                            <?php
+                    $head = mysqli_fetch_assoc( $heads );
+                    while ($head) {
+                        echo('
+                        <tr>
+                                    <td><span style="font-size: 1.37rem;   line-height: 1.5;">
+                                            <li>' . $head['COL 1'] . '</li>
+                                        </span></td>
+                                    <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                                        &nbsp;</td>
+                                    
+                                    <td><span style="font-size: 1.37rem; line-height: 1.5; "><a href="tel: +91-' . $head['COL 7'] . '">' . $head['COL 7'] . '</a></span></td>
+                              </tr>
+                        ');
+                    $head = mysqli_fetch_assoc( $heads );
+                        
+                    }                
+                    ?>
+                        </table>
+                    </div>
+
+                    <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
+                        <h4>Activity Associates</h4>
+                        <table>
+
+                            <?php
+                        $aa = mysqli_fetch_assoc( $AAs );
+                        while ($aa) {
+        $name=$aa['name'];
+        $contact=$aa['contact'];
+        echo
+        (
+          "<tr>
+              <td><span style='font-size: 1.37rem;   line-height: 1.5;'><li>$name</span></td>
+             
+              <td><span style='font-size: 1.37rem; line-height: 1.5; '><a href='tel: +91-$contact'>$contact</a></span></td></li>
+            </tr>"
+        );
+        $aa = mysqli_fetch_assoc( $AAs );
+      }
+?>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
