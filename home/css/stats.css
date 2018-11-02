@@ -73,20 +73,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
 .statistics-icon img {
-  width: 20px;
+  width: 50px;
   height: auto;
 }
 
 .statistics-content {
+  color: white;
 }
 
 .statistics-content > h5 {
   margin: 0px;
+  font-size: 40px;
 }
 
 .statistics-content > span {
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
