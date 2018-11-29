@@ -1,6 +1,7 @@
 /* Adjusting cards */
 table {
   width: 100%;
+  background-color: black;
 }
 td {
   flex: 1 0 0;
@@ -56,4 +57,51 @@ div {
   background: white;
   color: black;
   cursor: pointer;
+}
+
+
+
+/* checks */
+
+
+.introTable img {
+  object-fit: cover;
+  width: 32vw;
+  height: calc(32vh - 18px);
+}
+
+.introTable td {
+  width: 32vw;
+  height: calc(32vh - 17px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#introImg {
+  width: 53%;
+  min-width: 330px;
+  height: auto;
+}
+.introImgdiv h2 {
+  margin: 33px;
+  font-size: 5vw;
+  font-family: cursive;
+}
+@media (min-width: 768px) {
+  .introImgdiv h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .side {
+    display: none !important;
+  }
+  #introimg {
+    width: 100% !important;
+  }
+  .main {
+    justify-content: center;
+  }
 }
