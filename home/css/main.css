@@ -81,9 +81,9 @@ button {
   border: none;
 }
 
-section {
+/*section {
   padding: 50px;
-}
+} */
 
 .container {
   padding-right: 15px;
@@ -265,23 +265,24 @@ section {
 .card,
 .text {
   transition: opacity 0.1s linear;
+  color: black;
 }
 .card:hover .text {
   display: flex;
   flex-direction: column;
   transition: 0.1s;
 }
-.card:hover > .image {
+/* .card:hover > .image {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
-}
+} */
 
-.text {
+/* .text {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 .card > .image {
   height: 255px;
   padding: 6px;
