@@ -39,196 +39,181 @@
   </head>
 
   <body onload="changeImg()">
-    <!-- START SCROLL TOP BUTTON -->
+    <!-- Scroll to top -->
     <a class="scrollToTop" href="#"><span>^</span> </a>
     <script type="text/javascript" src="./js/scrollTop.js"></script>
 
-    <!-- END SCROLL TOP BUTTON -->
-
-    <!-- First division for navbar set -->
-    <div id="firstSet"></div>
-
-
-
-
-    <!-- FLipping cards Start -->
-    <!--
-      <section id="flip">
-        <link rel="stylesheet" href="./css/flip.css" />
-
-        <div class="introTable">
-          <table class="flex">
-            <tbody>
-              <tr class="flex">
-                <td id="js-flip-1">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/ALP.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/prayog.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-                <td id="js-flip-2">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/muskaan.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/neem_school.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-                <td id="js-flip-3">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/neem_school.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/OLI.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr class="flex main">
-                <td class="side" id="js-flip-4">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/NGO.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/VFP.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-                <td id="introtd">
-                  <img
-                    id="introImg"
-                    src="../assets/logo/typo-alpha.png"
-                    alt="NSS typography with departments"
-                  />
-                </td>
-                <td class="side" id="js-flip-6">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/OLI.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/neem_school.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr class="flex">
-                <td id="js-flip-7">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/prayog.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/neem_school.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-                <td id="js-flip-8">
-                  <div class="card1">
-                    <div class="face front">
-                      <img src="../assets/images/EO/VFP.jpg" alt="img" />
-                    </div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/ALP.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-                <td id="js-flip-9">
-                  <div class="card1">
-                    <div class="face front"><img src="" alt="img" /></div>
-                    <div class="face back">
-                      <img src="../assets/images/EO/muskaan.jpg" alt="img" />
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <script src="./js/flip.js"></script>
-      </section>
-    -->
-    <!-- flipping cards close -->
-
-    <!-- sticky navbar -->
-    <!--
-      <nav id="sticky-navbar" data-spy="affix" data-offset-top="1000">
-        <a class="navhead" href="../depts/GC/">Green Campus</a>
-        <a class="navhead" href="../depts/EO/">Educational Outreach</a>
-        <a class="navhead" href="../depts/SSD/">Sustainable Social Development</a>
-        <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-      </nav>
-
-      <div class="mobile-fix" style="height: 0"></div>
-    -->
-    <div id="navbar">
-      <link scoped rel="stylesheet" href="./css/navbar.css" />
-
-      <h1>NSS, IIT Bombay <span>moto</span></h1>
+    <!-- Navbar -->
+    <section id="nav">
+      <link rel="stylesheet" href="./css/navbar.css" />
+      <h1>Burger Menu <span>by JLNLJN</span></h1>
 
       <input id="burger" type="checkbox" style="display:none;" />
 
       <label for="burger"> <span></span> <span></span> <span></span> </label>
 
-      <nav id="nav-container">
-        <div id="nav-contents">
-          <div id="depts">
-            <h2>Departments</h2>
-            <ul>
-              <li><a href="#">Educational Outreach</a></li>
-              <li><a href="#">Green Campus</a></li>
-              <li><a href="#">Sustainable Social Development</a></li>
-              <li><a href="#">Media & Design</a></li>
-              <li><a href="#">Web</a></li>
-            </ul>
-          </div>
-
-          <div id="portals">
-            <h2>Portals</h2>
-            <ul>
-              <li><a href="#">Greenopedia</a></li>
-              <li><a href="#">OLI Video Downloader</a></li>
-              <li><a href="#">NOCS portal</a></li>
-            </ul>
-          </div>
-
-          <div id="youtube">
-            <h2>Youtube</h2>
-            <ul>
-              <li><a href="#">VFP</a></li>
-              <li><a href="#">Open Learning Initiative - OLI</a></li>
-              <li><a href="#">Greenopedia</a></li>
-              <li><a href="#">Tarang</a></li>
-            </ul>
-          </div>
-
-          <div id="wordpress">
-            <h2>Wordpress</h2>
-            <ul>
-              <li><a href="#">Parivartan</a></li>
-              <li><a href="#">Prakriti</a></li>
-            </ul>
-          </div>
-        </div>
+      <link rel="stylesheet" href="./css/mega-style.css" />
+      <nav class="cbp-hrmenu">
+        <ul>
+          <li class="cbp-hropen">
+            <div class="cbp-hrsub">
+              <div class="cbp-hrsub-inner">
+                <div>
+                  <h4>Departments</h4>
+                  <ul>
+                    <li><a href="#">Educational Outreach</a></li>
+                    <li><a href="#">Green Campus</a></li>
+                    <li><a href="#">Sustainable Social Development</a></li>
+                    <li><a href="#">Media and Design</a></li>
+                    <li><a href="#">Web</a></li>
+                  </ul>
+                  <div>
+                    <h4>Youtube</h4>
+                    <ul>
+                      <li><a href="#">Greenopedia</a></li>
+                      <li><a href="#">Open Learning Initiative - OLI</a></li>
+                      <li><a href="#">Tarang</a></li>
+                      <li><a href="#">VFP</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <h4>Portal</h4>
+                  <ul>
+                    <li><a href="#">Greenopedia</a></li>
+                    <li><a href="#">OLI Video Downloader</a></li>
+                    <li><a href="#">NOCS portal</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Wordpress</h4>
+                  <ul>
+                    <li><a href="#">Pravriti</a></li>
+                    <li><a href="#">Prayog</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </nav>
-    </div>
-    <!-- <script src="js/index.js"></script> -->
+    </section>
+
+    <!-- First division for navbar set -->
+    <div id="navFix" style="height:100px;"></div>
+
+    <!-- FLipping cards Start -->
+
+    <section id="flip">
+      <link rel="stylesheet" href="./css/flip.css" />
+
+      <div class="introTable">
+        <table class="flex">
+          <tbody>
+            <tr class="flex">
+              <td id="js-flip-1">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/ALP.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/prayog.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+              <td id="js-flip-2">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/muskaan.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+              <td id="js-flip-3">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/OLI.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="flex main">
+              <td class="side" id="js-flip-4">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/NGO.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/VFP.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+              <td id="introtd">
+                <img
+                  id="introImg"
+                  src="../assets/logo/typo-alpha.png"
+                  alt="NSS typography with departments"
+                />
+              </td>
+              <td class="side" id="js-flip-6">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/OLI.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="flex">
+              <td id="js-flip-7">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/prayog.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+              <td id="js-flip-8">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/VFP.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/ALP.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+              <td id="js-flip-9">
+                <div class="card1">
+                  <div class="face front"><img src="" alt="img" /></div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/muskaan.jpg" alt="img" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <script src="./js/flip.js"></script>
+    </section>
+
+    <!-- flipping cards close -->
 
     <!-- Start main content -->
     <main>
       <!-- Start About -->
       <section id="myabout">
-        <div id="m-fix"></div>
         <div class="divider">
           <img height="50px" src="../assets/divider.png" />
         </div>

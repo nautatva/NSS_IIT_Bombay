@@ -1,7 +1,4 @@
-body {
-  background: #020304;
-}
-body h1 {
+#nav h1 {
   position: fixed;
   top: 40px;
   left: 40px;
@@ -11,13 +8,13 @@ body h1 {
   font-family: sans-serif;
   text-transform: uppercase;
 }
-body h1 > span {
+#nav h1 > span {
   text-transform: none;
   opacity: .5;
   font-weight: 300;
   font-size: 12px;
 }
-body input + label {
+#nav input + label {
   position: fixed;
   top: 40px;
   right: 40px;
@@ -25,7 +22,7 @@ body input + label {
   width: 15px;
   z-index: 5;
 }
-body input + label span {
+#nav input + label span {
   position: absolute;
   width: 100%;
   height: 2px;
@@ -36,28 +33,28 @@ body input + label span {
   background: #020304;
   transition: .5s;
 }
-body input + label span:first-child {
+#nav input + label span:first-child {
   top: 3px;
 }
-body input + label span:last-child {
+#nav input + label span:last-child {
   top: 16px;
 }
-body label:hover {
+#nav label:hover {
   cursor: pointer;
 }
-body input:checked + label span {
+#nav input:checked + label span {
   opacity: 0;
   top: 50%;
 }
-body input:checked + label span:first-child {
+#nav input:checked + label span:first-child {
   opacity: 1;
   transform: rotate(405deg);
 }
-body input:checked + label span:last-child {
+#nav input:checked + label span:last-child {
   opacity: 1;
   transform: rotate(-405deg);
 }
-body input ~ nav {
+#nav input ~ nav {
   background: white;
   position: fixed;
   top: 0;
@@ -70,12 +67,12 @@ body input ~ nav {
   overflow: hidden;
 }
 
-body input ~ nav > ul > li {
+#nav input ~ nav > ul > li {
   opacity: 0;
   transition: .5s;
   transition-delay: 0s;
 }
-body input ~ nav > ul > li > a {
+#nav input ~ nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
   color: #020304;
@@ -84,11 +81,11 @@ body input ~ nav > ul > li > a {
   display: block;
   padding: 30px;
 }
-body input:checked ~ nav {
+#nav input:checked ~ nav {
   height: 100%;
   transition-delay: 0s;
 }
-body input:checked ~ nav > ul > li {
+#nav input:checked ~ nav > ul > li {
   opacity: 1;
   transition-delay: .5s;
 }
