@@ -49,5 +49,8 @@ function flip() {
     }, 3000);
   }, 0);
 }
-$(window).load(flip());
+
+$(document).ready(function() {
+  flip();
+});
 // https://codepen.io/johnmotyljr/pen/tkipE

@@ -24,7 +24,6 @@
     <title>NSS IITB</title>
     <link id="switcher" href="./css/theme.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/stats.css" />
 
@@ -39,7 +38,7 @@
     <script src="./js/carousal.js"></script>
   </head>
 
-  <body onload="stick(); changeImg()">
+  <body onload="changeImg()">
     <!-- START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#"><span>^</span> </a>
     <script type="text/javascript" src="./js/scrollTop.js"></script>
@@ -54,97 +53,99 @@
 
       <div class="introTable">
         <table class="flex">
-          <tr class="flex">
-            <td id="js-flip-1">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/ALP.jpg" alt="img" />
+          <tbody>
+            <tr class="flex">
+              <td id="js-flip-1">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/ALP.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/prayog.jpg" alt="img" />
+                  </div>
                 </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/prayog.jpg" alt="img" />
+              </td>
+              <td id="js-flip-2">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/muskaan.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td id="js-flip-2">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/muskaan.jpg" alt="img" />
+              </td>
+              <td id="js-flip-3">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/OLI.jpg" alt="img" />
+                  </div>
                 </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+              </td>
+            </tr>
+            <tr class="flex main">
+              <td class="side" id="js-flip-4">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/NGO.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/VFP.jpg" alt="img" />
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td id="js-flip-3">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+              </td>
+              <td id="introtd">
+                <img
+                  id="introImg"
+                  src="../assets/logo/typo-alpha.png"
+                  alt="NSS typography with departments"
+                />
+              </td>
+              <td class="side" id="js-flip-6">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/OLI.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
                 </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/OLI.jpg" alt="img" />
+              </td>
+            </tr>
+            <tr class="flex">
+              <td id="js-flip-7">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/prayog.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
+                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="flex main">
-            <td class="side" id="js-flip-4">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/NGO.jpg" alt="img" />
+              </td>
+              <td id="js-flip-8">
+                <div class="card1">
+                  <div class="face front">
+                    <img src="../assets/images/EO/VFP.jpg" alt="img" />
+                  </div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/ALP.jpg" alt="img" />
+                  </div>
                 </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/VFP.jpg" alt="img" />
+              </td>
+              <td id="js-flip-9">
+                <div class="card1">
+                  <div class="face front"><img src="" alt="img" /></div>
+                  <div class="face back">
+                    <img src="../assets/images/EO/muskaan.jpg" alt="img" />
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td id="introtd">
-              <img
-                id="introImg"
-                src="../assets/logo/typo-alpha.png"
-                alt="NSS typography with departments"
-              />
-            </td>
-            <td class="side" id="js-flip-6">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/OLI.jpg" alt="img" />
-                </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/neem_school.jpg" alt="img" />
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="flex">
-            <td id="js-flip-7">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/prayog.jpg" alt="img" />
-                </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/neem_school.jpg" alt="img" />
-                </div>
-              </div>
-            </td>
-            <td id="js-flip-8">
-              <div class="card1">
-                <div class="face front">
-                  <img src="../assets/images/EO/VFP.jpg" alt="img" />
-                </div>
-                <div class="face back">
-                  <img src="../assets/images/EO/ALP.jpg" alt="img" />
-                </div>
-              </div>
-            </td>
-            <td id="js-flip-9">
-              <div class="card1">
-                <div class="face front"><img src="" alt="img" /></div>
-                <div class="face back">
-                  <img src="../assets/images/EO/muskaan.jpg" alt="img" />
-                </div>
-              </div>
-            </td>
-          </tr>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
 
@@ -164,7 +165,9 @@
 
       <div class="mobile-fix" style="height: 0"></div>
     -->
-    <nav>
+    <nav id="navbar">
+      <link scoped rel="stylesheet" href="./css/navbar.css" />
+
       <h1>NSS, IIT Bombay <span>moto</span></h1>
 
       <input id="burger" type="checkbox" style="display:none;" />
@@ -291,101 +294,136 @@
           </div>
         </div>
       </section>
-      <!-- statistics end -->
-      <!--
-        <section id="reach">
-        	<div>
-        		<span id="fbReach">2,00,000</span>
-        	</div>
-        </section>
-      -->
 
       <!-- Start activities -->
-      <section class="activities">
+      <section id="activities">
         <h2>Initiatives</h2>
         <div class="cards">
+          <link rel="stylesheet" href="./css/card.css" />
+          <!-- card 1 -->
           <div class="card">
-            <div class="image">
-              <img
-                class="cardImg"
-                src="../assets/home/images/ecoganesha.jpg"
-                alt="ecofriendly Ganesha"
-              />
-            </div>
-            <div class="text">
-              <div class="cardTitle">Eco Ganesha Workshop</div>
-              <p class="cardDescription">
-                The consistent endeavour of NSS IIT Bombay to bring about
-                ecological prosperity with Eco Ganesha, using 100% natural
-                compright-cardnts, to care for the nature that nurtures us. The
-                workshop is intended to motivate use of ecofriendly stuffs in
-                daily life, starting from Mumbai's worshiped Ganesha Idols.
-              </p>
+            <div
+              class="wrapper"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
+            >
+              <div class="data">
+                <div class="content">
+                  <span class="author">Jane Doe</span>
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
+                  </h1>
+                  <p class="text">
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
+                  </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- card 2 -->
           <div class="card">
-            <div class="image">
-              <img
-                class="cardImg"
-                src="../assets/home/images/biodivmapping.jpg"
-                alt="biodiversity mapping"
-              />
-            </div>
-            <div class="text">
-              <div class="cardTitle">Eco Ganesha Workshop</div>
-              <p class="cardDescription">
-                The consistent endeavour of NSS IIT Bombay to bring about
-                ecological prosperity with Eco Ganesha, using 100% natural
-                compright-cardnts, to care for the nature that nurtures us. The
-                workshop is intended to motivate use of ecofriendly stuffs in
-                daily life, starting from Mumbai's worshiped Ganesha Idols.
-              </p>
+            <div
+              class="wrapper"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
+            >
+              <div class="data">
+                <div class="content">
+                  <span class="author">Jane Doe</span>
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
+                  </h1>
+                  <p class="text">
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
+                  </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- card 3 -->
           <div class="card">
-            <div class="image">
-              <img
-                class="cardImg"
-                src="../assets/home/images/cashless.gif"
-                alt="Go cashless!"
-              />
-            </div>
-            <div class="text">
-              <div class="cardTitle">Eco Ganesha Workshop</div>
-              <p class="cardDescription">
-                The consistent endeavour of NSS IIT Bombay to bring about
-                ecological prosperity with Eco Ganesha, using 100% natural
-                compright-cardnts, to care for the nature that nurtures us. The
-                workshop is intended to motivate use of ecofriendly stuffs in
-                daily life, starting from Mumbai's worshiped Ganesha Idols.
-              </p>
+            <div
+              class="wrapper"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
+            >
+              <div class="data">
+                <div class="content">
+                  <span class="author">Jane Doe</span>
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
+                  </h1>
+                  <p class="text">
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
+                  </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- card 4 -->
           <div class="card">
-            <div class="image">
-              <img
-                class="cardImg"
-                src="../assets/home/images/ecoganesha.jpg"
-                alt="ecofriendly Ganesha"
-              />
-            </div>
-            <div class="text">
-              <div class="cardTitle">Eco Ganesha Workshop</div>
-              <p class="cardDescription">
-                The consistent endeavour of NSS IIT Bombay to bring about
-                ecological prosperity with Eco Ganesha, using 100% natural
-                compright-cardnts, to care for the nature that nurtures us. The
-                workshop is intended to motivate use of ecofriendly stuffs in
-                daily life, starting from Mumbai's worshiped Ganesha Idols.
-              </p>
+            <div
+              class="wrapper"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
+            >
+              <div class="data">
+                <div class="content">
+                  <span class="author">Jane Doe</span>
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
+                  </h1>
+                  <p class="text">
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
+                  </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- card 5 -->
+          <div class="card">
+            <div
+              class="wrapper"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
+            >
+              <div class="data">
+                <div class="content">
+                  <span class="author">Jane Doe</span>
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
+                  </h1>
+                  <p class="text">
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
+                  </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cards close -->
         </div>
       </section>
-      <!-- End Featured Tours -->
+      <!-- activities here -->
 
       <section id="collaboration">
         <h2>Collaborations</h2>

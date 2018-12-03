@@ -1,13 +1,16 @@
 /* Adjusting cards */
-table {
+#flip table,#flip tbody {
   width: 100%;
+}
+#flip table{
   background-color: black;
 }
-td {
+
+#flip td {
   flex: 1 0 0;
 }
-.full,
-div {
+#flip .full,
+#flip div {
   width: 100%;
   height: 100%;
 }
