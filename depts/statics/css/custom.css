@@ -1,0 +1,197 @@
+/* Key 
+  # Utils
+  # Navbar
+  # Dept Introduction - (#aboutdept)
+  # Team
+  # Initiatives - (#portfolio)
+  # Department specific colors
+*/
+
+/* Utils */
+.flex-wrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.full {
+  min-height: 100vh;
+}
+.perfect-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restrict600 {
+  max-width: 600px;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+.space-between {
+  display: flex;
+  justify-content: space-around;
+}
+.restrict600 a {
+  margin: 15px;
+  flex: 1 0 0;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+/* Navbar */
+.nav-distribute {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dept introduction */
+#aboutdept {
+  text-align: center;
+  padding: 0;
+}
+
+/* Team */
+#team {
+  padding: 50px 0 !important;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+#team .team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.team .heads,
+.AA {
+  flex: 1 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Initiatives  */
+#portfolio {
+  padding: 50px 0;
+}
+#initiatives {
+  width: 100%;
+}
+
+/* Department specific colors */
+.EO {
+  /* background-color: bisque; */
+  background: -webkit-linear-gradient(
+    137deg,
+    rgb(246, 147, 98),
+    rgb(250, 248, 112)
+  );
+  background: linear-gradient(137deg, rgb(246, 147, 98), rgb(250, 248, 112));
+}
+.SSD {
+  /* background-color: azure; */
+  background: -webkit-linear-gradient(
+    158deg,
+    rgb(126, 141, 235),
+    rgb(71, 217, 246)
+  );
+  background: linear-gradient(158deg, rgb(126, 141, 235), rgb(71, 217, 246));
+}
+.GC {
+  background-color: beige;
+}
+
+/* Team section */
+
+/*! CSS Used from: https://gymkhana.iitb.ac.in/~nss//assets/theme/css/style.css */
+.container {
+  position: relative;
+}
+.article .lead ul {
+  margin-bottom: 0;
+}
+.lead {
+  font-size: 1.07rem;
+  font-weight: 300;
+  flex: 1 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lead a {
+  font-family: 'Droid Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.lead a,
+.lead a:hover {
+  color: #c0a375;
+  text-decoration: none;
+}
+.lead h2 {
+  letter-spacing: -1px;
+}
+.lead h2,
+.lead h3,
+.lead h4 {
+  font-weight: 600;
+  margin-bottom: 1.605rem;
+}
+.lead h2 {
+  font-size: 2.5rem;
+}
+.lead h3,
+.lead h4 {
+  font-size: 2rem;
+}
+.lead h4 {
+  font-size: 1.5rem;
+}
+.lead ul {
+  margin-bottom: 2.3125rem;
+}
+h2,
+h3,
+h4 {
+  font-family: 'Nexa-light';
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.mbr-section {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .mbr-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+/*! CSS Used from: https://gymkhana.iitb.ac.in/~nss//assets/mobirise/css/mbr-additional.css */
+#EO-content6-1 h4 {
+  font-size: 17px;
+}
+#EO-content6-1 h3 {
+  font-size: 20px;
+}
+#EO-content6-1 ul {
+  font-size: 18px;
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: Nexa-light;
+  src: url(https://gymkhana.iitb.ac.in/~nss/assets/theme/css/Nexa_Light.otf);
+}
+@font-face {
+  font-family: Nexa-light;
+  src: url('https://gymkhana.iitb.ac.in/~nss/assets/mobirise/css/.Nexa_Light.ttf');
+}
