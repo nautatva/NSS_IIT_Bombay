@@ -80,6 +80,9 @@
   position: relative;
   z-index: 1;
 }
+.card .data .content  .text a{
+  color: #37b721;
+}
 .card .author {
   font-size: 12px;
 }
@@ -87,9 +90,9 @@
   margin-top: 10px;
 }
 .card .text {
-  height: 70px;
   margin: 0;
 }
+
 .card input[type='checkbox'] {
   display: none;
 }
