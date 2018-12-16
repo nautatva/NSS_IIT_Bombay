@@ -122,3 +122,21 @@
   margin-top: 30px;
   margin-top: 25px;
 }
+footer{
+  position: relative;
+  flex: 1;
+  z-index: 0;
+  background-color: #1976d2;
+  color: #fafafa;
+}
+footer::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/assets/logo/logo128.png) top 0 left 0/320px auto,url(/assets/logo/logo128.png) top 80px left 160px/320px auto;
+  opacity: .05;
+}
