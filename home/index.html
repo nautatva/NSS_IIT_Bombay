@@ -23,16 +23,16 @@
     />
     <title>NSS IITB</title>
     <link id="switcher" href="./css/theme.css" rel="stylesheet" />
-    <link rel="icon" href="../assets/logo/logo128.png">
-
+    <link href="../statics/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://angular.io/styles.bb8ee8c9edd51b934296.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/stats.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
       defer=""
-    />
+    /> -->
 
     <script src="./jquery.min.js"></script>
     <script src="./js/numbers.js"></script>
@@ -40,71 +40,16 @@
   </head>
 
   <body onload="changeImg()">
-    <!-- Scroll to top -->
+    <!-- START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#"><span>^</span> </a>
     <script type="text/javascript" src="./js/scrollTop.js"></script>
 
-    <!-- Navbar -->
-    <section id="nav">
-      <link rel="stylesheet" href="./css/navbar.css" />
-      <h1>NSS, IIT Bombay <span>moto</span></h1>
-
-      <input id="burger" type="checkbox" style="display:none;" />
-
-      <label for="burger"> <span></span> <span></span> <span></span> </label>
-
-      <link rel="stylesheet" href="./css/mega-style.css" />
-      <nav class="cbp-hrmenu">
-        <ul>
-          <li class="cbp-hropen">
-            <div class="cbp-hrsub">
-              <div class="cbp-hrsub-inner">
-                <div>
-                  <h4>Departments</h4>
-                  <ul>
-                    <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/">Educational Outreach</a></li>
-                    <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC">Green Campus</a></li>
-                    <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/">Sustainable Social Development</a></li>
-                    <li><a href="#">Media and Design</a></li>
-                    <li><a href="#">Web</a></li>
-                  </ul>
-                  <div>
-                    <h4>Youtube</h4>
-                    <ul>
-                      <li><a href="https://www.youtube.com/playlist?list=PL7jZaz9RpobeLA6ZE5e-Is4HoLkADcdbj">Greenopedia</a></li>
-                      <li><a href="https://www.youtube.com/channel/UCiRgHJGPSMsMI3hcQKrm4yA">Open Learning Initiative - OLI</a></li>
-                      <li><a href="https://www.youtube.com/channel/UCskd3K0NyyHqZ1t7AMAYACQ">Tarang</a></li>
-                      <li><a href="https://www.youtube.com/channel/UC2iPnxGyKViqjV37f3r6uJw">VFP</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <h4>Portal</h4>
-                  <ul>
-                    <li><a href="https://gymkhana.iitb.ac.in/~nss/greenopedia/home/">Greenopedia</a></li>
-                    <li><a href="https://gymkhana.iitb.ac.in/~nss/olidwd/">OLI Video Downloader</a></li>
-                    <li><a href="https://gymkhana.iitb.ac.in/~nss/nocs">NOCS portal</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Wordpress</h4>
-                  <ul>
-                    <li><a href="https://nssiitbblog.wordpress.com/">Pravriti</a></li>
-                    <li><a href="https://nssiitbblog.wordpress.com/">Prayog</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </section>
+    <!-- END SCROLL TOP BUTTON -->
 
     <!-- First division for navbar set -->
-    <div id="navFix" style="height:100px;"></div>
-
+    <div id="firstSet" style="height:100px;"></div>
     <!-- FLipping cards Start -->
-    <section id="flip">
+    <!-- <section id="flip">
       <link rel="stylesheet" href="./css/flip.css" />
 
       <div class="introTable">
@@ -114,30 +59,30 @@
               <td id="js-flip-1">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/ALP.jpg" alt="img" />
+                    <img src="../assets/images/EO/ALP.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/Prayog/7.png" alt="img" />
+                    <img src="../assets/images/EO/prayog.jpg" alt="img" />
                   </div>
                 </div>
               </td>
               <td id="js-flip-2">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/Muskaan/Copy of IMG_0230.JPG" alt="img" />
+                    <img src="../assets/images/EO/muskaan.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/Neem school/Copy of _MG_6319.JPG" alt="img" />
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
                   </div>
                 </div>
               </td>
               <td id="js-flip-3">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/Neem school/Copy of _MG_6323.JPG" alt="img" />
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/OLI/edu 1.png" alt="img" />
+                    <img src="../assets/images/EO/OLI.jpg" alt="img" />
                   </div>
                 </div>
               </td>
@@ -146,10 +91,10 @@
               <td class="side" id="js-flip-4">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/NGO volunteering/IMG_1559.JPG" alt="img" />
+                    <img src="../assets/images/EO/NGO.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/VFP/Booklet 2.png" alt="img" />
+                    <img src="../assets/images/EO/VFP.jpg" alt="img" />
                   </div>
                 </div>
               </td>
@@ -163,10 +108,10 @@
               <td class="side" id="js-flip-6">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/OLI/2.png" alt="img" />
+                    <img src="../assets/images/EO/OLI.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/Neem school/Copy of _MG_6343.JPG" alt="img" />
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
                   </div>
                 </div>
               </td>
@@ -175,28 +120,28 @@
               <td id="js-flip-7">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/Prayog/Copy of _MG_8060.JPG" alt="img" />
+                    <img src="../assets/images/EO/prayog.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/Neem school/Copy of _MG_6319.JPG" alt="img" />
+                    <img src="../assets/images/EO/neem_school.jpg" alt="img" />
                   </div>
                 </div>
               </td>
               <td id="js-flip-8">
                 <div class="card1">
                   <div class="face front">
-                    <img src="../assets/departments/EO/VFP/Summer volunteering poster.PNG" alt="img" />
+                    <img src="../assets/images/EO/VFP.jpg" alt="img" />
                   </div>
                   <div class="face back">
-                    <img src="../assets/departments/SSD/NGO Visits/9-600x337-60.jpg" alt="img" />
+                    <img src="../assets/images/EO/ALP.jpg" alt="img" />
                   </div>
                 </div>
               </td>
               <td id="js-flip-9">
                 <div class="card1">
-                  <div class="face front"><img src="../assets/departments/GCMain/Butterfly Garden/butterflyGarden.JPG" alt="img" /></div>
+                  <div class="face front"><img src="" alt="img" /></div>
                   <div class="face back">
-                    <img src="../assets/departments/EO/Muskaan/Copy of _MG_6389.JPG" alt="img" />
+                    <img src="../assets/images/EO/muskaan.jpg" alt="img" />
                   </div>
                 </div>
               </td>
@@ -204,15 +149,61 @@
           </tbody>
         </table>
       </div>
-      <script src="./js/flip.js"></script>
-    </section>
 
+      <script src="./js/flip.js"></script>
+    </section> -->
+    <!-- flipping cards close -->
+
+    <!-- sticky navbar -->
+    <!--
+      <nav id="sticky-navbar" data-spy="affix" data-offset-top="1000">
+        <a class="navhead" href="../depts/GC/">Green Campus</a>
+        <a class="navhead" href="../depts/EO/">Educational Outreach</a>
+        <a class="navhead" href="../depts/SSD/">Sustainable Social Development</a>
+        <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+      </nav>
+
+      <div class="mobile-fix" style="height: 0"></div>
+    -->
+    <div id="navbar">
+      <link scoped rel="stylesheet" href="./css/navbar.css" />
+
+      <h1>NSS, IIT Bombay <span>moto</span></h1>
+
+      <input id="burger" type="checkbox" style="display:none;" />
+
+      <label for="burger"> <span></span> <span></span> <span></span> </label>
+
+      <nav id="nav-container">
+        <div id="nav-contents">
+          <h2>Departments</h2>
+          <div id="depts">
+            <ul>
+              <li><a href="#">Educational Outreach</a></li>
+              <li><a href="#">Green Campus</a></li>
+              <li><a href="#">Sustainable Social Development</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- <script src="js/index.js"></script> -->
+
+    <!-- Start main content -->
     <main>
       <!-- Start About -->
       <section id="myabout">
+        <div id="m-fix"></div>
+        <div class="divider">
+          <img height="50px" src="../assets/divider.png" />
+        </div>
         <div id="info">
-          <span>What is it?</span>
-          <h2>
+          <span style="font-family: 'Great Vibes', cursive; font-size:30px;"
+            >About Us</span
+          >
+          <br />
+          <span>
             National Service Scheme, IIT Bombay, being the largest student
             volunteer body, is the most active and perseverent organization in
             the campus in the field of social/community service. We provide
@@ -226,15 +217,10 @@
             to create small, happy and memorable moments in their lives. And
             working in NSS itself has been one of the prime sources of happiness
             for the people associated with us.
-          </h2>
-
-          <span>What do we do?</span>
-          <h2 style="margin-bottom:0;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-            voluptate neque error dignissimos magni vero! At, numquam, qui quo,
-            ab commodi velit molestias autem aut blanditiis voluptatum
-            praesentium rerum inventore.
-          </h2>
+          </span>
+        </div>
+        <div class="divider" style="margin-top: 12px;">
+          <img class="reverse" height="50px" src="../assets/divider.png" />
         </div>
       </section>
 
@@ -247,10 +233,7 @@
         <div class="statistics-center">
           <div class="statistics">
             <div class="statistics-icon">
-              <img
-                src="../assets/home/stats/Volunteers.png"
-                aria-hidden="true"
-              />
+              <img src="../assets/home/stats/Volunteers.png" />
             </div>
             <div class="statistics-content">
               <h5>
@@ -264,7 +247,7 @@
 
           <div class="statistics">
             <div class="statistics-icon">
-              <img src="../assets/home/stats/Children.png" aria-hidden="true" />
+              <img src="../assets/home/stats/Children.png" />
             </div>
             <div class="statistics-content">
               <h5>
@@ -278,7 +261,7 @@
 
           <div class="statistics">
             <div class="statistics-icon">
-              <img src="../assets/home/stats/Reach.png" aria-hidden="true" />
+              <img src="../assets/home/stats/Reach.png" />
             </div>
             <div class="statistics-content">
               <h5>
@@ -291,10 +274,7 @@
           </div>
           <div class="statistics">
             <div class="statistics-icon">
-              <img
-                src="../assets/home/stats/Initiative.png"
-                aria-hidden="true"
-              />
+              <img src="../assets/home/stats/Initiative.png" />
             </div>
             <div class="statistics-content">
               <h5>
@@ -307,10 +287,7 @@
           </div>
           <div class="statistics">
             <div class="statistics-icon">
-              <img
-                src="../assets/home/stats/Subscribers.png"
-                aria-hidden="true"
-              />
+              <img src="../assets/home/stats/Subscribers.png" />
             </div>
             <div class="statistics-content">
               <h5>
@@ -326,30 +303,28 @@
 
       <!-- Start activities -->
       <section id="activities">
-        <span>Initiatives</span>
+        <h2>Initiatives</h2>
         <div class="cards">
           <link rel="stylesheet" href="./css/card.css" />
           <!-- card 1 -->
           <div class="card">
             <div
               class="wrapper"
-              style="background: url(./img/Main.jpg) center/cover no-repeat;"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
             >
               <div class="data">
                 <div class="content">
                   <span class="author">Jane Doe</span>
                   <h1 class="title">
-                    <a href="#">Greenopedia and Biodiversity mapping</a>
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
                   </h1>
                   <p class="text">
-                    Our volunteers made this small effort to map the trees along
-                    the main road and name them! They covered 200+ trees,
-                    providing interesting trivia with basic facts. This activity
-                    received lot of
-                    <a href="./Publicity.html">media attention</a> as well.
-                    Supporting the mapping is
-                    <a href="./greenopedia/home">Greenopedia</a>
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
                   </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
                 </div>
               </div>
             </div>
@@ -359,27 +334,21 @@
           <div class="card">
             <div
               class="wrapper"
-              style="background: url(./img/CCC.jpg) center/cover no-repeat;"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
             >
               <div class="data">
                 <div class="content">
-                  <!-- <span class="author">Jane Doe</span> -->
+                  <span class="author">Jane Doe</span>
                   <h1 class="title">
-                    <a href="#">Cloth Collection Campaign</a>
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
                   </h1>
                   <p class="text">
-                    As the name suggests, the initiative acts as a link between
-                    the donation-interested people in the institute to the
-                    beneficiaries by donation of clothes from the former to
-                    latter. The Cloth Collection Campaign(CCC) is held over the
-                    course of the complete academic year. It is further broken
-                    down to 2 phases- Phase 1, held in October involves
-                    collection from the student hostels, which includes making
-                    of interactive donation boxes by the volunteers, putting
-                    them up in visible, common areas in each hostel followed by
-                    regular collection of the donated items. Phase 2, held in
-                    March, is conducted in the professor residences
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
                   </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
                 </div>
               </div>
             </div>
@@ -389,26 +358,21 @@
           <div class="card">
             <div
               class="wrapper"
-              style="background: url(./img/vfp.webp) center/cover no-repeat;"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
             >
               <div class="data">
                 <div class="content">
-                  <!-- <span class="author">Jane Doe</span> -->
-                  <h1 class="title"><a href="#">Voice For Purpose</a></h1>
+                  <span class="author">Jane Doe</span>
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
+                  </h1>
                   <p class="text">
-                    Voice for Purpose is an initiative aimed at providing
-                    quality audiobooks for the visually impaired community via
-                    our YouTube channel which has increased the accessibility of
-                    these audiobooks and facilitate their distribution. We are
-                    currently focusing on providing literature ( both Hindi and
-                    English), and have launched new genres like Travel Diaries (
-                    to provide picturesque descriptions of places which the
-                    visually impaired cannot see themselves) and Current Affairs
-                    ( with the aim to provide information about the world
-                    affairs). We also conducted a blind school visit where we
-                    had fun interaction with the kids. Requirements given by the
-                    blind school are being worked on. To know more, visit this
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
                   </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
                 </div>
               </div>
             </div>
@@ -418,29 +382,21 @@
           <div class="card">
             <div
               class="wrapper"
-              style="background: url(./img/Tarang.png) center/cover no-repeat;"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
             >
               <div class="data">
                 <div class="content">
                   <span class="author">Jane Doe</span>
                   <h1 class="title">
-                    <a href="#">Tarang-A Wave to Sustainable Mind</a>
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
+                    >
                   </h1>
                   <p class="text">
-                    We at NSS, IIT Bombay believe that sustainability can not
-                    only be achieved via huge workforce and real hard work, but
-                    also through small daily life practices that can be followed
-                    without having a significant effect on our lifestyle. Owing
-                    to this, we started our very own sustainability club, which
-                    aimed for the same. Following to this, we also launched our
-                    YouTube channel 'Tarang- A wave to sustainable minds' so
-                    that our efforts can reach an even larger audience. The
-                    channel contains simple, yet engaging videos to address the
-                    issue of highlighting such practices and encouraging more
-                    and more people to follow them. We believe in doing our bit
-                    to save the environment around us and hope that this effort
-                    spreads far and wide.
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
                   </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
                 </div>
               </div>
             </div>
@@ -450,69 +406,157 @@
           <div class="card">
             <div
               class="wrapper"
-              style="background: url(./img/GD.gif) center/cover no-repeat;"
+              style="background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;"
             >
               <div class="data">
                 <div class="content">
                   <span class="author">Jane Doe</span>
-                  <h1 class="title"><a href="#">Go Cashless</a></h1>
-                  <p class="text">
-                    Under the VISAKA program of MHRD, NSS IIT Bombay adopted the
-                    Powai Fish Market. We introduced the vendors and consumers
-                    to the various modes of cashless transactions and also in
-                    installation of
-                    <a href="https://gymkhana.iitb.ac.in/~nss/Cashless.html"
-                      >UPI
-                    </a>
-                    apps. We also gave a demo these apps and presented our
-                    <a
-                      href="https://www.youtube.com/watch?list=PLFBHsqw1knQedY19zecK3KY2rwuCsReog&v=YvsYEXeCUes"
-                      >tutorial videos</a
+                  <h1 class="title">
+                    <a href="#"
+                      >Stranger Things: The sound of the Upside Down</a
                     >
+                  </h1>
+                  <p class="text">
+                    The antsy bingers of Netflix will eagerly anticipate the
+                    digital release of the Survive soundtrack, out today.
                   </p>
+                  <!-- <a href="#" class="button">Read more</a> -->
                 </div>
               </div>
             </div>
           </div>
+
           <!-- cards close -->
         </div>
       </section>
-
       <!-- collaborations here -->
-      <section id="collaboration">
-        <span>Collaborations</span>
+      <!-- <section id="collaboration">
+        <h2>Collaborations</h2>
         <div class="collabs">
           <img
             class="elems"
-            src="../assets/home/collaborations/asha.png"
+            src="../assets/collaborations/asha.png"
             alt="Asha"
           />
           <img
             class="elems"
-            src="../assets/home/collaborations/LCCWA.jpg"
+            src="../assets/collaborations/LCCWA.jpg"
             alt="LCCWA"
           />
           <img
             class="elems"
-            src="../assets/home/collaborations/greenyatra.svg"
+            src="../assets/collaborations/greenyatra.svg"
             alt="Greenyatra"
           />
           <img
             class="elems"
-            src="../assets/home/collaborations/vidya.png"
+            src="../assets/collaborations/vidya.png"
             alt="Vidya"
-          />
+          /> -->
           <!--
-            <img class="elems" src="../assets/home/collaborations/neemSchool" alt="Neem School"> NEEM School no logo
+            <img class="elems" src="../assets/collaborations/neemSchool" alt="Neem School"> NEEM School no logo
           -->
-          <img class="elems" src="../assets/home/collaborations/CLP" alt="CLP" />
+          <!-- <img class="elems" src="../assets/collaborations/CLP" alt="CLP" />
         </div>
-      </section>
+      </section> -->
+      <!-- Start Call to Action -->
 
-      <footer id="departments">
-        <h2>Let's explore the departments</h2>
-        <a href="../c1/card.html">Departments</a>
-      </footer>
+      <footer class="no-print">
+        <aio-footer>
+          <div class="grid-fluid">
+            <div class="footer-block ng-star-inserted">
+              <h3>Educational Outreach</h3>
+              <ul>
+                <li class="ng-star-inserted"><a class="link" href="#EO" title="NGO Volunteering">NGO Volunteering</a></li>
+                <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/EO.php" title="Muskaan">Muskaan</a></li>
+                <li class="ng-star-inserted"><a class="link" href="https://www.youtube.com/channel/UC2iPnxGyKViqjV37f3r6uJw/" title="Voice For Purpose">Voice For Purpose</a></li>
+                <li class="ng-star-inserted"><a class="link" href="https://www.youtube.com/channel/UCiRgHJGPSMsMI3hcQKrm4yA" title="Muskaan">Open Learning Initiative</a></li>
+                <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/EO.php" title="Click for EO">Know More about EO >></a></li>
+              </ul>
+            </div>
+
+            <div class="footer-block ng-star-inserted">
+              <h3>Sustainable Social Development</h3>
+              <ul>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/SSD.php" title="Tarang">Tarang-A Wave to Sustainable Mind</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/SSD.php" title="Zero Waste Week">Zero Waste Week</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/SSD.php" title="Stationery Collection">Stationery Collection Drive</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/SSD.php" title="Cloth Collection">Cloth Collection Campaign</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/SSD.php" title="Click for SSD">Know more about SSD >></a></li>
+              </ul>
+            </div>
+              
+            <div class="footer-block ng-star-inserted">
+              <h3>Green Campus</h3>
+              <ul>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/GC.php" title="Muskaan">Reducing Waste</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/greenopedia/home" title="Muskaan">Greenopedia</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/GC.php" title="Muskaan">Biodiversity Mapping</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://groups.google.com/forum/#!forum/prakriti_nssiitb" title="Muskaan">Prakriti</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/GC.php" title="Muskaan">Know more about GC >></a></li>
+              </ul>
+            </div>
+
+            <div class="footer-block ng-star-inserted">
+                <h3>Other Departments</h3>
+                <ul>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/NIC.php" title="NIC">National Innovation Club</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/Media.php" title="Design">Design and Media</a></li>
+                  <li class="ng-star-inserted"><a class="link" href="https://gymkhana.iitb.ac.in/~nss/Web.php" title="Web">NSS Web</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; NSS, IIT Bombay, 2018</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            </aio-footer>
+<!-- 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; NSS, IIT Bombay, 2018</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li><a href="#">Privacy Policy</a>
+                            </li>
+                            <li><a href="#">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+          </footer>
+
+
+      <!-- <footer id="departments"> -->
+        <!-- <div class="mycallto-action-area"> -->
+        <!-- <h2>Let's explore the departments</h2> -->
+        <!-- <a href="../c1/card.html">Departments</a> -->
+        <!-- </div> -->
+        <!-- </footer> -->
+      <!-- Start Call to Action -->
 
       <!-- Start Google Map -->
 
