@@ -244,8 +244,8 @@ button {
 }
 #footer a{
   text-decoration: none;
-  font-size: 25px;
-  padding: 1rem;
+  font-size: 35px;
+  padding-right: 1rem;
 }
 .initLink a{
   color: gold;
@@ -258,6 +258,7 @@ button {
   text-decoration: none;
 }
 .footer-block ul li{
+  cursor: pointer;
   text-align: center;
   border:2px solid;
   border-color:white;
@@ -265,18 +266,18 @@ button {
   margin-top:0.5rem;
   text-decoration: none;
   padding:0.3rem;
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
-#knowDept li:last-child{
+#knowDept li:last-child,#knowDept2 li:nth-child(4),#knowDept2 li:nth-child(5){
   background-color: #fff;
 }
-#knowDept li:last-child a{
+#knowDept li:last-child a,#knowDept2 li:nth-child(4) a,#knowDept2 li:nth-child(5) a{
   color: #1976d2;
 }
 /************************************Button Animation****************/
 .footer-block ul li:hover,.footer-block ul li:focus {
   text-align: center;
-    background-size: 30px 30px;
+    background-size: 50px 50px;
     background-color: #1976d2;
     background-image: linear-gradient(135deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%, transparent);
     color: white;
