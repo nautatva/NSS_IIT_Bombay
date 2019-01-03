@@ -1,25 +1,95 @@
-#myvideo:after {
-  background-color: #37b721; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #64b3f4,
-    #37b721
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #64b3f4,
-    #37b721
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-#mywelcome {
-  /* background: -webkit-linear-gradient(
-    76deg,
-    rgb(105, 22, 237),
-    rgb(57, 156, 11)
-  );
-  background: linear-gradient(76deg, rgb(105, 22, 237), rgb(57, 156, 11)); */
-  background: -webkit-radial-gradient(rgb(248, 248, 248), rgb(98, 100, 97));
-  background: radial-gradient(rgb(248, 248, 248), rgb(98, 100, 97));
+
+a {
+  text-decoration: none;
+  color: #2f2f2f;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.13;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+img {
+  border: none;
+}
+
+code {
+  background-color: #ee6e73;
+  border-radius: 2px;
+  color: #fff;
+  padding: 2px 4px;
+}
+
+blockquote {
+  background-color: #f8f8f8;
+  border-radius: 0 4px 4px 0;
+  padding: 5px 15px;
+}
+
+blockquote p {
+  margin-top: 10px;
+}
+
+button {
+  padding: 5px 15px;
+  border: none;
+}
+section {
+  padding: 150px 0;
+}
+section > span {
+  font-size: 38px;
+  font-weight: 400;
+}
+section > h2 {
+  padding-top: 40px;
+  font-size: 16px;
+  color: #535863;
+  font-weight: 200;
 }
 a:hover,
 a:focus,

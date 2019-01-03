@@ -1,8 +1,12 @@
 /* Adjusting cards */
-#flip table,#flip tbody {
+#flip {
+  padding: 0;
+}
+#flip table,
+#flip tbody {
   width: 100%;
 }
-#flip table{
+#flip table {
   background-color: black;
 }
 
@@ -62,10 +66,7 @@
   cursor: pointer;
 }
 
-
-
 /* checks */
-
 
 .introTable img {
   object-fit: cover;
