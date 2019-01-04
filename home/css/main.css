@@ -111,7 +111,14 @@
   letter-spacing: 0.5px;
 }
 
-#departments a {
+.deptButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#departments .deptButtons a {
   display: inline-block;
   border: 1px solid #fff;
   background-color: #fff;
