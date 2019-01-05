@@ -28,7 +28,7 @@ $AAs = $conn->query($sql3);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Educational Outreach - NSS, IIT Bombay</title>
+    <title>Green Campus - NSS, IIT Bombay</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../statics/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
