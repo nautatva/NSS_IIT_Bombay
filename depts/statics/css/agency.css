@@ -313,6 +313,9 @@ section h3.section-subheading {
 }
 #portfolio .portfolio-item .portfolio-link img {
   height: 225px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
