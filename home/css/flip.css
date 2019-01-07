@@ -70,8 +70,9 @@
 
 .introTable img {
   object-fit: cover;
-  width: 32vw;
+  width: 100%;
   height: calc(32vh - 18px);
+  object-fit: cover;
 }
 
 .introTable td {

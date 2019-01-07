@@ -33,6 +33,15 @@
   color: #fff;
 }
 
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2);
+}
+
 /* navbar.css
  * mega-style.css(mega-navbar)*/
 
@@ -41,6 +50,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../../assets/NSS/NSScandles.jpg');
+  color: white;
+  box-shadow: inset 0 0 0 2000px rgba(27, 27, 27, 0.67);
 }
 #myabout > div > span {
   padding-top: 80px;
@@ -50,8 +62,8 @@
 #myabout > div > h2 {
   margin-top: 30px;
   margin-bottom: 120px;
-  color: #535863;
-  font-size: 16px;
+  color: #fdfdff;
+  font-size: 18px;
   font-weight: 200;
 }
 #info,
@@ -102,7 +114,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  /* background-color: blue;
+  background-image: url('../../assets/NSS/NSScandles.jpg'); */
 }
 
 #departments h2 {
@@ -111,7 +124,7 @@
   letter-spacing: 0.5px;
 }
 
-.deptButtons{
+.deptButtons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
