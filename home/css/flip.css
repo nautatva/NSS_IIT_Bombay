@@ -73,6 +73,7 @@
   width: 100%;
   height: calc(32vh - 18px);
   object-fit: cover;
+  object-position: top;
 }
 
 .introTable td {
