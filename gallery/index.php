@@ -11,7 +11,7 @@
       href="assets/images/147455559147662-1-128x128-55.png"
       type="image/x-icon"
     />
-    <base href="https://gymkhana.iitb.ac.in/~nss/tem/gallery/" target="_blank">
+    <base href="https://gymkhana.iitb.ac.in/~nss/" target="_blank">
     <meta name="description" content="" />
     <link rel="stylesheet" href="assets/et-line-font-plugin/style.css" />
     <link
