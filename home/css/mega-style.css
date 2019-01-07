@@ -38,6 +38,7 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	font-size: 18px;
 }
 
 /* first level ul style */
@@ -108,7 +109,7 @@
 	color: #afdefa;
 	padding: 2em 0 0.6em;
 	margin: 0;
-	font-size: 160%;
+	font-size: 32px;
 	font-weight: 300;
 }
 
