@@ -38,12 +38,14 @@ $AAs = $conn->query($sql3);
 
     <!-- Theme CSS -->
     <link href="../statics/css/agency.css" rel="stylesheet">
+    <link href="./eo.css" rel="stylesheet">
+    
 
     <!-- custom CSS -->
     <link href="../statics/css/custom.css" rel="stylesheet">
 
     <!-- caroual CSS -->
-    <link href="../statics/css/slideshow.css" rel="stylesheet">
+    <!-- <link href="../statics/css/slideshow.css" rel="stylesheet"> -->
     <!-- Colors -->
 
 </head>
@@ -90,7 +92,7 @@ $AAs = $conn->query($sql3);
     <?php
                     $department = mysqli_fetch_assoc( $basic );
                     echo('
-    <header id="welcome" class="scrollify" style="background-image:url('.$department['main_image'].')">
+    <header id="welcome" class="scrollify full" style="background-image:url('.$department['main_image'].')">
         <div class="container">
             <div class="intro-text">
                 
