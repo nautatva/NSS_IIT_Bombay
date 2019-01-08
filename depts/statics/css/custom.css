@@ -83,29 +83,6 @@
   width: 100%;
 }
 
-/* Department specific colors */
-.EO {
-  /* background-color: bisque; */
-  background: -webkit-linear-gradient(
-    137deg,
-    rgb(246, 147, 98),
-    rgb(250, 248, 112)
-  );
-  background: linear-gradient(137deg, rgb(246, 147, 98), rgb(250, 248, 112));
-}
-.SSD {
-  /* background-color: azure; */
-  background: -webkit-linear-gradient(
-    158deg,
-    rgb(126, 141, 235),
-    rgb(71, 217, 246)
-  );
-  background: linear-gradient(158deg, rgb(126, 141, 235), rgb(71, 217, 246));
-}
-.GC {
-  background-color: beige;
-}
-
 /* Team section */
 
 /*! CSS Used from: https://gymkhana.iitb.ac.in/~nss//assets/theme/css/style.css */
