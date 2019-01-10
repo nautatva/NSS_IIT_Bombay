@@ -21,6 +21,7 @@ $AAs = $conn->query($sql3);
 <html lang="en">
 
 <head>
+<?php header("Location: https://gymkhana.iitb.ac.in/~nss/tem/depts?dept=GC"); ?>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +38,7 @@ $AAs = $conn->query($sql3);
     <link href="../statics/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../statics/css/agency.css" rel="stylesheet">
+    <link href="../statics/css/theme.css" rel="stylesheet">
     <link href="./gc.css" rel="stylesheet">
     
     <!-- custom CSS -->

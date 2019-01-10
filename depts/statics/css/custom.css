@@ -79,6 +79,11 @@
 #portfolio {
   padding: 50px 0;
 }
+#portfolio h1{
+  text-transform: inherit;
+  text-align: center;
+  margin-top: 40px;
+}
 #initiatives {
   width: 100%;
 }
