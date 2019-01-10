@@ -1,3 +1,5 @@
+<?php header("Location: https://gymkhana.iitb.ac.in/~nss/tem/depts?dept=EO"); ?>
+
 <?php
 $host ="10.105.177.5";
 $username = "nss";
@@ -37,7 +39,7 @@ $AAs = $conn->query($sql3);
     <link href="../statics/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../statics/css/agency.css" rel="stylesheet">
+    <link href="../statics/css/theme.css" rel="stylesheet">
     <link href="./eo.css" rel="stylesheet">
     
 
@@ -132,8 +134,9 @@ $AAs = $conn->query($sql3);
 
     <section id="initiatives" class="scrollify">
         <div id="portfolio" class="bg-light-gray">
+            <h1>Initiatives</h1>
             <div class="container">
-                <div class="row flex-wrap-center">
+                <div class="flex-wrap-center">
                     <!-- portfolio item is to be repeated -->
                     <?php
                     $a = "";

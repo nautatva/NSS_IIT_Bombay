@@ -1,3 +1,5 @@
+<?php header("Location: https://gymkhana.iitb.ac.in/~nss/tem/depts?dept=SSD"); ?>
+
 <?php
 $host ="10.105.177.5";
 $username = "nss";
@@ -37,7 +39,7 @@ $AAs = $conn->query($sql3);
     <link href="../statics/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../statics/css/agency.css" rel="stylesheet">
+    <link href="../statics/css/theme.css" rel="stylesheet">
     <link href="./ssd.css" rel="stylesheet">
     
     <!-- custom CSS -->
