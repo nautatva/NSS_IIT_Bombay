@@ -20,11 +20,15 @@
 }
 
 .card {
-  float: left;
+  /* float: left; */
   padding: 0 1.7rem;
   width: 400px;
   margin: 10px;
 }
+.cardimg {
+  display: flex;
+}
+
 .card .menu-content {
   margin: 0;
   padding: 0;
@@ -55,11 +59,27 @@
   transform: translate(-50%, 0);
 }
 .card .wrapper {
+  display: flex;
   background-color: #fff;
-  min-height: 500px;
+  height: 500px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper .cardimg img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card .wrapper:hover .cardimg img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
 }
 .card .wrapper:hover .data {
   -webkit-transform: translateY(0);
@@ -120,12 +140,10 @@
   clear: both;
 }
 .card .header .date {
-  float: left;
+  /* float: left; */
   font-size: 12px;
 }
-.card .menu-content {
-  float: right;
-}
+
 .card .menu-content li {
   margin: 0 5px;
   position: relative;
