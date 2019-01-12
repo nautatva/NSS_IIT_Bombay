@@ -1,0 +1,49 @@
+/* Statistics */
+
+.statistics-section {
+  background-color: gray;
+}
+
+
+.statistics-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.statistics {
+  margin: 8px;
+  flex: 0 0 150px;
+}
+
+.statistics.block .statistics-icon,
+.statistics.block .statistics-content,
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.statistics-icon img {
+  width: 50px;
+  height: auto;
+}
+
+.statistics-content {
+  color: white;
+}
+
+.statistics-content > h5 {
+  margin: 0px;
+  font-size: 40px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
