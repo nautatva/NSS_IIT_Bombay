@@ -37,6 +37,8 @@
     <script src="./jquery.min.js"></script>
     <script src="./js/numbers.js"></script>
     <script src="./js/carousal.js"></script>
+    <link rel="stylesheet" href="./css/carouselFooter.css" />
+    <script src="./js/carouselFooter.js"></script>
   </head>
 
   <body onload="changeImg()">
@@ -57,6 +59,7 @@
       <label for="burger"> <span></span> <span></span> <span></span> </label>
 
       <link rel="stylesheet" href="./css/mega-style.css" />
+      <link 
       <nav class="cbp-hrmenu">
         <ul>
           <li class="cbp-hropen">
@@ -593,7 +596,31 @@
           />
         </div>
       </section>
-      <img src="../assets/NSS/NSScandles.jpg" style="width:100%;" />
+      
+      <!-- /*********************carousal*************/ -->
+      
+      <div id="app">
+        <div id="artwork">
+          <div class="arttype-container">
+            <transition name="fade">
+              <p class="artwork-type" :key="currentArt">{{ currentArt }}</p>
+            </transition>
+          </div>
+    
+          <transition-group id="carousel" tag="div" name="slide">
+            <img v-for="art in arts" :src="art.source" alt="" :key="art.type">
+          </transition-group>
+          <div id="btns">
+            <button @click="prevArt">< Prev</button>
+            <button @click="nextArt">Next ></button>
+         
+            <transition name="fade">
+              <p class="counter" :key="currentArt">{{ counter }} / 3</p>
+            </transition>
+          </div>
+        </div>
+      </div>
+
       <section id="departments">
         <!-- <h2>Let's explore the departments</h2> -->
         <div class="deptButtons">
