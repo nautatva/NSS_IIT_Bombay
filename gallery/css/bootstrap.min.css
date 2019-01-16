@@ -332,12 +332,10 @@ blockquote,figure {
 }
 
 a {
-    color: #f1c050;
     text-decoration: none
 }
 
 a:focus,a:hover {
-    color: #e2a312;
     text-decoration: underline
 }
 

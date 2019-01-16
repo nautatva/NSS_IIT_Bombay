@@ -13,14 +13,11 @@ else if($dept=='GC'){
 else{
     $name = "Sustainable Social Development";
 }
-
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
-
 $sql="SELECT * FROM department_data WHERE department = '$dept'" ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
 $sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept'" ;
 $sql3="SELECT * FROM AA1819 WHERE dept = '$dept'" ;
-
 $result = $conn->query($sql);
 $basic = $conn->query($sql1);
 $heads = $conn->query($sql2);
@@ -245,7 +242,8 @@ $AAs = $conn->query($sql3);
         (
           "<tr>
               <td><span style='font-size: 1.37rem;   line-height: 1.5;'><li>$name</span></td>
-             
+              <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+              &nbsp;</td>
               <td><span style='font-size: 1.37rem; line-height: 1.5; '><a href='tel: +91-$contact'>$contact</a></span></td></li>
             </tr>"
         );
@@ -258,7 +256,6 @@ $AAs = $conn->query($sql3);
             </div>
         </div>
     </section>
-
 
     <footer>
         <div class="container">
@@ -316,10 +313,8 @@ $AAs = $conn->query($sql3);
             setHeights: false,
         });
     });
-
     // Typed JS config
     document.addEventListener('DOMContentLoaded', function () {
-
         var typed = new Typed("#typed", {
             stringsElement: '#typed-strings',
             typeSpeed: 90,

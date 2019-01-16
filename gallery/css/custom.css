@@ -1480,6 +1480,8 @@ input:-webkit-autofill:hover {
 
 .mbr-gallery .modal.in .modal-dialog {
   margin: 0 auto;
+  width: 98%;
+  top: 17vh;
 }
 
 .modal-backdrop.in {
