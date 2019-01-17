@@ -155,8 +155,8 @@ ul.social-buttons li a:active {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-.copyright {
-  color: #fed136;
+.copyright, .quicklinks a {
+  color: #ffa500;
 }
 
 .EO {
@@ -171,4 +171,7 @@ ul.social-buttons li a:active {
 
 .department-color {
 
+}
+.lead a:hover {
+  color: #ffc031;
 }
