@@ -117,7 +117,7 @@ $AAs = $conn->query($sql3);
     <!-- About -->
     <section id="aboutdept" class="full scrollify">
         <?php    
-        echo('<div class=" full perfect-center" style="' . $department['color'] . '">
+        echo('<div class=" full perfect-center department-color" style="' . $department['color'] . '">
     
         <h1 class="section-heading">' . $department['name'] . '</h1>
         <h3 class="section-subheading text-muted restrict600">' . $department['description'] . '
@@ -213,13 +213,13 @@ $AAs = $conn->query($sql3);
                     while ($head) {
                         echo('
                         <tr>
-                                    <td><span style="font-size: 1.37rem;   line-height: 1.5;">
+                                    <td><span class="name-contact">
                                             <li>' . $head['COL 1'] . '</li>
                                         </span></td>
                                     <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
                                         &nbsp;</td>
                                     
-                                    <td><span style="font-size: 1.37rem; line-height: 1.5; "><a href="tel: +91-' . $head['COL 7'] . '">' . $head['COL 7'] . '</a></span></td>
+                                    <td><span class="name-contact"><a href="tel: +91-' . $head['COL 7'] . '">' . $head['COL 7'] . '</a></span></td>
                               </tr>
                         ');
                     $head = mysqli_fetch_assoc( $heads );
@@ -241,10 +241,10 @@ $AAs = $conn->query($sql3);
         echo
         (
           "<tr>
-              <td><span style='font-size: 1.37rem;   line-height: 1.5;'><li>$name</span></td>
+              <td><span class='name-contact'><li>$name</span></td>
               <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
               &nbsp;</td>
-              <td><span style='font-size: 1.37rem; line-height: 1.5; '><a href='tel: +91-$contact'>$contact</a></span></td></li>
+              <td><span class='name-contact'><a href='tel: +91-$contact'>$contact</a></span></td></li>
             </tr>"
         );
         $aa = mysqli_fetch_assoc( $AAs );
