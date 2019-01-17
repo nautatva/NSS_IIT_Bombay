@@ -20,10 +20,10 @@
 }
 
 .card {
-  /* float: left; */
   padding: 0 1.7rem;
   width: 400px;
   margin: 10px;
+  max-width: 80%;
 }
 .cardimg {
   display: flex;

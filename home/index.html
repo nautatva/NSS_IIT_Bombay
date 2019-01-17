@@ -36,12 +36,12 @@
 
     <script src="./jquery.min.js"></script>
     <script src="./js/numbers.js"></script>
-    <script src="./js/carousal.js"></script>
-    <link rel="stylesheet" href="./css/carouselFooter.css" />
-    <script src="./js/carouselFooter.js"></script>
+    <!-- <script src="./js/carousal.js"></script> 
+    <link rel="stylesheet" href="./css/carouselFooter.css" /> 
+    <script src="./js/carouselFooter.js"></script> -->
   </head>
 
-  <body onload="changeImg()">
+  <body>
     <!-- Scroll to top -->
     <a class="scrollToTop" href="#"
       ><span><i class="icon icon-up-open-mini">&#xe801;</i></span>
@@ -52,14 +52,13 @@
     <section id="nav">
       <link rel="stylesheet" href="./css/navbar.css" />
       <img id="nav-logo" src="../assets/NSS/logo128.png" />
-      <h1>NSS, IIT Bombay</h1>
+      <h1 id="colorchange">NSS, IIT Bombay</h1>
 
       <input id="burger" type="checkbox" style="display:none;" />
 
       <label for="burger"> <span></span> <span></span> <span></span> </label>
 
       <link rel="stylesheet" href="./css/mega-style.css" />
-      <link 
       <nav class="cbp-hrmenu">
         <ul>
           <li class="cbp-hropen">
@@ -343,7 +342,7 @@
         </div>
       </section>
 
-      <br><br>
+      <section style="padding:100px;"><span>Our Reach</span></section>
       <!-- statistics -->
       <section
         class="statistics-section section-space-padding bg-cover text-center parallax"
@@ -596,9 +595,9 @@
           />
         </div>
       </section>
-      
+
       <!-- /*********************carousal*************/ -->
-      
+
       <div id="app">
         <div id="artwork">
           <div class="arttype-container">
@@ -606,14 +605,14 @@
               <p class="artwork-type" :key="currentArt">{{ currentArt }}</p>
             </transition>
           </div>
-    
+
           <transition-group id="carousel" tag="div" name="slide">
-            <img v-for="art in arts" :src="art.source" alt="" :key="art.type">
+            <img v-for="art in arts" :src="art.source" alt="" :key="art.type" />
           </transition-group>
           <div id="btns">
             <button @click="prevArt">< Prev</button>
             <button @click="nextArt">Next ></button>
-         
+
             <transition name="fade">
               <p class="counter" :key="currentArt">{{ counter }} / 3</p>
             </transition>
