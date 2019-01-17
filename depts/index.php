@@ -120,7 +120,7 @@ $AAs = $conn->query($sql3);
         echo('<div class=" full perfect-center department-color" style="' . $department['color'] . '">
     
         <h1 class="section-heading">' . $department['name'] . '</h1>
-        <h3 class="section-subheading text-muted restrict600">' . $department['description'] . '
+        <h3 class="section-subheading department-description restrict600">' . $department['description'] . '
         </h3>');
         ?>
         <div>
@@ -269,7 +269,11 @@ $AAs = $conn->query($sql3);
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-wordpress"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-github"></i></a>
                         </li>
                     </ul>
                 </div>

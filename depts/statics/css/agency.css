@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.75;
 }
 p.large {
@@ -36,7 +36,7 @@ h6 {
   /* font-weight: 700; */
 }
 nav {
-  font-size: 15px;
+  font-size: 12px;
 }
 .img-centered {
   margin: 0 auto;
@@ -71,7 +71,6 @@ nav {
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -114,7 +113,6 @@ header {
   text-align: center;
   color: white;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.37);
-  height: 100vh;
 }
 header .intro-text {
   padding-top: 100px;
@@ -152,18 +150,16 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
-
+section {
+  padding: 100px 0;
+}
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 45px;
 }
-.department-description {
-  color: white;
-  font-style: normal;
-}
 section h3.section-subheading {
-  font-size: 18px;
+  font-size: 16px;
 
   text-transform: none;
   font-style: italic;
@@ -253,6 +249,9 @@ section h3.section-subheading {
 }
 
 @media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
@@ -349,7 +348,7 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
   display: block;
-  background-color: #5d5a5a;
+  background-color: #222222;
   height: 40px;
   width: 40px;
   border-radius: 100%;
@@ -447,8 +446,4 @@ img::selection {
 }
 img::-moz-selection {
   background: transparent;
-}
-.btn-xl,
-.department-color {
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.17);
 }

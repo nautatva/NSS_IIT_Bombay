@@ -169,3 +169,6 @@ ul.social-buttons li a:active {
 }
 .department-color {
 }
+.lead a:hover {
+  color: #3196ff;
+}
