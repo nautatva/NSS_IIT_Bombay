@@ -79,7 +79,7 @@
 #portfolio {
   padding: 50px 0;
 }
-#portfolio h1{
+#portfolio h1 {
   text-transform: inherit;
   text-align: center;
   margin-top: 40px;
@@ -176,4 +176,9 @@ h4 {
 @font-face {
   font-family: Nexa-light;
   src: url('https://gymkhana.iitb.ac.in/~nss/assets/mobirise/css/.Nexa_Light.ttf');
+}
+
+.name-contact {
+  font-size: 1.67rem;
+  line-height: 1.5;
 }
