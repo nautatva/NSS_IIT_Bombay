@@ -23,7 +23,11 @@
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   height: 55px;
-  border-radius: 10px;
+  background: #016087;
+  border: 1px solid;
+  border-radius: 30px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
   /*-webkit-transform: scale(1.5, 1);
   transform: scale(1.5, 1); */
 }
