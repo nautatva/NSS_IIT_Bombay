@@ -1,7 +1,7 @@
 <html>
     <head>
         <style>
-          * {
+            * {
   margin: 0;
   padding: 0;
 }
@@ -18,106 +18,81 @@ body {
 }
 
 ul {
-  display: inline-flex;
   list-style: none;
 }
 
 ul li {
-  margin-right: 1rem;
-  width: 40px;
-  height: 40px;
+  width: 200px;
+  height: 50px;
   position: relative;
   background: #e59500;
   margin: 10px 0;
   cursor: pointer;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin-right: 1rem;
 }
 
 ul li .fa {
-  position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: #fff;
+  text-transform: uppercase;
+font-size: 16px;
+font-weight: 900;
+color: #fff;
+text-align: center;
+line-height: 50px;
+  margin-left: 2rem;
 }
 
-ul li.facebook{
+ul li.One{
   background: #3b5998;
 }
 
-ul li.twitter{
+ul li.Two{
   background: #00aced;
 }
 
-ul li.instagram{
-  background: #bc2a8d;
-}
-
-ul li.google{
-  background: #dd4b39;
-}
-
-ul li.whatsapp{
-  background: #4dc247;
-}
-
-ul li.facebook div.slider{
+ul li.One div.slider{
   background: #627aac;
 }
 
-ul li.twitter div.slider{
+ul li.Two div.slider{
   background: #7fd5f6;
 }
-
-ul li.instagram div.slider{
-  background: #dd94c6;
-}
-
-ul li.google div.slider{
-  background: #eea59c;
-}
-
-ul li.whatsapp div.slider{
-  background: #82d47e;
-}
-
 .slider {
-  z-index: 10;
   content: "";
   position: absolute;
   top: 0;
-  left: 41px;
+  left: 201px;
   width: 0px;
-  height: 40px;
+  height: 50px;
   background: #eebb5c;
   border-radius: 3px;
   transition: all 0.5s 0.3s ease;
 }
 
 .slider p {
-  z-index: 10;
   font-family: arial;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 900;
   color: #fff;
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
   opacity: 0;
   transition: all 0.6s ease;
 }
 
 ul li:hover .slider {
-  z-index: 10;
-  width: 100px;
+  width: 180px;
   transition: all 0.5s ease;
 }
 
 ul li:hover .slider p {
-  z-index: 10;
   opacity: 1;
   transition: all 1s 0.2s ease;
 }
@@ -125,45 +100,22 @@ ul li:hover .slider p {
             </style>
 </head>
 <body>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <div class="wrapper">
-    <ul>
-      <li class="facebook">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <div class="slider">
-          <p>facebook</p>
-        </div>
-      </li>
-      
-      <li class="twitter">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <div class="slider">
-          <p>twitter</p>
-        </div>
-      </li>
-      
-      <li class="instagram">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <div class="slider">
-          <p>instagram</p>
-        </div>
-      </li>
-      
-      <li class="google">
-        <i class="fa fa-google" aria-hidden="true"></i>
-        <div class="slider">
-          <p>google</p>
-        </div>
-      </li>
-      
-      <li class="whatsapp">
-        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-        <div class="slider">
-          <p>whatsapp</p>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <div class="wrapper">
+  <ul>
+    <li class="One">
+      <i class="fa fa-One" aria-hidden="true">Yash Kadam</i>
+      <div class="slider">
+            <p href='tel: +91-8976136868'>8976136868</p>
+      </div>
+    </li>
+    
+    <li class="Two">
+      <i class="fa fa-Two" aria-hidden="true">Aditya Saurabh</i>
+      <div class="slider">
+        <p href='tel: +91-9987097028'>9987097028</p>
+      </div>
+    </li>
+  </ul>
+</div>
     </body>
 </html>
