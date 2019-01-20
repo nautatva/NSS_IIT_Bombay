@@ -17,7 +17,7 @@ $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't conne
 $sql="SELECT * FROM department_data WHERE department = '$dept'" ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
 $sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept'" ;
-$sql3="SELECT * FROM AA1819 WHERE dept = '$dept'" ;
+$sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
 $result = $conn->query($sql);
 $basic = $conn->query($sql1);
 $heads = $conn->query($sql2);
@@ -155,11 +155,11 @@ $AAs = $conn->query($sql3);
                                     </div>
                                 </div>
                                 <img src="' . $row['thumbnail'] . '" class="img-responsive" alt="">
-                            </a>
                             <div class="portfolio-caption">
                                 <h4>' . $row['initiative'] . '</h4>
                                 <p class="text-muted"> ' . $row['des_short'] . '</p>
                             </div>
+                            </a>
                         </div>'); 
                         
                         $a=$a.'<div class="portfolio-modal modal fade" id="portfolioModal'.$i.'" tabindex="-1" role="dialog" aria-hidden="true">
