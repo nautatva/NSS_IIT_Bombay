@@ -180,6 +180,9 @@ section h3.section-subheading {
   margin: 0 0 15px;
   right: 0;
 }
+#portfolio .portfolio-item a{
+  text-decoration: none;
+}
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
@@ -192,7 +195,7 @@ section h3.section-subheading {
   object-fit: cover;
   object-position: top;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#portfolio .portfolio-item:hover .portfolio-link .portfolio-hover {
   opacity: 1;
 }
 #portfolio
