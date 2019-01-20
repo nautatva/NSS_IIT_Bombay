@@ -53,7 +53,11 @@ $AAs = $conn->query($sql3);
     <!-- caroual CSS -->
     <!-- <link href="../statics/css/slideshow.css" rel="stylesheet"> -->
     <!-- Colors -->
-
+    <link href="./statics/js/navbar.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./statics/js/BigFiles/bootStrap.js">
+    <link href="./statics/js/BigFiles/jquery.js">
+    <link href="./statics/css/bootstrap.css">
 </head>
 
 <body id="page-top" class="index">
@@ -86,6 +90,38 @@ $AAs = $conn->query($sql3);
                     </li>
                     <li>
                         <a class="page-scroll" href="#DnM">Technicals</a>
+                    </li>
+                    <li>
+                        <div class="dropdown-submenu">
+                        <a class="page-scroll" href="#">More</a>
+                        <div class="dropdown-menu">
+                        <a tabindex="-1" href="#">Current Team</a>
+                        <a tabindex="-1" href="#">Media Coverage</a>
+                        <a tabindex="-1" href="#">About Us</a>
+                        <div class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#">Resources<span class="caret"></span></a>
+                            <div class="dropdown-menu">
+                                <a tabindex="-1" href="#">Greenopedia</a>
+                                <a tabindex="-1" href="#">Voice for Purpose</a>
+                                <a tabindex="-1" href="#">Tarang</a>
+                                <a tabindex="-1" href="#">Prakriti</a>
+                                <a tabindex="-1" href="#">Open Learning Initiative</a>
+                                <a tabindex="-1" href="#">Invisible Humans of IITB</a>
+                                <a tabindex="-1" href="#">Download OLI Videos</a>
+                                <a tabindex="-1" href="#">NSS Memories</a>
+                                <div class="dropdown-submenu">
+                                    <a class="test" href="#">Annual Report<span class="caret"></span></a>
+                                    <div class="dropdown-menu">
+                                        <a href="#">2017-18</a>
+                                        <a href="#">2016-17</a>
+                                        <a href="#">2015-16</a>
+                                        <a href="#">2014-15</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    </div>
                     </li>
                 </ul>
             </div>
@@ -332,6 +368,15 @@ $AAs = $conn->query($sql3);
             resetCallback: function () { newTyped(); }
         });
     });
+</script>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
 </script>
 
 </html>
