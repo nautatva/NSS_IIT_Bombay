@@ -37,6 +37,11 @@
   color: #fff;
 }
 
+.scrollToTop:hover{
+  border-right-width: 1px;
+border-bottom-width: 1px;
+}
+
 .parallax {
   background-attachment: fixed;
   background-position: center;
