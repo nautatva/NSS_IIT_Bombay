@@ -44,7 +44,9 @@
   <body>
     <!-- Scroll to top -->
     <a class="scrollToTop" href="#" title="Click for Top">
-      <span><i class="icon icon-up-open-mini"><b>↑</b></i></span>
+      <span
+        ><i class="icon icon-up-open-mini"><b>↑</b></i></span
+      >
     </a>
     <script type="text/javascript" src="./js/scrollTop.js"></script>
 
@@ -534,7 +536,6 @@
           <div class="card">
             <div class="wrapper">
               <div class="cardimg"><img src="./img/GD.gif" /></div>
-
               <div class="data">
                 <div class="content">
                   <!-- <span class="author">Jane Doe</span> -->
@@ -596,29 +597,31 @@
         </div>
       </section>
 
-      <!-- /*********************carousal*************/ -->
-
-      <div id="app">
-        <div id="artwork">
-          <div class="arttype-container">
-            <transition name="fade">
-              <p class="artwork-type" :key="currentArt">{{ currentArt }}</p>
-            </transition>
-          </div>
-
-          <transition-group id="carousel" tag="div" name="slide">
-            <img v-for="art in arts" :src="art.source" alt="" :key="art.type" />
-          </transition-group>
-          <div id="btns">
-            <button @click="prevArt">< Prev</button>
-            <button @click="nextArt">Next ></button>
-
-            <transition name="fade">
-              <p class="counter" :key="currentArt">{{ counter }} / 3</p>
-            </transition>
-          </div>
-        </div>
-      </div>
+      <link rel="stylesheet" href="./css/slideshow.css" />
+      <section class="responsive-slider">
+        <ul class="rslides" id="slider">
+          <li>
+            <img src="../assets/home/images/GC_Col.JPG" alt="" />
+            <p class="caption">Chocolate Milkshake with Ice Cream</p>
+          </li>
+          <li>
+            <img src="../assets/home/images/VFP.png" alt="" />
+            <p class="caption">Sweets and Cherries</p>
+          </li>
+          <li>
+            <img src="../assets/home/images/ecoganesha.jpg" alt="" />
+            <p class="caption">Fruity Orange Ice Cream</p>
+          </li>
+          <li>
+            <img src="../assets/home/images/visitvastsalya.png" alt="" />
+            <p class="caption">Ice Cream with Fruit Salad</p>
+          </li>
+          <li>
+            <img src="../assets/home/images/GC_trans.jpg" alt="" />
+            <p class="caption">Arabian Sweets and Desserts</p>
+          </li>
+        </ul>
+      </section>
 
       <section id="departments">
         <!-- <h2>Let's explore the departments</h2> -->
@@ -650,9 +653,13 @@
         <link rel="stylesheet" href="./fontello/icon.css" />
         <a href="#"><i class="icon twitter" aria-hidden="true">&#xf099;</i></a>
         <a href="#"><i class="icon facebook" aria-hidden="true">&#xf09a;</i></a>
-        <a href="#"><i class="icon wordpress" aria-hidden="true">&#xf19a;</i></a>
+        <a href="#"
+          ><i class="icon wordpress" aria-hidden="true">&#xf19a;</i></a
+        >
         <a href="#"><i class="icon youtube" aria-hidden="true">&#xf16a;</i></a>
-        <a href="#"><i class="icon instagram" aria-hidden="true">&#xf16d;</i></a>
+        <a href="#"
+          ><i class="icon instagram" aria-hidden="true">&#xf16d;</i></a
+        >
         <!-- <a href="#"><i class="icon github">&#xf09b;</i></a>  -->
       </div>
     </footer>
@@ -661,13 +668,13 @@
 
     <link rel="stylesheet" href="./css/iconSlide.css" />
     <link rel="stylesheet" href="./css/shubhamfooter.css" />
-   
+
     <footer id="shubham">
       <p class="footer-links">
         <a href="#">Home</a> · <a href="#">Blog</a> · <a href="#">Pricing</a> ·
         <a href="#">About</a> · <a href="#">Faq</a> · <a href="#">Contact</a>
       </p>
-      <div id="footer-icons" class="wrapper" >
+      <div id="footer-icons" class="wrapper">
         <ul>
           <li class="facebook">
             <i class="icon fb" aria-hidden="true">&#xf09a;</i>
@@ -709,4 +716,16 @@
     <!-- </main> -->
     <!-- End main content -->
   </body>
+  <script src="./js/plugin.js"></script>
+  <script>
+    $(function() {
+      $('#slider').responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: 'slider-callback',
+      });
+    });
+  </script>
 </html>
