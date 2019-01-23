@@ -1,30 +1,4 @@
-<?php
-$host ="10.105.177.5";
-$username = "nss";
-$password = "nssiitb@2015";
-$db = "nss";
-$dept = $_GET['dept'];
-if ($dept=='EO') {
-    $name = "Educational Outreach";
-}
-else if($dept=='GC'){
-    $name = "Green Campus";
-}
-else{
-  $dept = 'SSD';
-  $name = "Sustainable Social Development";
-}
-$conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
-$sql="SELECT * FROM department_data WHERE department = '$dept'" ;
-$sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
-$sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept'" ;
-$sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
-$result = $conn->query($sql);
-$basic = $conn->query($sql1);
-$heads = $conn->query($sql2);
-$AAs = $conn->query($sql3);
-?>
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -50,7 +24,7 @@ $AAs = $conn->query($sql3);
 
     <!-- Theme CSS -->
     <link href="./statics/css/theme.css" rel="stylesheet" />
-    <link href="./statics/css/<?php echo $dept ?>.css" rel="stylesheet" />
+    <link href="./statics/css/EO.css" rel="stylesheet" />
 
     <!-- custom CSS -->
     <link href="./statics/css/custom.css" rel="stylesheet" />
@@ -58,6 +32,11 @@ $AAs = $conn->query($sql3);
     <!-- caroual CSS -->
     <!-- <link href="../statics/css/slideshow.css" rel="stylesheet"> -->
     <!-- Colors -->
+    <style>
+    .page-scroll{
+      color:chocolate !important;
+    }
+    </style>
   </head>
 
   <body id="page-top" class="index">
@@ -78,13 +57,14 @@ $AAs = $conn->query($sql3);
             <span class="sr-only">Toggle navigation</span> Menu
             <i class="fa fa-bars"></i>
           </button>
-          <!-- <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
-        </div>
+          </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right nav-distribute">
-            <li class="hidden"><a href="#page-top"></a></li>
+            <!-- <li class="hidden"><a href="#page-top"></a></li> -->
+            <!-- <li><a class="navbar-brand page-scroll" href="./home"><img src="../assets/NSS/logo128.png"></a>
+            </li> -->
             <li><a class="page-scroll" href="#EO">Educational Outreach</a></li>
             <li><a class="page-scroll" href="#GC">Green Campus</a></li>
             <li>
@@ -93,31 +73,30 @@ $AAs = $conn->query($sql3);
               >
             </li>
             <!-- <li><a class="page-scroll" href="#DnM">Technicals</a></li> -->
-
-            <li>
-              <a class="page-scroll" type="button" data-toggle="dropdown"
-                >Technicals <span class="caret"></span
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Media and Design</a></li>
-                <li><a href="#">Web</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="page-scroll" type="button" data-toggle="dropdown"
-                >More <span class="caret"></span
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">VFP</a></li>
-                <li><a href="#">OLI</a></li>
-              </ul>
-            </li>
+            
+              <li>  <a class="page-scroll" type="button" data-toggle="dropdown">Technicals
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Media and Design</a></li>
+                  <li><a href="#">Web</a></li>
+                </ul>
+              </li>
+              <li>
+                  <a class="page-scroll" type="button" data-toggle="dropdown">More
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">VFP</a></li>
+                        <li><a href="#">OLI</a></li>
+                      </ul>
+              </li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
     </nav>
+
+    <div style="height:400px;"></div>
 
     <!-- Header -->
     <?php
@@ -183,7 +162,7 @@ $AAs = $conn->query($sql3);
                 </div>
               </div>
               <img
-                src="' . $row['thumbnail'] . '"
+                
                 class="img-responsive"
                 alt=""
               />
@@ -213,8 +192,7 @@ $AAs = $conn->query($sql3);
                         <!-- Project Details Go Here -->
                         <h2>' . $row['initiative'] . '</h2>
                         <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                        <img class="img-responsive img-centered" src='.
-                        $row['thumbnail'] .' alt="">
+                        <img class="img-responsive img-centered"  alt="">
                         <p>' . $row['des_short'] . '</p>
                         <button
                           type="button"
@@ -234,7 +212,7 @@ $AAs = $conn->query($sql3);
           <!-- portfolio item closed -->
         </div>
       </div>
-      
+      <!-- </div> -->
     </section>
 
     <section id="team" class="scrollify">
@@ -254,25 +232,27 @@ $AAs = $conn->query($sql3);
                 <?php
                     $head = mysqli_fetch_assoc( $heads );
                     while ($head) {
-                      $name=$head['COL 1'];
-        $contact=$head['COL 7'];
-                      echo('
-                      <tr>
-                              <td>
-                                <span class="name-contact"><li>'.$name.'</li></span>
-                              </td>
-                              <td>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                                &nbsp; &nbsp; &nbsp;
-                              </td>
-                              <td>
-                                <span class="name-contact"
-                                  ><a href="tel: +91-$contact">'.$contact.'</a></span
-                                >
-                              </td>
-                              </li> 
-                            </tr>
-                              '); $head = mysqli_fetch_assoc( $heads ); } ?>
+                        echo('
+                        <tr>
+                <td>
+                  <span class="name-contact">
+                    <li>' . $head['COL 1'] . '</li>
+                  </span>
+                </td>
+                <td>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                </td>
+
+                <td>
+                  <span class="name-contact"
+                    ><a href="tel: +91-' . $head['COL 7'] . '"
+                      >' . $head['COL 7'] . '</a
+                    ></span
+                  >
+                </td>
+                </tr>
+                '); $head = mysqli_fetch_assoc( $heads ); } ?>
               </table>
             </div>
 
@@ -299,8 +279,8 @@ $AAs = $conn->query($sql3);
                     ><a href="tel: +91-$contact">'.$contact.'</a></span
                   >
                 </td>
-                </li> 
-              </tr>
+                <!-- </li> -->
+                </tr>
                 ' ); $aa = mysqli_fetch_assoc( $AAs ); } ?>
               </table>
             </div>
@@ -363,7 +343,7 @@ $AAs = $conn->query($sql3);
   <!-- javascript for slideshow -->
   <script src="./statics/js/slideshow.js"></script>
 
-  <script>
+  <!-- <script>
     // scrollify config
     $(function() {
       $.scrollify({
@@ -401,5 +381,5 @@ $AAs = $conn->query($sql3);
         e.preventDefault();
       });
     });
-  </script>
+  </script> -->
 </html>
