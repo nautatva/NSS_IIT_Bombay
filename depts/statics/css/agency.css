@@ -90,9 +90,7 @@ nav {
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
-}
-@media (min-width: 768px) {
-  .navbar-custom.affix {
+   .navbar-custom.affix {
     background-color: #222222;
     padding: 10px 0;
   }
@@ -100,6 +98,7 @@ nav {
     font-size: 1.5em;
   }
 }
+
 header {
   background-repeat: no-repeat;
   background-attachment: scroll;

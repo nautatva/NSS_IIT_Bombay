@@ -24,7 +24,7 @@ new content -->
  * Default theme v2 (https://mobirise.com/)
  * Copyright 2016 Mobirise
  */
-@font-face {
+/* @font-face {
   font-family: Nexa-light;
   src: url(./Nexa_Light.otf);
 }
@@ -32,7 +32,7 @@ new content -->
 @font-face {
   font-family: Nexa-Bold;
   src: url(./Nexa_Bold.otf);
-}
+} */
 
 .container,
 .mbr-slider > .boxed-slider > div {

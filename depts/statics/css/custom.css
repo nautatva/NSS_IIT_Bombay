@@ -42,8 +42,10 @@
 .nav-distribute {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
+
 
 /* Dept introduction */
 #aboutdept {
@@ -156,6 +158,12 @@ h4 {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .nav-distribute{
+    flex-direction: column;
+  }
+  .navbar-custom .nav li a{
+    text-align: left;
+  }
 }
 /*! CSS Used from: https://gymkhana.iitb.ac.in/~nss//assets/mobirise/css/mbr-additional.css */
 #EO-content6-1 h4 {
@@ -168,16 +176,20 @@ h4 {
   font-size: 18px;
 }
 /*! CSS Used fontfaces */
-@font-face {
+/* @font-face {
   font-family: Nexa-light;
   src: url(https://gymkhana.iitb.ac.in/~nss/assets/theme/css/Nexa_Light.otf);
 }
 @font-face {
   font-family: Nexa-light;
   src: url('https://gymkhana.iitb.ac.in/~nss/assets/mobirise/css/.Nexa_Light.ttf');
-}
+} */
 
 .name-contact {
   font-size: 1.67rem;
   line-height: 1.5;
+}
+
+.dropdown-menu{
+  background: chocolate
 }
