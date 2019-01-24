@@ -134,32 +134,22 @@ $AAs = $conn->query($sql3);
           <span id="typed"></span>
         </div>
       </div>
+       
+        <h4 class="section-subheading department-description restrict600">
+          ' . $department['description'] . '
+        </h4>
+        
+        <div>
+          <div class="space-between restrict600">
+            <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
+            <a href="#team" class="page-scroll btn btn-xl">Team</a>
+          </div>
+        </div>   
     </div>
     </header>
     '); ?>
 
-    <!-- About -->
-    <section id="aboutdept" class="full scrollify">
-      <?php    
-        echo('<div class=" full perfect-center department-color" style="' . $department['color'] . '">
-
-      <h1 class="section-heading">' . $department['name'] . '</h1>
-      <h3 class="section-subheading department-description restrict600">
-        ' . $department['description'] . '
-      </h3>
-      '); ?>
-      <div>
-        <!-- <div class="h3 text-center">
-                Know more...
-            </div> -->
-        <div class="space-between restrict600">
-          <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
-          <a href="#team" class="page-scroll btn btn-xl">Team</a>
-        </div>
-      </div>
-      </div>
-    </section>
-
+    
     <section id="initiatives" class="scrollify">
       <div id="portfolio" class="bg-light-gray">
         <h1>Initiatives</h1>
@@ -215,7 +205,7 @@ $AAs = $conn->query($sql3);
                         <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
                         <img class="img-responsive img-centered" src='.
                         $row['thumbnail'] .' alt="">
-                        <p>' . $row['des_short'] . '</p>
+                        <p>' . $row['des_long'] . '</p>
                         <button
                           type="button"
                           class="btn btn-primary"
@@ -365,12 +355,12 @@ $AAs = $conn->query($sql3);
 
   <script>
     // scrollify config
-    $(function() {
-      $.scrollify({
-        section: '.scrollify',
-        setHeights: false
-      });
-    });
+    // $(function() {
+    //   $.scrollify({
+    //     section: '.scrollify',
+    //     setHeights: false
+    //   });
+    // });
     // Typed JS config
     document.addEventListener('DOMContentLoaded', function() {
       var typed = new Typed('#typed', {

@@ -23,7 +23,8 @@
   align-items: center;
 }
 .restrict600 {
-  max-width: 600px;
+  width: 80%;
+  margin: auto;
   padding: 0 40px;
   flex-wrap: wrap;
 }
