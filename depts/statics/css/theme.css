@@ -135,8 +135,8 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 250px;
+    /* padding-bottom: 200px; */
   }
   header .intro-text .intro-lead-in {
     font-style: italic;
@@ -180,7 +180,7 @@ section h3.section-subheading {
   margin: 0 0 15px;
   right: 0;
 }
-#portfolio .portfolio-item a{
+#portfolio .portfolio-item a {
   text-decoration: none;
 }
 #portfolio .portfolio-item .portfolio-link {
@@ -240,7 +240,7 @@ section h3.section-subheading {
   background-color: white;
   text-align: center;
   padding: 25px;
-  height: 300px;
+  height: auto;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
@@ -258,6 +258,9 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+  }
+  #portfolio .portfolio-item .portfolio-caption {
+    height: 300px;
   }
 }
 
