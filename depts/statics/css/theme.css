@@ -3,10 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
-  overflow-x: hidden;
-  webkit-tap-highlight-color: #fed136;
-}
+
 .text-muted {
   color: #777777;
 }

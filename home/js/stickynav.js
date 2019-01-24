@@ -1,3 +1,5 @@
+// now removed from home
+
 function stick() {
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {

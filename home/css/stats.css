@@ -4,7 +4,6 @@
   background-color: gray;
 }
 
-
 .statistics-center {
   display: flex;
   flex-wrap: wrap;
@@ -40,4 +39,3 @@
   margin: 0px;
   font-size: 40px;
 }
-

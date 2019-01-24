@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One|Aleo');
+
+.NIC *{
+  position: absolute;
+}
+.NIC {
+  position: relative;
+  background: antiquewhite;
+  width: 300px;
+  height: 300px;
+  /* position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0); */
+}
+
+.name {
+  border-radius: 0px;
+  top: -20px;
+  transform: rotate(3deg);
+  right: -10px;
+  font-size: 35px;
+  /* width: 180px; */
+  height: 40px;
+  background: #f9f940;
+  text-align: right;
+  padding-right: 5px;
+  box-shadow: 2px 2px 3px #8d0019;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.subhead {
+  font-size: 10px;
+  width: 100px;
+  transform: rotate(3deg);
+  border-radius: 0px;
+  right: -10px;
+  top: 40px;
+  text-align: right;
+  background: #f9f940;
+  padding-right: 5px;
+  box-shadow: 2px 2px 3px #8d0019;
+}
+
+.pic {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  width: 140px;
+  height: 140px;
+  box-shadow: 3px 3px 5px #8d0019;
+  background: wheat;
+  border-radius: 0px;
+  transform: rotate(-3deg);
+}
+
+.sticky {
+  line-height: 1.5em;
+  font-size: 14px;
+  width: 130px;
+  height: 190px;
+  right: 2%;
+  top: 90px;
+  background: white;
+  box-shadow: 3px 3px 6px #8d0019;
+  padding: 10px;
+  transform: rotate(3deg);
+}
+
+.button a {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 5px;
+  height: 15px;
+  width: 130px;
+  border-radius: 25px;
+  letter-spacing: 3px;
+  background: #43dde2;
+  transform: rotate(1deg);
+}
+
+.codepen {
+  top: 200px;
+  left: -17px;
+}
+
+.linkedin {
+  top: 240px;
+  left: -10px;
+}
+
+a:hover {
+  background: #f50ca0;
+}
