@@ -51,10 +51,8 @@ function flip() {
   // setTimeout(() => {
   setIntervalI(function() {
     $('#js-flip-9 .card1').toggleClass('flipped');
-    console.log('this');
   }, 5000);
   // }, 100);
-  console.log('starggggt');
 }
 
 $(document).ready(function() {
