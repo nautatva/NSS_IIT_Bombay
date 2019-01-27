@@ -59,7 +59,7 @@ while($mydept = $depts->fetch_assoc()){
     <?php
     foreach ($mydepts as $q) {
       $code = $q['deptcode'];
-      $sql1 = $conn->query("SELECT * FROM Coreteam1819 WHERE dept='$code' ");
+      $sql1 = $conn->query("SELECT * FROM Coreteam1819 WHERE dept='$code' ORDER BY Name ");
       echo('
       <h1 class="dtitle">'.$q['deptname'].'</h1>
       <div id="ssd">
@@ -70,7 +70,7 @@ while($mydept = $depts->fetch_assoc()){
         <div class="team-member">
           <img
             src="'.$details['photo'].'"
-            alt="'.$details['COL 1'].'"
+            alt="'.$details['Name'].'"
           />
           <div class="team-hover">
             <div class="desk">
@@ -86,7 +86,7 @@ while($mydept = $depts->fetch_assoc()){
         </div>
 
         <div class="team-title">
-          <h5>'.$details['COL 1'].'</h5>
+          <h5>'.$details['Name'].'</h5>
         </div>
       </div>
         ');
