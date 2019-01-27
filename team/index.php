@@ -47,13 +47,13 @@ while($mydept = $depts->fetch_assoc()){
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Team 2018-19</title>
     <!-- <link href="./main.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./fontello/icon.css" />
   </head>
 
   <body>
-    <link rel="stylesheet" href="./css/ssd.css" />
+    <link rel="stylesheet" href="./css/team.css" />
     <h1 class="title" >
       NSS Core-Team 2018-19</h1>
     <?php
