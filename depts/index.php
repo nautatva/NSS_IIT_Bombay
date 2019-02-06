@@ -17,13 +17,12 @@ else{
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept'" ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
-$sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept'" ;
+$sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept' ORDER BY name" ;
 $sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
-$result = $conn->query($sql);
-$basic = $conn->query($sql1);
-$heads = $conn->query($sql2);
-$AAs = $conn->query($sql3);
-?>
+$result = $conn->query($sql); 
+$basic = $conn->query($sql1); 
+$heads =
+$conn->query($sql2); $AAs = $conn->query($sql3); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -85,10 +84,10 @@ $AAs = $conn->query($sql3);
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right nav-distribute">
             <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll" href="#EO">Educational Outreach</a></li>
-            <li><a class="page-scroll" href="#GC">Green Campus</a></li>
+            <li><a class="page-scroll EO-nav" href="#EO">Educational Outreach</a></li>
+            <li><a class="page-scroll GC-nav" href="#GC">Green Campus</a></li>
             <li>
-              <a class="page-scroll" href="#SSD"
+              <a class="page-scroll SSD-nav" href="#SSD"
                 >Sustainable Social Development</a
               >
             </li>
@@ -108,8 +107,59 @@ $AAs = $conn->query($sql3);
                 >More <span class="caret"></span
               ></a>
               <ul class="dropdown-menu">
-                <li><a href="#">VFP</a></li>
-                <li><a href="#">OLI</a></li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/greenopedia/home/"
+                    target="_blank"
+                    >Greenopedia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC2iPnxGyKViqjV37f3r6uJw"
+                    target="_blank"
+                    >Voice for Purpose</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCskd3K0NyyHqZ1t7AMAYACQ"
+                    target="_blank"
+                    >Tarang</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://groups.google.com/forum/#!forum/prakriti_nssiitb"
+                    target="_blank"
+                    >Prakriti</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCiRgHJGPSMsMI3hcQKrm4yA"
+                    target="_blank"
+                    >Open Learning Initiative</a
+                  >
+                </li>
+                <li>
+                  <a href="./HoIITB.php" target="_blank"
+                    >Invisible Humans of IITB</a
+                  >
+                </li>
+                <li>
+                  <a href="./olidwd/" target="_blank">Download OLI Videos</a>
+                </li>
+                <li><a href="./Memoirs.php" target="_blank">NSS Memoirs</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./reports/17_18"
+                    target="_blank"
+                    >2017-18</a
+                  >
+                </li>
               </ul>
             </li>
           </ul>
@@ -134,22 +184,21 @@ $AAs = $conn->query($sql3);
           <span id="typed"></span>
         </div>
       </div>
-       
-        <h4 class="section-subheading department-description restrict600">
-          ' . $department['description'] . '
-        </h4>
-        
-        <div>
-          <div class="space-between restrict600">
-            <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
-            <a href="#team" class="page-scroll btn btn-xl">Team</a>
-          </div>
-        </div>   
+
+      <h4 class="section-subheading department-description restrict600">
+        ' . $department['description'] . '
+      </h4>
+
+      <div>
+        <div class="space-between restrict600">
+          <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
+          <a href="#team" class="page-scroll btn btn-xl">Team</a>
+        </div>
+      </div>
     </div>
     </header>
     '); ?>
 
-    
     <section id="initiatives" class="scrollify">
       <div id="portfolio" class="bg-light-gray">
         <h1>Initiatives</h1>
@@ -224,7 +273,6 @@ $AAs = $conn->query($sql3);
           <!-- portfolio item closed -->
         </div>
       </div>
-      
     </section>
 
     <section id="team" class="scrollify">
@@ -244,25 +292,25 @@ $AAs = $conn->query($sql3);
                 <?php
                     $head = mysqli_fetch_assoc( $heads );
                     while ($head) {
-                      $name=$head['COL 1'];
-        $contact=$head['COL 7'];
+                      $name=$head['name'];
+        $contact=$head['contact'];
                       echo('
                       <tr>
-                              <td>
-                                <span class="name-contact"><li>'.$name.'</li></span>
-                              </td>
-                              <td>
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                                &nbsp; &nbsp; &nbsp;
-                              </td>
-                              <td>
-                                <span class="name-contact"
-                                  ><a href="tel: +91-$contact">'.$contact.'</a></span
-                                >
-                              </td>
-                              </li> 
-                            </tr>
-                              '); $head = mysqli_fetch_assoc( $heads ); } ?>
+                <td>
+                  <span class="name-contact"><li>'.$name.'</li></span>
+                </td>
+                <td>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                </td>
+                <td>
+                  <span class="name-contact"
+                    ><a href="tel: +91-$contact">'.$contact.'</a></span
+                  >
+                </td>
+                </li> 
+                </tr>
+                '); $head = mysqli_fetch_assoc( $heads ); } ?>
               </table>
             </div>
 
@@ -290,7 +338,7 @@ $AAs = $conn->query($sql3);
                   >
                 </td>
                 </li> 
-              </tr>
+                </tr>
                 ' ); $aa = mysqli_fetch_assoc( $AAs ); } ?>
               </table>
             </div>
