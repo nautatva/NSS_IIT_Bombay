@@ -70,12 +70,12 @@ while($mydept = $depts->fetch_assoc()){
         <div class="team-member">
           <img
             src="'.$details['photo'].'"
-            alt="'.$details['Name'].'"
+            alt="'.$details['name'].'"
           />
           <div class="team-hover">
             <div class="desk">
               <h4>Hi There !</h4>
-              <p>introduce yourself</p>
+              <p>"'.$details['intro'].'"</p>
             </div>
             <div class="s-link">
               <i class="icon " aria-hidden="true">&#xf09a;</i>
@@ -86,7 +86,7 @@ while($mydept = $depts->fetch_assoc()){
         </div>
 
         <div class="team-title">
-          <h5>'.$details['Name'].'</h5>
+          <h5>'.$details['name'].'</h5>
         </div>
       </div>
         ');
@@ -105,7 +105,7 @@ while($mydept = $depts->fetch_assoc()){
           <div class="team-hover">
             <div class="desk">
               <h4>Hi There !</h4>
-              <p>introduce yourself</p>
+              <p>introduce yourself<br> </p>
             </div>
             <div class="s-link">
               <i class="icon " aria-hidden="true">&#xf09a;</i>
