@@ -23,15 +23,6 @@ a.active {
   outline: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
-  /* font-weight: 700; */
-}
 nav {
   font-size: 15px;
 }
@@ -111,7 +102,6 @@ header {
   text-align: center;
   color: white;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.37);
-  height: 100vh;
 }
 header .intro-text {
   padding-top: 100px;
@@ -137,14 +127,14 @@ header .intro-text .intro-heading {
   }
   header .intro-text .intro-lead-in {
     font-style: italic;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 40px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 35px;
     line-height: 75px;
     margin-bottom: 50px;
   }

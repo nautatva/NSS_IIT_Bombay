@@ -175,3 +175,6 @@ ul.social-buttons li a:active {
 .lead a:hover {
   color: #ffc031;
 }
+.dropdown-menu {
+  background: #ecbb0f;
+}
