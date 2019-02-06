@@ -166,6 +166,8 @@
   padding: 0 1.875em;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 100vh;
 }
 
 .cbp-hrmenu > ul > li {
