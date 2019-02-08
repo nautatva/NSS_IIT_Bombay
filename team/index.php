@@ -5,42 +5,14 @@ $password = "nssiitb@2015";
 $db = "nss";
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 
-$depts=$conn->query("SELECT distinct dept FROM Coreteam1819 ") ;
-$mydepts = [];
-$t=0;
-while($mydept = $depts->fetch_assoc()){
-  switch ($mydept['dept']) {
-    case 'OC':
-      $name = 'Overall Coordinators';
-      break;
-    case 'EO':
-      $name = 'Educational Outreach';
-      break;
-    case 'SSD':
-      $name = 'Sustainable Social Development';
-      break;
-    case 'GC':
-      $name = 'Green Campus';
-      break;
-    case 'NIC':
-      $name = 'National Innovation Cell';
-      break;
-    case 'Media':
-      $name = 'Media & Design';
-      break;        
-    default:
-      $name = 'Web & Finance';
-      break;
-  }
-  $y = array('deptcode' => $mydept['dept'],
-             'deptname' => $name 
-);
-  array_push($mydepts, $y);
-}
-
-
-
-?>
+$depts=$conn->query("SELECT distinct dept FROM Coreteam1819 ") ; $mydepts = [];
+$t=0; while($mydept = $depts->fetch_assoc()){ switch ($mydept['dept']) { case
+'OC': $name = 'Overall Coordinators'; break; case 'EO': $name = 'Educational
+Outreach'; break; case 'SSD': $name = 'Sustainable Social Development'; break;
+case 'GC': $name = 'Green Campus'; break; case 'NIC': $name = 'National
+Innovation Cell'; break; case 'Media': $name = 'Media & Design'; break; default:
+$name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
+'deptname' => $name ); array_push($mydepts, $y); } ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -54,24 +26,20 @@ while($mydept = $depts->fetch_assoc()){
 
   <body>
     <link rel="stylesheet" href="./css/team.css" />
-    <h1 class="title" >
-      NSS Core-Team 2018-19</h1>
+    <h1 class="title">
+      NSS Core-Team 2018-19
+    </h1>
     <?php
     foreach ($mydepts as $q) {
       $code = $q['deptcode'];
-      $sql1 = $conn->query("SELECT * FROM Coreteam1819 WHERE dept='$code' ORDER BY Name ");
-      echo('
-      <h1 class="dtitle">'.$q['deptname'].'</h1>
-      <div id="ssd">
-      ');
-      while($details = $sql1->fetch_assoc()){
-        echo('
-        <div class="member">
+      $sql1 = $conn->query("SELECT * FROM Coreteam1819 WHERE dept='$code' ORDER
+    BY Name "); echo('
+    <h1 class="dtitle">'.$q['deptname'].'</h1>
+    <div id="ssd">
+      '); while($details = $sql1->fetch_assoc()){ echo('
+      <div class="member">
         <div class="team-member">
-          <img
-            src="'.$details['photo'].'"
-            alt="'.$details['name'].'"
-          />
+          <img src="'.$details['photo'].'" alt="'.$details['name'].'" />
           <div class="team-hover">
             <div class="desk">
               <h4>Hi There !</h4>
@@ -89,44 +57,12 @@ while($mydept = $depts->fetch_assoc()){
           <h5>'.$details['name'].'</h5>
         </div>
       </div>
-        ');
-      }
-      echo('</div>');
-    }
-    ?>
-    <div id="ssd">
-      <!-- member 1 -->
-      <div class="member">
-        <div class="team-member">
-          <img
-            src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg"
-            alt="Yash Rajan"
-          />
-          <div class="team-hover">
-            <div class="desk">
-              <h4>Hi There !</h4>
-              <p>introduce yourself<br> </p>
-            </div>
-            <div class="s-link">
-              <i class="icon " aria-hidden="true">&#xf09a;</i>
-              <i class="icon " aria-hidden="true">&#xe801;</i>
-              <i class="icon " aria-hidden="true">&#xe800;</i>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-title">
-          <h5>Anshul Verma</h5>
-          <span>Department Head - SSD</span>
-        </div>
-      </div>
+      '); } echo('
     </div>
+    '); } ?>
 
+    <!--FOOTER -->
 
-
-
-<!--FOOTER -->
-    
     <link rel="stylesheet" href="./css/footer.css" />
     <footer id="footer">
       <p class="footer-links">

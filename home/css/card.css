@@ -193,3 +193,18 @@
   transform: translate(5px, -50%);
   opacity: 1;
 }
+
+@media(max-width:1400px){
+  .card{
+    width: 320px;
+  }
+  .card .wrapper{
+    height: 450px;
+  }
+  .card .cardimg img{
+    width: 320px;
+  }
+  .card .data{
+    transform: translateY(calc(10px + 4em));
+  }
+}
