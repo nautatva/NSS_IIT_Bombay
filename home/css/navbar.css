@@ -167,7 +167,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  max-height: 100vh;
+  max-height: 95vh;
 }
 
 .cbp-hrmenu > ul > li {
@@ -229,7 +229,7 @@
 
 .cbp-hrsub h4 {
   color: #afdefa;
-  padding: 2em 0 0.6em;
+  padding: 1.5em 0 0.6em;
   margin: 0;
   font-size: 30px;
   font-weight: 300;
