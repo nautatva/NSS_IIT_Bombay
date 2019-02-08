@@ -34,6 +34,13 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
 
     <title><?php echo $name ?> - NSS, IIT Bombay</title>
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      defer=""
+    />
+    
+
     <!-- Bootstrap Core CSS -->
     <link
       href="./statics/vendor/bootstrap/css/bootstrap.min.css"
@@ -285,8 +292,8 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
           <div class="text-center">
             <h2 class="section-heading">Meet our team</h2>
           </div>
-          <div class="team" style="font-family: 'Droid Sans', Sans-serif;">
-            <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
+          <div class="team" >
+            <div class="lead" >
               <h4>Department Heads</h4>
               <table>
                 <?php
@@ -314,7 +321,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               </table>
             </div>
 
-            <div class="lead" style="font-family: 'Droid Sans', Sans-serif;">
+            <div class="lead" >
               <h4>Activity Associates</h4>
               <table>
                 <?php

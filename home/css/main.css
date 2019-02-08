@@ -126,6 +126,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 75px 0;
   /* background-color: blue;
   background-image: url('../../assets/NSS/NSScandles.jpg'); */
 }

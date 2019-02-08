@@ -33,7 +33,7 @@
   justify-content: space-around;
 }
 .restrict600 a {
-  margin: 15px;
+  margin: 30px 0;
   flex: 1 0 0;
   min-width: 200px;
   max-width: 200px;
@@ -108,7 +108,7 @@
   align-items: center;
 }
 .lead a {
-  font-family: 'Droid Sans', sans-serif;
+  /* font-family: 'Droid Sans', sans-serif; */
   font-style: italic;
   font-weight: 400;
 }
@@ -141,7 +141,6 @@
 h2,
 h3,
 h4 {
-  font-family: 'oblique';
   word-break: break-word;
   word-wrap: break-word;
 }
@@ -164,6 +163,10 @@ h4 {
   .navbar-custom .nav li a {
     text-align: left;
   }
+  .restrict600{
+    width: 100%;
+    padding: 0;
+  }
 }
 /*! CSS Used from: https://gymkhana.iitb.ac.in/~nss//assets/mobirise/css/mbr-additional.css */
 #EO-content6-1 h4 {
@@ -175,15 +178,6 @@ h4 {
 #EO-content6-1 ul {
   font-size: 18px;
 }
-/*! CSS Used fontfaces */
-/* @font-face {
-  font-family: Nexa-light;
-  src: url(https://gymkhana.iitb.ac.in/~nss/assets/theme/css/Nexa_Light.otf);
-}
-@font-face {
-  font-family: Nexa-light;
-  src: url('https://gymkhana.iitb.ac.in/~nss/assets/mobirise/css/.Nexa_Light.ttf');
-} */
 
 .name-contact {
   font-size: 1.67rem;
