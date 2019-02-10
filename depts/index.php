@@ -3,16 +3,20 @@ $host ="10.105.177.5";
 $username = "nss";
 $password = "nssiitb@2015";
 $db = "nss";
-$dept = $_GET['dept'];
+$dept = strtoupper($_GET['dept']);
 if ($dept=='EO') {
     $name = "Educational Outreach";
 }
 else if($dept=='GC'){
     $name = "Green Campus";
 }
-else{
+else if($dept=='SSD'){
   $dept = 'SSD';
   $name = "Sustainable Social Development";
+}
+else {
+  $dept = 'Web';
+  $name = "";
 }
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept'" ;
