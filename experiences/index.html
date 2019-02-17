@@ -9,43 +9,10 @@
         color: #4e5359;
         background-color: #f3f3f5;
       }
-      .block {
-        display: flex;
-        flex-direction: row;
-        background: #ffffff;
-        margin-bottom: 6px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-        -webkit-transition: box-shadow 0.2s;
-        -moz-transition: box-shadow 0.2s;
-        transition: box-shadow 0.2s;
-        width: 60%;
-        margin: auto;
-      }
-      .reverse {
-        flex-direction: row-reverse;
-      }
-      .name {
-        color: #a9c056;
-        font-size: 1.5rem;
-        font-weight: 300;
+      p {
         margin: 0;
-        padding: 24px 72px 24px 24px;
       }
-      .experience {
-        font-size: 0.875rem;
-        color: #6c7d8e;
-        padding: 0 24px 30px;
-        line-height: 1.6;
-        text-align: justify;
-      }
-      .photo {
-        width: 320px;
-        flex: 1 0 0;
-      }
-      .text {
-        flex: 1 0 0;
-      }
-      .initiatives {
+      .head {
         width: 100%;
         height: 350px;
         background: url(./initi.jpeg);
@@ -56,35 +23,66 @@
         justify-content: center;
         align-items: center;
       }
-      .initiatives span {
+      .head span {
         font-size: 60px;
         color: white;
         font-weight: 600;
         margin-top: 80px;
       }
-      /* .initiatives img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-      } */
+
+      .block {
+        background: #ffffff;
+        margin-bottom: 6px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+        -webkit-transition: box-shadow 0.2s;
+        -moz-transition: box-shadow 0.2s;
+        transition: box-shadow 0.2s;
+        width: 60%;
+        margin: auto;
+      }
+      .name {
+        color: #a9c056;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0;
+        padding: 24px 72px 24px 24px;
+        padding-bottom: 0;
+      }
+      .description {
+        padding: 20px;
+        font-size: 0.875rem;
+        color: #6c7d8e;
+        line-height: 1.6;
+        text-align: justify;
+      }
+      .photo-img {
+        width: 320px;
+        height: 160px;
+        float: left;
+        padding-right: 20px;
+      }
+      .rev {
+        float: right;
+        padding-left: 20px;
+        padding-right: 0;
+      }
     </style>
   </head>
 
   <body>
     <!-- block 1 -->
-    <div class="initiatives">
-      <!-- <img src="./initi.jpeg" /> -->
+    <div class="head">
       <span> My NSS Experience</span>
     </div>
     <div class="block">
-      <div class="photo">
-        <img />
-      </div>
-      <div class="text">
-        <p class="name">
-          Yash Sanghvi
-        </p>
-        <div class="experience">
+      <!-- <div class="photo"> -->
+      <div class="name">Yash Sanghvi</div>
+      <div class="description">
+        <img
+          class="photo-img"
+          src="../assets/departments/EO/Muskaan/Copy of IMG_0230.JPG"
+        />
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, atque
           amet eos quas doloribus nobis libero blanditiis corrupti consequuntur
           nemo, quidem, nam natus sed voluptates id iusto corporis at quasi.
@@ -94,20 +92,20 @@
           voluptas molestias fugiat molestiae beatae dolores corrupti minus ea,
           asperiores odit. Corrupti error facilis aspernatur sapiente maiores
           modi incidunt molestias.
-        </div>
+        </p>
       </div>
     </div>
 
     <!-- block 2 -->
-    <div class="block reverse">
-      <div class="photo">
-        <img />
-      </div>
-      <div class="text">
-        <p class="name">
-          Yash Sanghvi
-        </p>
-        <div class="experience">
+    <div class="block">
+      <!-- <div class="photo"> -->
+      <div class="name">Yash Sanghvi</div>
+      <div class="description">
+        <img
+          class="photo-img rev"
+          src="../assets/departments/EO/Muskaan/Copy of IMG_0230.JPG"
+        />
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, atque
           amet eos quas doloribus nobis libero blanditiis corrupti consequuntur
           nemo, quidem, nam natus sed voluptates id iusto corporis at quasi.
@@ -117,7 +115,7 @@
           voluptas molestias fugiat molestiae beatae dolores corrupti minus ea,
           asperiores odit. Corrupti error facilis aspernatur sapiente maiores
           modi incidunt molestias.
-        </div>
+        </p>
       </div>
     </div>
   </body>
