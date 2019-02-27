@@ -60,14 +60,19 @@
         margin-left: 24px;
         margin-top: 24px;
       }
+      .mainImg {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
     </style>
   </head>
 
   <body>
     <section class="portal">
       <div>
-        <h2 class="head">Teach for a better future!</h2>
-
+        <img class="mainImg" src="./main.png" />
         <div class="mainPortal">
           <div class="more">
             <p>
