@@ -34,8 +34,8 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
       $code = $q['deptcode'];
       $sql1 = $conn->query("SELECT * FROM Coreteam1819 WHERE dept='$code' ORDER
     BY Name "); echo('
-    <h1 class="dtitle">'.$q['deptname'].'</h1>
-    <div id="ssd">
+    <h1 class="dtitle hideme">'.$q['deptname'].'</h1>
+    <div class="card hideme">
       '); while($details = $sql1->fetch_assoc()){ echo('
       <div class="member">
         <div class="team-member">

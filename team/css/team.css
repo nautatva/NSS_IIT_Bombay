@@ -1,4 +1,4 @@
-#ssd {
+.card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,23 +11,23 @@
   width: 300px;
   height: 400px;
   padding-left: 3%;
-  padding-right: 3% 
+  padding-right: 3%;
 }
-.title{
-  text-align:center; 
-  font-size: 3rem; 
-  font-family: 'Courier New', Courier, monospace; 
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
   color: brown;
 }
-.dtitle{
-  text-align:center; 
-  font-size: 2rem; 
-  font-family: 'Courier New', Courier, monospace; 
-  color:brown;
+.dtitle {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: brown;
 }
 
 .team-member,
-.team-member img{
+.team-member img {
   position: relative;
   width: 100%;
 }
