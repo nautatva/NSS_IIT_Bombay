@@ -1,0 +1,128 @@
+/* .fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.partOne-content .partTwo-content{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ddd;
+    z-index: -99;
+    opacity: 0.85;
+    z-index: 2;
+} */
+#content{
+    color: black;
+}
+.partOne-content{
+
+}
+.moderateContent{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: left;
+    padding: 1rem;
+    background-color: #ddd;
+    border-left: 1rem solid #d04087;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 1rem;
+    vertical-align: top;
+}
+.moderateContentLayoutOne{
+    display: flex;
+}
+.moderateContentLayoutTwo{
+    display: flex;
+    padding-top: 1rem;
+}
+.titleContent{
+    width: 30%;
+    font-size: 21px;
+    font-weight: bold;
+}
+.detailsContent{
+    width: 70%; 
+    padding-left: inherit;
+}
+.shortContentLayout{
+    display: flex;
+}
+.birdImage{
+    width: auto;
+    vertical-align: middle;
+   text-align: center;
+}
+#img{
+    border: 5px solid white;
+    border-radius: 0.7rem;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    max-height: 50vh;
+}
+.shortContentLayoutOne{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.shortContent{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    background-color: #fff;
+    border-left: 1rem solid #23335e;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    vertical-align: top;
+}
+.shortTitleContent{
+    font-size: 21px;
+    font-weight: bold;
+}
+.shortDetailsContent{
+    padding-left: inherit;
+}
+
+
+.partTwo-content{
+
+}
+.largeContentLayoutOne{
+    display: flex;
+}
+.largeContent{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    padding: 1rem;
+    background-color: #ddd;
+    background-color: #fff;
+    border-left: 1rem solid #23335e;   
+    border-radius: 0.5rem; 
+    margin: 1rem;
+    vertical-align: top;
+}
+.largeTitleContent{
+    font-size: 21px;
+    font-weight: bold;
+}
+.largeDetailsContent{
+    padding-left: inherit;
+}
