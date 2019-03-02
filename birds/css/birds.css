@@ -23,6 +23,17 @@
     opacity: 0.85;
     z-index: 2;
 } */
+.birdName{
+    font-family: monospace;
+    text-align: center;
+    font-size: 4rem;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
 #content{
     color: black;
 }
@@ -36,7 +47,7 @@
     text-align: left;
     padding: 1rem;
     background-color: #ddd;
-    border-left: 1rem solid #d04087;
+    border-left: 1rem solid #23335e ;
     border-radius: 0.5rem;
     background-color: white;
     margin: 1rem;
@@ -50,9 +61,10 @@
     padding-top: 1rem;
 }
 .titleContent{
-    width: 30%;
+    width: 50%;
     font-size: 21px;
     font-weight: bold;
+    border-bottom: 0.2rem solid #23335e;
 }
 .detailsContent{
     width: 70%; 
@@ -86,14 +98,16 @@
     text-align: left;
     padding: 1rem;
     background-color: #fff;
-    border-left: 1rem solid #23335e;
+    border-left: 1rem solid #d04087;
     border-radius: 0.5rem;
     margin: 1rem;
     vertical-align: top;
 }
 .shortTitleContent{
+    width: 50%;
     font-size: 21px;
     font-weight: bold;
+    border-bottom: 0.2rem solid #d04087;
 }
 .shortDetailsContent{
     padding-left: inherit;
@@ -120,9 +134,52 @@
     vertical-align: top;
 }
 .largeTitleContent{
+    width: 50%;
+    border-bottom: 0.2rem solid #23335e;
     font-size: 21px;
     font-weight: bold;
 }
 .largeDetailsContent{
     padding-left: inherit;
 }
+@media screen and (max-width: 480px){
+    .birdName{
+        background-color: maroon;
+    }
+    .titleContent{
+        width: auto;
+    }
+    .shortTitleContent{
+        width: auto;
+    }
+    .largeTitleContent{
+        width:auto;
+    }
+    #img{
+        border: 5px solid white;
+        border-radius: 0.7rem;
+        vertical-align: middle;
+        display: inline-block;
+        width: 90%;
+        max-height: 50vh;
+    }
+    .shortContentLayout{
+        display: block;
+    }
+    .largeContentLayoutOne{
+        display: block;
+    }
+    .largeContent{
+        display: block;
+        flex-direction: column;
+        width: auto;
+        text-align: left;
+        padding: 1rem;
+        background-color: #ddd;
+        background-color: #fff;
+        border-left: 1rem solid #23335e;   
+        border-radius: 0.5rem; 
+        margin: 1rem;
+        vertical-align: top;
+    }
+  }
