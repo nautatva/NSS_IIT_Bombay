@@ -53,13 +53,26 @@
       <h1 id="colorchange">NSS, IIT Bombay</h1>
 
       <link rel="stylesheet" href="./css/mega-style.css" />
+      <script>
+        $(document).ready(function() {
+          $('.nav-mobile ul').hide();
+          $('.nav-mobile a').click(function(e) {
+            e.preventDefault();
+            var $menuItem = $(this).next('ul');
+            $menuItem.slideToggle();
+            $('.nav-mobile ul')
+              .not($menuItem)
+              .slideUp();
+          });
+        });
+      </script>
       <nav class="cbp-hrmenu">
         <ul>
           <li class="cbp-hropen">
             <div class="cbp-hrsub">
               <div class="cbp-hrsub-inner">
-                <div>
-                  <h4>Departments</h4>
+                <div class="nav-mobile">
+                  <a href="#">Departments</a>
                   <ul>
                     <li>
                       <a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/"
@@ -80,8 +93,8 @@
                     <li><a href="#">Web</a></li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Youtube</h4>
+                <div class="nav-mobile">
+                  <a href="#">Youtube</a>
                   <ul>
                     <li>
                       <a
@@ -109,8 +122,8 @@
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Portals</h4>
+                <div class="nav-mobile">
+                  <a href="#">Portals</a>
                   <ul>
                     <li>
                       <a
@@ -139,8 +152,8 @@
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Blogs</h4>
+                <div class="nav-mobile">
+                  <a href="#">Blogs</a>
                   <ul>
                     <li>
                       <a
@@ -162,8 +175,8 @@
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <h4>About Us</h4>
+                <div class="nav-mobile">
+                  <a href="#">About Us</a>
                   <ul>
                     <li>
                       <a href="#">Current Team</a>
@@ -178,8 +191,8 @@
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Impacting Lives</h4>
+                <div class="nav-mobile">
+                  <a href="#">Impacting Lives</a>
                   <ul>
                     <li>
                       <a href="#">Stories of change</a>
@@ -195,8 +208,8 @@
                     <li><a>Memoirs</a></li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Resources</h4>
+                <div class="nav-mobile">
+                  <a href="#">Resources</a>
                   <ul>
                     <li>
                       <a href="#">Annual Reports</a>
