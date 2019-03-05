@@ -60,15 +60,16 @@
         text-align: justify;
         min-height: 250px;
       }
-      .photo-img {
+      
+      .block:nth-of-type(2n + 1) .description .photo-img {
         height: 250px;
         float: left;
         padding-right: 20px;
       }
-      .rev {
+      .block:nth-of-type(2n) .description .photo-img {
+        height: 250px;
         float: right;
         padding-left: 20px;
-        padding-right: 0;
       }
     </style>
   </head>
@@ -81,7 +82,6 @@
     <div class="blocks">
       <!-- block 1 -->
       <div class="block">
-        <!-- <div class="photo"> -->
         <div class="name">Muskaan - Educational Outreach</div>
         <div class="description">
           <img class="photo-img" src="./muskaan.jpg" />
@@ -101,10 +101,9 @@
 
       <!-- block 2 -->
       <div class="block">
-        <!-- <div class="photo"> -->
         <div class="name">Abhinay - Educational Outreach</div>
         <div class="description">
-          <img class="photo-img rev" src="./abhinay.jpg" />
+          <img class="photo-img" src="./abhinay.jpg" />
           <p>
             Seeing my kids perform on stage in Abhinay brought tears of
             happiness to my eyes! All my efforts for their education are worth
@@ -114,7 +113,6 @@
         </div>
       </div>
       <div class="block">
-        <!-- <div class="photo"> -->
         <div class="name">Green Campus</div>
         <div class="description">
           <img class="photo-img" src="./gc.jpg" />
@@ -133,6 +131,31 @@
             way up. It was very tiring but so much fun as we all were together.
             The AAs kept motivating us and this led us all the way up to the
             top. We dug a hole and planted a tree in it.
+          </p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="name">Open Learning initiative</div>
+        <div class="description">
+          <img class="photo-img" src="./oli.jpg" />
+          <p>
+            The naxal-affected Giridih district in Jharkhand has started an
+            e-learning initiative (Disha Giridih) for its students to educate
+            them in the absence of Government teachers and that videos on our
+            YouTube channel, OLI were helping them provide regional language
+            content to the students. On interaction with them, the Web-learning
+            Coordinator of Giridih had the following to say: "Most of the
+            students belong to rural areas and govt Hindi medium schools. Videos
+            from OLI NSS are totally apt for them as the content is presented in
+            Hindi in verbal as well as in written format. Also,the content is
+            presented in a very simple manner and it helps our students get the
+            basic concepts....students can ask questions to their teachers and
+            due to local language they can even discuss issues among their
+            friends...As per our monthly assessment report, there is a huge
+            demand of new videos from students as well as teachers. Students are
+            very much excited because of the e-learning initiative and their
+            attendance has increased due to such initiatives."
           </p>
         </div>
       </div>
