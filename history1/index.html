@@ -20,6 +20,10 @@
       p {
         margin: 0;
       }
+      .center {
+        display: flex;
+        justify-content: center;
+      }
       .head {
         padding-top: 2.1875rem;
       }
@@ -27,8 +31,7 @@
         /* min-width: 30%; */
         display: inline-block;
         text-align: right;
-        margin-left: 5%;
-        border-left: 6px #a5a5a5 solid;
+        /* border-left: 6px #a5a5a5 solid; */
       }
       .head .quote {
         font-size: 36px;
@@ -90,11 +93,13 @@
 
   <body>
     <div class="head">
-      <div class="quote-block">
-        <h5 class="quote">
-          "Alone we can do so little; together we can do so much"
-        </h5>
-        <h4 class="quote-author">- Helen Keller</h4>
+      <div class="center">
+        <div class="quote-block">
+          <h5 class="quote">
+            "Alone we can do so little; together we can do so much"
+          </h5>
+          <h4 class="quote-author">- Helen Keller</h4>
+        </div>
       </div>
       <p class="about">
         NSS IITB has come a long way in establishing itself as the largest
