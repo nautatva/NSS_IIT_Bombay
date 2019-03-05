@@ -156,7 +156,12 @@
   list-style-type: none;
   font-size: 16px;
 }
-
+.cbp-hrmenu .cbp-hrsub-inner {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /* first level ul style */
 .cbp-hrmenu > ul,
 .cbp-hrmenu .cbp-hrsub-inner {
