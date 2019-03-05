@@ -39,12 +39,31 @@
         font-weight: 600;
         margin-top: 80px; */
       }
+      .head .quote-block {
+        /* min-width: 30%; */
+        display: inline-block;
+        text-align: right;
+        margin-left: 5%;
+      }
+      .head .quote {
+        font-size: 24px;
+        font-style: italic;
+        font-family: serif;
+        margin: 0;
+      }
+      .head .quote-author {
+        margin: 0;
+      }
+      .about {
+        margin: 32px;
+        margin-left: 10%;
+      }
       .blocks {
         padding: 24px 0;
       }
       .block {
         background: #ffffff;
-        margin-bottom: 6px;
+        margin-bottom: 32px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
         -webkit-transition: box-shadow 0.2s;
         -moz-transition: box-shadow 0.2s;
@@ -55,12 +74,13 @@
         font-size: 1.5rem;
         font-weight: 300;
         margin: 0;
-        padding: 4px 72px 24px 24px;
+        padding: 4px 0 24px 0;
         padding-bottom: 0;
         text-align: center;
       }
       .description {
         padding: 20px;
+        padding-right: 36px;
         font-size: 0.875rem;
         color: #6c7d8e;
         line-height: 1.6;
@@ -83,10 +103,13 @@
 
   <body>
     <div class="head">
-      <quote>
-        Alone we can do so little; together we can do so much. - Helen Keller
-      </quote>
-      <p>
+      <div class="quote-block">
+        <h5 class="quote">
+          "Alone we can do so little; together we can do so much"
+        </h5>
+        <h4 class="quote-author">- Helen Keller</h4>
+      </div>
+      <p class="about">
         NSS IITB has come a long way in establishing itself as the largest
         student-volunteer body in the institute. The growth NSS has seen over
         the past few has been phenomenal. This can be attributed to the
