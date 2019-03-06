@@ -64,6 +64,11 @@
   box-shadow: inset 0 0 0 2000px rgba(27, 27, 27, 0.75);
   padding: 150px;
 }
+@media (max-width: 450px) {
+  #myabout {
+    padding: 150px 20px;
+  }
+}
 #myabout > div > span {
   padding-top: 80px;
   font-size: 38px;
@@ -177,7 +182,7 @@
   text-align: center;
   font-size: 14px;
 }
-.divider{
+.divider {
   margin: auto;
   width: 100px;
   border-top: solid 2px #d9dce2;
