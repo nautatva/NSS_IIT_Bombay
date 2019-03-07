@@ -117,6 +117,17 @@
           </ul>
         </div>
         <div class="mbr-gallery-row-main"></div>
+        <?php
+        $parentdir = "../assets/gallery/EO/";
+        $EOfolders = scandir($parentdir);
+        foreach ($EOfolders as $folder) {
+            if ($folder[0] == "."){
+                continue;
+            }
+            $dir = $parentdir.$folder.'/';
+            echo('<h2>'.$folder.'</h2>');
+            $subfolder = scandir($dir);
+            echo('
         <div>
           <div class="mbr-gallery-row container">
             <div class=" mbr-gallery-layout-default">
@@ -134,12 +145,12 @@
                     >
                       <img
                         alt=""
-                        src="../assets/departments/GCMain/Reusing Waste/reusingWaste.jpg"
+                        src="'.$dir.$subfolder[2].'"
                       />
 
                       <span class="icon-focus"></span>
                       <span class="mbr-gallery-title"
-                        >Hostel 15 Plantations</span
+                        >'.$folder.'</span
                       >
                     </div>
                   </div>
@@ -158,21 +169,30 @@
             id="lb-Gallery-gallery3-0"
           >
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="moda l-content">
                 <div class="modal-body">
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img alt="" src="../assets/gallery/15plant.jpg" />
-                    </div>
-                    <div class="carousel-item">
-                      <img alt="" src="../assets/gallery/ALP.jpg" />
-                    </div>
-                    <div class="carousel-item">
-                      <img alt="" src="../assets/gallery/Aman.jpg" />
-                    </div>
-                    <div class="carousel-item">
-                      <img alt="" src="../assets/gallery/C01.JPG" />
-                    </div>
+                  ');
+                  $i=0;
+                  foreach($subfolder as $myimg){
+                      if($myimg[0] == "."){
+                          continue;
+                      }
+                      $imgdir = $dir.$myimg;
+                      if($i==0){
+                        echo('<div class="carousel-item active">
+                        <img alt="Helloji" src="'.$imgdir.'" />
+                              </div>');
+                        $i+=1;
+                      }
+                      else{
+                      echo('<div class="carousel-item">
+                      <img alt="Helloji" src="'.$imgdir.'" />
+                            </div>'
+                );
+                $i+=1;}
+            };
+                echo('
                   </div>
                   <a
                     class="left carousel-control"
@@ -201,7 +221,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>');
+        };
+    ?>
       </div>
     </section>
     <footer
