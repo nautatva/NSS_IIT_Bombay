@@ -25,6 +25,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
   </head>
 
   <body>
+  <?php include("../common/navbar/navbar.php");?>
     <link rel="stylesheet" href="./css/team.css" />
     <h1 class="title">
       NSS Core-Team 2018-19
@@ -61,42 +62,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     </div>
     '); } ?>
 
-    <!--FOOTER -->
-
-    <link rel="stylesheet" href="./css/footer.css" />
-    <footer id="footer">
-      <p class="footer-links">
-        <a href="#">Home</a> · <a href="#">Blog</a> · <a href="#">Pricing</a> ·
-        <a href="#">About</a> · <a href="#">Faq</a> · <a href="#">Contact</a>
-      </p>
-      <div id="footer-icons" class="wrapper">
-        <ul>
-          <li class="facebook">
-            <i class="icon fb" aria-hidden="true">&#xf09a;</i>
-            <div class="slider"><p>facebook</p></div>
-          </li>
-
-          <li class="twitter">
-            <i class="icon tweet" aria-hidden="true">&#xf099;</i>
-            <div class="slider"><p>twitter</p></div>
-          </li>
-
-          <li class="instagram">
-            <i class="icon insta" aria-hidden="true">&#xf16d;</i>
-            <div class="slider"><p>instagram</p></div>
-          </li>
-
-          <li class="google">
-            <i class="icon youtubeee" aria-hidden="true">&#xf16a;</i>
-            <div class="slider"><p>youtube</p></div>
-          </li>
-
-          <li class="whatsapp">
-            <i class="icon wordpresssss" aria-hidden="true">&#xf19a;</i>
-            <div class="slider"><p>wordpress</p></div>
-          </li>
-        </ul>
-      </div>
-    </footer>
+<?php include("../common/footer/footer.php");?>
   </body>
+  <script>includeHTML()</script>
 </html>
