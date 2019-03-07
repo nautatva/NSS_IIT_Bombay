@@ -21,7 +21,8 @@
   z-index: 6;
   font-size: 18px;
   font-weight: 900;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -31,7 +32,7 @@
   font-weight: 300;
   font-size: 12px;
 }
-#nav a{
+#nav a {
   text-decoration: none;
 }
 #nav input + label {
@@ -119,7 +120,14 @@
   transition: 0.5s;
   transition-delay: 0.5s;
 }
-
+#colorchange:hover {
+  color: #47a3da;
+}
+#nav input:checked ~ #colorchange:hover {
+  color: white;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
 
 /* mega style navbar */
 /* General Demo Style */
