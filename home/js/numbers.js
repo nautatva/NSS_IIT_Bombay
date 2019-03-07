@@ -32,9 +32,9 @@ function numbers() {
     once = 1;
     increaseNumber('.volunteers', 20133,1043);
     increaseNumber('.children', 3230, 233);
-    increaseNumber('.reach',50000,1233);
+    increaseNumber('.followers',13380,1233);
     increaseNumber('.initiatives',30,1);
-    increaseNumber('.subscribers',13000,234)
+    increaseNumber('.subscribers',92352,5342)
   }
 }
 

@@ -100,10 +100,10 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right nav-distribute">
             <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll EO-nav" href="#EO">Educational Outreach</a></li>
-            <li><a class="page-scroll GC-nav" href="#GC">Green Campus</a></li>
+            <li><a class="page-scroll EO-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/">Educational Outreach</a></li>
+            <li><a class="page-scroll GC-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC/">Green Campus</a></li>
             <li>
-              <a class="page-scroll SSD-nav" href="#SSD"
+              <a class="page-scroll SSD-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
                 >Sustainable Social Development</a
               >
             </li>
@@ -114,8 +114,8 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 >Technicals <span class="caret"></span
               ></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Media and Design</a></li>
-                <li><a href="#">Web</a></li>
+                <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/">Media and Design</a></li>
+                <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/">Web</a></li>
               </ul>
             </li>
             <li>
@@ -160,18 +160,18 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                   >
                 </li>
                 <li>
-                  <a href="./HoIITB.php" target="_blank"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php" target="_blank"
                     >Invisible Humans of IITB</a
                   >
                 </li>
                 <li>
-                  <a href="./olidwd/" target="_blank">Download OLI Videos</a>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/olidwd/" target="_blank">Download OLI Videos</a>
                 </li>
-                <li><a href="./Memoirs.php" target="_blank">NSS Memoirs</a></li>
+                <li><a href="https://gymkhana.iitb.ac.in/~nss/Memoirs.php" target="_blank">NSS Memoirs</a></li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="./reports/17_18"
+                    href="https://gymkhana.iitb.ac.in/~nss/reports/17_18/"
                     target="_blank"
                     >2017-18</a
                   >

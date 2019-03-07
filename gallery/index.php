@@ -120,6 +120,7 @@
         <?php
         $parentdir = "../assets/gallery/EO/";
         $EOfolders = scandir($parentdir);
+        $i=0;
         foreach ($EOfolders as $folder) {
             if ($folder[0] == "."){
                 continue;
@@ -139,7 +140,7 @@
                     data-video-url="false"
                   >
                     <div
-                      href="#lb-Gallery-gallery3-0"
+                      href="#lb-Gallery-gallery3-'.$i.'"
                       data-slide-to="0"
                       data-toggle="modal"
                     >
@@ -159,38 +160,38 @@
               <div class="clearfix"></div>
             </div>
           </div>
-
+          
           <div
             data-app-prevent-settings=""
             class="mbr-slider modal fade carousel slide"
             tabindex="-1"
             data-keyboard="true"
             data-interval="false"
-            id="lb-Gallery-gallery3-0"
+            id="lb-Gallery-gallery3-'.$i.'"
           >
             <div class="modal-dialog">
               <div class="moda l-content">
                 <div class="modal-body">
                   <div class="carousel-inner">
                   ');
-                  $i=0;
+                  $j = 0;
                   foreach($subfolder as $myimg){
                       if($myimg[0] == "."){
                           continue;
                       }
                       $imgdir = $dir.$myimg;
-                      if($i==0){
+                      if($j==0){
                         echo('<div class="carousel-item active">
                         <img alt="Helloji" src="'.$imgdir.'" />
                               </div>');
-                        $i+=1;
+                        $j+=1;
                       }
                       else{
                       echo('<div class="carousel-item">
                       <img alt="Helloji" src="'.$imgdir.'" />
                             </div>'
                 );
-                $i+=1;}
+                $j+=1;}
             };
                 echo('
                   </div>
@@ -198,7 +199,7 @@
                     class="left carousel-control"
                     role="button"
                     data-slide="prev"
-                    href="#lb-Gallery-gallery3-0"
+                    href="#lb-Gallery-gallery3-'.$i.'"
                   >
                     <span class="icon-prev" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -207,7 +208,7 @@
                     class="right carousel-control"
                     role="button"
                     data-slide="next"
-                    href="#lb-Gallery-gallery3-0"
+                    href="#lb-Gallery-gallery3-'.$i.'"
                   >
                     <span class="icon-next" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
@@ -222,6 +223,7 @@
             </div>
           </div>
         </div>');
+        $i = $i+1;
         };
     ?>
       </div>
