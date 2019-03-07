@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-
+   
     <title>Let's teach!</title>
     <style type="text/css">
       body {
@@ -70,6 +68,7 @@
   </head>
 
   <body>
+    <?php include("../common/navbar/navbar.php");?>
     <section class="portal">
       <div>
         <img class="mainImg" src="./main.png" />

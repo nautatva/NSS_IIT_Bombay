@@ -60,7 +60,7 @@
         text-align: justify;
         min-height: 250px;
       }
-      
+
       .block:nth-of-type(2n + 1) .description .photo-img {
         height: 250px;
         float: left;
@@ -72,9 +72,27 @@
         padding-left: 20px;
       }
     </style>
+    <script src="../common/jquery.min.js"></script>
+    <script src="../common/common.js"></script>
   </head>
 
   <body>
+    <!-- navbar -->
+    <div w3-include-html="../common/navbar/navbar.html"></div>
+    <script>
+      $(document).ready(function() {
+        $('.nav-mobile ul').hide();
+        $('.preventDefault').click(function(e) {
+          e.preventDefault();
+          var $menuItem = $(this).next('ul');
+          $menuItem.slideToggle();
+          $('.nav-mobile ul')
+            .not($menuItem)
+            .slideUp();
+        });
+      });
+    </script>
+
     <div class="head">
       <span> Stories of Change</span>
     </div>
@@ -160,10 +178,15 @@
         </div>
       </div>
     </div>
+    <!-- footer -->
+    <div w3-include-html="../common/footer/footer.html"></div>
   </body>
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Montserrat"
     defer=""
   />
+  <script>
+    includeHTML();
+  </script>
 </html>
