@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-
+   
     <title>Take away plants from Nursery!</title>
     <style type="text/css">
       body {

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>History1 at NSS, IIT Bombay</title>
+    <title>History at NSS, IIT Bombay</title>
     <meta
       name="description"
       content="Here's what the teams have to contribute along the years!"
@@ -102,9 +102,26 @@
         }
       }
     </style>
+    <script src="../common/jquery.min.js"></script>
+    <script src="../common/common.js"></script>
   </head>
 
   <body>
+    <!-- navbar -->
+    <div w3-include-html="../common/navbar/navbar.html"></div>
+    <script>
+      $(document).ready(function() {
+        $('.nav-mobile ul').hide();
+        $('.preventDefault').click(function(e) {
+          e.preventDefault();
+          var $menuItem = $(this).next('ul');
+          $menuItem.slideToggle();
+          $('.nav-mobile ul')
+            .not($menuItem)
+            .slideUp();
+        });
+      });
+    </script>
     <div class="head">
       <div class="center">
         <div class="quote-block">
@@ -250,8 +267,10 @@
         </div>
       </div>
     </div>
-
     <!-- end of blocks -->
+
+    <!-- footer -->
+    <div w3-include-html="../common/footer/footer.html"></div>
   </body>
   <link
     rel="stylesheet"
@@ -262,4 +281,7 @@
     href="https://fonts.googleapis.com/css?family=Great+Vibes"
     rel="stylesheet"
   />
+  <script>
+    includeHTML();
+  </script>
 </html>

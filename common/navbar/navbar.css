@@ -23,12 +23,16 @@
   font-weight: 900;
   font-family: sans-serif;
   text-transform: uppercase;
+  margin-top: 0;
 }
 #nav h1 > span {
   text-transform: none;
   opacity: 0.5;
   font-weight: 300;
   font-size: 12px;
+}
+#nav a{
+  text-decoration: none;
 }
 #nav input + label {
   position: fixed;
@@ -115,6 +119,7 @@
   transition: 0.5s;
   transition-delay: 0.5s;
 }
+
 
 /* mega style navbar */
 /* General Demo Style */
