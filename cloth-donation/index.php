@@ -68,6 +68,7 @@
   </head>
 
   <body>
+  <?php include("../common/navbar/navbar.php");?>
     <section class="portal">
       <div>
       <img class="mainImg" src="./main.png" />
@@ -126,7 +127,7 @@
         </div>
       </div>
     </section>
-
+    <?php include("../common/footer/footer.php");?>
     <?php
 function test(){
 include('../dbconfig.php');
@@ -141,4 +142,5 @@ $res=$conn->query($sql); if ($res === TRUE) { echo "New request created
     successfully"; } else { echo "Error"; } $conn->close(); }
     if(array_key_exists('submit',$_POST)){ test(); } ?>
   </body>
+  <script>includeHTML()</script>
 </html>
