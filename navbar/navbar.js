@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.nav-mobile ul').hide();
-  $('.nav-mobile a').click(function(e) {
+  $('.preventDefault').click(function(e) {
     e.preventDefault();
     var $menuItem = $(this).next('ul');
     $menuItem.slideToggle();

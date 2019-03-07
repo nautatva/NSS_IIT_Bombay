@@ -606,10 +606,10 @@
           <a class="SSD" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
             >Sustainable Social Development</a
           >
-          <a class="MnD" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
+          <a class="Web" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
             >Media and design</a
           >
-          <a class="Web" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/MnD/"
+          <a class="Media" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/"
             >Web</a
           >
         </div>

@@ -14,10 +14,15 @@ else if($dept=='SSD'){
   $dept = 'SSD';
   $name = "Sustainable Social Development";
 }
-else {
+else if($dept=='MEDIA'){
+  $dept = 'Media';
+  $name = "Media and Design";
+}
+else if($dept=='WEB'){
   $dept = 'Web';
   $name = "";
 }
+
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept'" ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
