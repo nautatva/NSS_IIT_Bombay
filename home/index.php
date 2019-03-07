@@ -211,10 +211,7 @@
 
           <span>What do we do?</span>
           <h2 style="margin-bottom:0;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-            voluptate neque error dignissimos magni vero! At, numquam, qui quo,
-            ab commodi velit molestias autem aut blanditiis voluptatum
-            praesentium rerum inventore.
+          We at NSS, IIT Bombay, aim to bring about a positive change in the society with focus on Education and Development of the underpriveleged, conserving Nature and sowing the seeds of Sustainability. More than 350 volunteers guided by a team of 40 members carry out several initiatives throughout the year. We also work in close collaboration with several NGOs and Governmental bodies for reaching out to more and more beneficiaries.
           </h2>
         </div>
       </section>
