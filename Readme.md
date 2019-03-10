@@ -19,14 +19,15 @@
 |     teach      | php  |  [x]   |  [x]   |
 | :------------: | :--: | :----: | :----: |
 |      team      | php  |  [x]   |  [x]   |
-
+| :------------: | :--: | :----: | :----: |
+| Media coverage | html |  [x]   |  [x]   |
+| :------------: | :--: | :----: | :----: |
+|   Contact us   | php  |  [x]   |  [x]   |
 
 edits:
 resolution better karo in stats image and carousal in home page
 
 Dept page:
 compress images
-2 pics in EO not there 
-EFG ko SSD ka main pic rakho
 videomaking.gif ko media ka background rakho
-dept page social icons change - footer
+prayog ke beech me khali hai - mention campus/teachme and udaan

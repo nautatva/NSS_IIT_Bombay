@@ -25,7 +25,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
   </head>
 
   <body>
-  <?php include("../common/navbar/navbar.php");?>
+    <?php include("../common/navbar/navbar.php");?>
     <link rel="stylesheet" href="./css/team.css" />
     <h1 class="title">
       NSS Core-Team 2018-19
@@ -47,9 +47,15 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
               <p>"'.$details['intro'].'"</p>
             </div>
             <div class="s-link">
-              <i class="icon " aria-hidden="true">&#xf09a;</i>
-              <i class="icon " aria-hidden="true">&#xe801;</i>
-              <i class="icon " aria-hidden="true">&#xe800;</i>
+              <a href="'.$details['fb'].'">
+                <i class="icon" aria-hidden="true">&#xf09a;</i>
+              </a>
+              <a href="'.$details['contact'].'">
+                <i class="icon" aria-hidden="true">&#xe801;</i>
+              </a>
+              <a href="'.$details['email'].'">
+                <i class="icon" aria-hidden="true">&#xe800;</i>
+              </a>
             </div>
           </div>
         </div>
@@ -62,7 +68,9 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     </div>
     '); } ?>
 
-<?php include("../common/footer/footer.php");?>
+    <?php include("../common/footer/footer.php");?>
   </body>
-  <script>includeHTML()</script>
+  <script>
+    includeHTML();
+  </script>
 </html>

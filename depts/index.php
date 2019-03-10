@@ -28,9 +28,7 @@ $sql="SELECT * FROM department_data WHERE department = '$dept'" ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
 $sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept' ORDER BY name" ;
 $sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
-$result = $conn->query($sql); 
-$basic = $conn->query($sql1); 
-$heads =
+$result = $conn->query($sql); $basic = $conn->query($sql1); $heads =
 $conn->query($sql2); $AAs = $conn->query($sql3); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +46,6 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
       href="https://fonts.googleapis.com/css?family=Montserrat"
       defer=""
     />
-    
 
     <!-- Bootstrap Core CSS -->
     <link
@@ -93,87 +90,236 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
             <span class="sr-only">Toggle navigation</span> Menu
             <i class="fa fa-bars"></i>
           </button>
-          <!-- <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a> -->
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right nav-distribute">
             <li class="hidden"><a href="#page-top"></a></li>
-            <li><a class="page-scroll EO-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/">Educational Outreach</a></li>
-            <li><a class="page-scroll GC-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC/">Green Campus</a></li>
-            <li>
-              <a class="page-scroll SSD-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
-                >Sustainable Social Development</a
-              >
+            <li class="page-scroll">
+              <a href="https://gymkhana.iitb.ac.in/~nss/tem/home/">Home</a>
             </li>
-            <!-- <li><a class="page-scroll" href="#DnM">Technicals</a></li> -->
-
             <li>
               <a class="page-scroll" type="button" data-toggle="dropdown"
-                >Technicals <span class="caret"></span
+                >departments <span class="caret"></span
               ></a>
               <ul class="dropdown-menu">
-                <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/">Media and Design</a></li>
-                <li><a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/">Web</a></li>
+                <li>
+                  <a
+                    class=" EO-nav"
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/"
+                    >Educational Outreach</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class=" GC-nav"
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC/"
+                    >Green Campus</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class=" SSD-nav"
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
+                    >Sustainable Social Development</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/"
+                    >Media and Design</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
+                    >Web</a
+                  >
+                </li>
               </ul>
             </li>
+
             <li>
               <a class="page-scroll" type="button" data-toggle="dropdown"
-                >More <span class="caret"></span
+                >Blogs and portals <span class="caret"></span
               ></a>
               <ul class="dropdown-menu">
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/greenopedia/home/"
-                    target="_blank"
-                    >Greenopedia</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UC2iPnxGyKViqjV37f3r6uJw"
-                    target="_blank"
-                    >Voice for Purpose</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UCskd3K0NyyHqZ1t7AMAYACQ"
-                    target="_blank"
-                    >Tarang</a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="https://groups.google.com/forum/#!forum/prakriti_nssiitb"
-                    target="_blank"
+                    href="https://nssiitbblog.wordpress.com/category/green-campus/prakriti/"
                     >Prakriti</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.youtube.com/channel/UCiRgHJGPSMsMI3hcQKrm4yA"
-                    target="_blank"
-                    >Open Learning Initiative</a
+                    href="https://nssiitbblog.wordpress.com/category/parivartan/"
+                    >Parivartan</a
                   >
                 </li>
-                <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php" target="_blank"
-                    >Invisible Humans of IITB</a
-                  >
-                </li>
-                <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/olidwd/" target="_blank">Download OLI Videos</a>
-                </li>
-                <li><a href="https://gymkhana.iitb.ac.in/~nss/Memoirs.php" target="_blank">NSS Memoirs</a></li>
                 <li>
                   <a
-                    class="dropdown-item"
-                    href="https://gymkhana.iitb.ac.in/~nss/reports/17_18/"
-                    target="_blank"
-                    >2017-18</a
+                    href="https://nssiitbblog.wordpress.com/category/jigyasa-a-quest-to-learn/"
+                    >Jigyasa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PL7jZaz9RpobeLA6ZE5e-Is4HoLkADcdbj"
+                    >Greenopedia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCiRgHJGPSMsMI3hcQKrm4yA"
+                    >Open Learning Initiative - OLI</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCskd3K0NyyHqZ1t7AMAYACQ"
+                    >Tarang</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC2iPnxGyKViqjV37f3r6uJw"
+                    >Voice For Purpose - VFP</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/greenopedia/home/"
+                    >Greenopedia</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/olidwd/"
+                    >OLI Video Downloader</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/nocs"
+                    >NOCS portal</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/teach/"
+                    >Let's Teach!</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/cloth-donation/"
+                    >Make a Donation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/nursery/Nursery"
+                  >
+                   Nursery For All</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/artimp/"
+                    >The Artistic Impact</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="page-scroll" type="button" data-toggle="dropdown"
+                >About us <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/team/"
+                    >Current Team</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/history/"
+                    >History of NSS</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/Publicity.php"
+                    >Media Coverage</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/SoC/"
+                    >Stories of Change</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/experiences/"
+                    >My NSS Experiences</a
+                  >
+                </li>
+                <!-- <li>
+                    <a href="#">Words from OC</a>
+                  </li> -->
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/gallery/"
+                    >Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="page-scroll" type="button" data-toggle="dropdown"
+                >More <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <!-- Impacting lives -->
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                    Invisible Humans of IIT Bombay
+                  </a>
+                </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/Memoirs.php"
+                    >Memoirs</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/reports/17_18/"
+                    >Annual Report 2017-18</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1617.pdf"
+                    >Annual Report 2016-17</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1516.pdf"
+                    >Annual Report 2015-16</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1415.pdf"
+                    >Annual Report 2014-15</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1314.pdf"
+                    >Annual Report 2013-14</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1213.pdf"
+                    >Annual Report 2012-13</a
                   >
                 </li>
               </ul>
@@ -187,9 +333,23 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
 
     <!-- Header -->
     <?php
+    
                     $department = mysqli_fetch_assoc( $basic );
                     echo('
-    <header id="welcome" class="scrollify full" style="background-image:url('.$department['main_image'].')">
+ 
+    <header id="welcome" class="scrollify full" style="background-image:url('.$department['main_image'].')">');
+    if ($dept=='Media') {
+      echo('
+      <video autoplay="" muted="" loop="" id="myVideo" style="
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0
+        "> <source src="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/main.mp4" type="video/mp4">
+      </video>');
+     }
+     echo('
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">' . $department['name'] . '</div>
@@ -276,7 +436,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                           class="btn btn-primary"
                           data-dismiss="modal"
                         >
-                          <i class="fa fa-times"></i> Close Project
+                          <i class="fa fa-times"></i> Close
                         </button>
                       </div>
                     </div>
@@ -301,8 +461,8 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
           <div class="text-center">
             <h2 class="section-heading">Meet our team</h2>
           </div>
-          <div class="team" >
-            <div class="lead" >
+          <div class="team">
+            <div class="lead">
               <h4>Department Heads</h4>
               <table>
                 <?php
@@ -330,7 +490,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               </table>
             </div>
 
-            <div class="lead" >
+            <div class="lead">
               <h4>Activity Associates</h4>
               <table>
                 <?php
@@ -368,32 +528,42 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
         <div class="row">
           <div class="col-md-4">
             <span class="copyright"
-              >Copyright &copy; NSS, IIT Bombay, 2018</span
+              >Copyright &copy; NSS, IIT Bombay, 2019</span
             >
+          </div>
+          <div class="col-md-4">
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://twitter.com/nss_iitb?lang=en"
+                  ><i class="fa fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/pg/nssiitbombay/"
+                  ><i class="fa fa-facebook"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/nssiitb/"
+                  ><i class="fa fa-instagram"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-wordpress"></i></a>
+                <a href="https://nssiitbblog.wordpress.com/"
+                  ><i class="fa fa-wordpress"></i
+                ></a>
               </li>
               <li>
+                <a
+                  href="https://www.youtube.com/channel/UCPtcaL4JLfIq2fUGORmn6Yg"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+              </li>
+              <!-- <li>
                 <a href="#"><i class="fa fa-github"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -406,7 +576,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
   </body>
 
   <!-- jQuery -->
-  <script src="./statics/vendor/jquery/jquery.min.js"></script>
+  <script src="../common/jquery.min.js"></script>
 
   <!-- Custom Javascript -->
   <script src="./statics/js/custom.js"></script>

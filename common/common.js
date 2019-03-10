@@ -57,11 +57,10 @@ function includeNav() {
       };
       xhttp.open('GET', file, false);
       xhttp.send();
-      
-      console.log($('.nav-mobile ul'));
 
       $(document).ready(function() {
         $('.nav-mobile ul').hide();
+        $('.nav-mobile .show').slideToggle();
         $('.preventDefault').click(function(e) {
           e.preventDefault();
           var $menuItem = $(this).next('ul');

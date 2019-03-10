@@ -62,27 +62,27 @@
                 }
             } else {
                 $('<img>').on('load', function() {
-                    if (120 == (this.naturalWidth || this.width)) {
-                        // selection of preview in the best quality
-                        var file = this.src.split('/').pop();
-                        switch (file) {
-                            case 'maxresdefault.jpg':
-                                this.src = this.src.replace(file, 'sddefault.jpg');
-                                break;
-                            case 'sddefault.jpg':
-                                this.src = this.src.replace(file, 'hqdefault.jpg');
-                                break;
-                            case 'hqdefault.jpg':
-                                this.src = this.src.replace(file, 'default.jpg');
-                                break;
-                            default:
-                                cache[id] = null;
-                                def.reject('Preview image not found.');
-                                break;
-                        }
-                    } else {
-                        def.resolve(cache[id] = this.src);
-                    }
+                    // if (120 == (this.naturalWidth || this.width)) {
+                    //     // selection of preview in the best quality
+                    //     var file = this.src.split('/').pop();
+                    //     switch (file) {
+                    //         case 'maxresdefault.jpg':
+                    //             this.src = this.src.replace(file, 'sddefault.jpg');
+                    //             break;
+                    //         case 'sddefault.jpg':
+                    //             this.src = this.src.replace(file, 'hqdefault.jpg');
+                    //             break;
+                    //         case 'hqdefault.jpg':
+                    //             this.src = this.src.replace(file, 'default.jpg');
+                    //             break;
+                    //         default:
+                    //             cache[id] = null;
+                    //             def.reject('Preview image not found.');
+                    //             break;
+                    //     }
+                    // } else {
+                    //     def.resolve(cache[id] = this.src);
+                    // }
                 }).attr('src', getPreviewUrl(id, 'maxres'));
             }
             return def;
