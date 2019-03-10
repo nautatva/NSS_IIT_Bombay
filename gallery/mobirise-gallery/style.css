@@ -1,13 +1,3 @@
-@font-face{
-  font-family: Nexa-Bold;
-  src: url(../assets/theme/css/Nexa_Bold.ttf);
-}
-
-@font-face{
-  font-family: Nexa-Light;
-  src: url(../assets/theme/css/Nexa_Light.ttf);
-}
-
 .mbr-gallery .icon {
   z-index: 100 !important;
 }
