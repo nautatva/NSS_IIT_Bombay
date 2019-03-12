@@ -23,6 +23,8 @@
 | Media coverage | html |  [x]   |  [x]   |
 | :------------: | :--: | :----: | :----: |
 |   Contact us   | php  |  [x]   |  [x]   |
+| :------------: | :--: | :----: | :----: |
+|    Memoirs     |      |  [ ]   |  [ ]   |
 
 edits:
 resolution better karo in stats image and carousal in home page

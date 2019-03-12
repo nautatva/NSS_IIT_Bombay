@@ -3,10 +3,6 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-@font-face {
-  font-family: 'Vegan';
-  src: url('./vegan.ttf') format('truetype'); /* Safari, Android, iOS */
-}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -127,7 +123,7 @@ header .intro-text .intro-heading {
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 25px;
-  font-family: 'Vegan';
+  font-family: 'Great Vibes', cursive;
   letter-spacing: 5px;
 }
 @media (min-width: 768px) {

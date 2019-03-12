@@ -71,6 +71,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     <?php include("../common/footer/footer.php");?>
   </body>
   <script>
+    includeNav();
     includeHTML();
   </script>
 </html>
