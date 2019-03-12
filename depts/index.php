@@ -36,8 +36,14 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <meta name="description" content="" />
     <meta name="author" content="" />
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/NSS/logo192.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/NSS/logo128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../assets/NSS/logo128.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../assets/NSS/logo192.png">
 
     <title><?php echo $name ?> - NSS, IIT Bombay</title>
 
@@ -236,11 +242,11 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </li>
                 <li>
                   <a href="https://gymkhana.iitb.ac.in/~nss/tem/history/"
-                    >History of NSS</a
+                    >History of NSS IITB</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/Publicity.php"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/news"
                     >Media Coverage</a
                   >
                 </li>
@@ -626,4 +632,8 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
       });
     });
   </script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Great+Vibes"
+    rel="stylesheet"
+  />
 </html>
