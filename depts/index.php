@@ -24,7 +24,7 @@ else if($dept=='WEB'){
 }
 
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
-$sql="SELECT * FROM department_data WHERE department = '$dept'" ;
+$sql="SELECT * FROM department_data WHERE department = '$dept' ORDER BY orderOnPage " ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
 $sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept' ORDER BY name" ;
 $sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
