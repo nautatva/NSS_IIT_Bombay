@@ -23,6 +23,12 @@ else if($dept=='WEB'){
   $name = "";
 }
 
+if ($dept=='WEB') {
+  $tabname = "Web";
+}
+else {
+  $tabname = $name;
+}
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept' ORDER BY orderOnPage " ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
@@ -45,7 +51,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
     <link rel="apple-touch-icon" sizes="128x128" href="../assets/NSS/logo128.png">
     <link rel="apple-touch-icon" sizes="192x192" href="../assets/NSS/logo192.png">
 
-    <title><?php echo $name ?> - NSS, IIT Bombay</title>
+    <title><?php echo $tabname ?> - NSS, IIT Bombay</title>
 
     <link
       rel="stylesheet"
@@ -111,32 +117,32 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               <ul class="dropdown-menu">
                 <li>
                   <a
-                    class=" EO-nav"
+                    class="EO-nav"
                     href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/"
                     >Educational Outreach</a
                   >
                 </li>
                 <li>
                   <a
-                    class=" GC-nav"
+                    class="GC-nav"
                     href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC/"
                     >Green Campus</a
                   >
                 </li>
                 <li>
                   <a
-                    class=" SSD-nav"
+                    class="SSD-nav"
                     href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
                     >Sustainable Social Development</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/"
+                  <a class="Media-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/"
                     >Media and Design</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
+                  <a class="Web-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
                     >Web</a
                   >
                 </li>
@@ -283,16 +289,10 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               <ul class="dropdown-menu">
                 <!-- Impacting lives -->
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
-                    Invisible Humans of IIT Bombay
-                  </a>
-                </li>
-                <li>
                   <a href="https://gymkhana.iitb.ac.in/~nss/Memoirs.php"
                     >Memoirs</a
                   >
                 </li>
-
                 <li>
                   <a href="https://gymkhana.iitb.ac.in/~nss/reports/17_18/"
                     >Annual Report 2017-18</a
@@ -328,6 +328,11 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                     >Annual Report 2012-13</a
                   >
                 </li>
+                <li>
+                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                    Invisible Humans of IIT Bombay
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -344,17 +349,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                     echo('
  
     <header id="welcome" class="scrollify full" style="background-image:url('.$department['main_image'].')">');
-    if ($dept=='Media') {
-      echo('
-      <video autoplay="" muted="" loop="" id="myVideo" style="
-      width: 100%;
-      position: absolute;
-      height: 100%;
-      left: 0;
-      top: 0
-        "> <source src="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/main.mp4" type="video/mp4">
-      </video>');
-     }
+   
      echo('
     <div class="container">
       <div class="intro-text">
@@ -391,6 +386,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                     $a = "";
                     $i=0;
                         while( $row = mysqli_fetch_assoc( $result ) ){
+                          if ($row['orderOnPage']!=0) {
                             $i = $i+1;
                             echo('<div class="portfolio-item">
             <a
@@ -451,7 +447,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               </div>
             </div>
           </div>
-          '; } ?>
+          '; }} ?>
           <!-- portfolio item closed -->
         </div>
       </div>

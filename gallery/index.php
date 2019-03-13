@@ -116,116 +116,93 @@
             </li>
           </ul>
         </div>
-        <div class="mbr-gallery-row-main"></div>
-        <?php
-        $parentdir = "../assets/gallery/EO/";
-        $EOfolders = scandir($parentdir);
+        <div>
+          <?php
+        $parentdirs = ["../assets/gallery/EO/","../assets/gallery/GC/","../assets/gallery/SSD/"]; 
         $i=0;
+        foreach ($parentdirs as $parentdir) {
+          
+        $EOfolders = scandir($parentdir);
+       
         foreach ($EOfolders as $folder) {
             if ($folder[0] == "."){
                 continue;
             }
             $dir = $parentdir.$folder.'/';
-            echo('<h2>'.$folder.'</h2>');
             $subfolder = scandir($dir);
             echo('
-        <div>
-          <div class="mbr-gallery-row container">
-            <div class=" mbr-gallery-layout-default">
-              <div>
-                <div>
                   <div
                     class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1"
                     data-tags="Green Campus"
                     data-video-url="false"
                   >
-                    <div
-                      href="#lb-Gallery-gallery3-'.$i.'"
-                      data-slide-to="0"
-                      data-toggle="modal"
-                    >
-                      <img
-                        alt=""
-                        src="'.$dir.$subfolder[2].'"
-                      />
-
-                      <span class="icon-focus"></span>
-                      <span class="mbr-gallery-title"
-                        >'.$folder.'</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </div>
-          
           <div
-            data-app-prevent-settings=""
-            class="mbr-slider modal fade carousel slide"
-            tabindex="-1"
-            data-keyboard="true"
-            data-interval="false"
-            id="lb-Gallery-gallery3-'.$i.'"
+            href="#lb-Gallery-gallery3-'.$i.'"
+            data-slide-to="0"
+            data-toggle="modal"
           >
-            <div class="modal-dialog">
-              <div class="moda l-content">
-                <div class="modal-body">
-                  <div class="carousel-inner">
-                  ');
-                  $j = 0;
-                  foreach($subfolder as $myimg){
-                      if($myimg[0] == "."){
-                          continue;
-                      }
-                      $imgdir = $dir.$myimg;
-                      if($j==0){
-                        echo('<div class="carousel-item active">
-                        <img alt="Helloji" src="'.$imgdir.'" />
-                              </div>');
-                        $j+=1;
-                      }
-                      else{
-                      echo('<div class="carousel-item">
-                      <img alt="Helloji" src="'.$imgdir.'" />
-                            </div>'
-                );
-                $j+=1;}
-            };
-                echo('
-                  </div>
-                  <a
-                    class="left carousel-control"
-                    role="button"
-                    data-slide="prev"
-                    href="#lb-Gallery-gallery3-'.$i.'"
-                  >
-                    <span class="icon-prev" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a
-                    class="right carousel-control"
-                    role="button"
-                    data-slide="next"
-                    href="#lb-Gallery-gallery3-'.$i.'"
-                  >
-                    <span class="icon-next" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+            <img alt="" src="'.$dir.$subfolder[2].'" />
 
-                  <a class="close" href="#" role="button" data-dismiss="modal">
-                    <span aria-hidden="true">×</span>
-                    <span class="sr-only">Close</span>
-                  </a>
+            <span class="icon-focus"></span>
+            <span class="mbr-gallery-title">'.$folder.'</span>
+          </div>
+        </div>
+
+        <div
+          data-app-prevent-settings=""
+          class="mbr-slider modal fade carousel slide"
+          tabindex="-1"
+          data-keyboard="true"
+          data-interval="false"
+          id="lb-Gallery-gallery3-'.$i.'"
+        >
+          <div class="modal-dialog">
+            <div class="moda l-content">
+              <div class="modal-body">
+                <div class="carousel-inner">
+                  '); $j = 0; foreach($subfolder as $myimg){ if($myimg[0] ==
+                  "."){ continue; } $imgdir = $dir.$myimg; if($j==0){ echo('
+                  <div class="carousel-item active" style="height: 100vh;">
+                    <img alt="NSS IIT Bombay picture collection" src="'.$imgdir.'" />
+                  </div>
+                  '); $j+=1; } else{ echo('
+                  <div class="carousel-item">
+                    <img alt="NSS IIT Bombay picture collection" src="'.$imgdir.'" />
+                  </div>
+                  ' ); $j+=1;} }; echo('
                 </div>
+                <a
+                  class="left carousel-control"
+                  role="button"
+                  data-slide="prev"
+                  href="#lb-Gallery-gallery3-'.$i.'"
+                >
+                  <span class="icon-prev" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="right carousel-control"
+                  role="button"
+                  data-slide="next"
+                  href="#lb-Gallery-gallery3-'.$i.'"
+                >
+                  <span class="icon-next" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+
+                <a class="close" href="#" role="button" data-dismiss="modal">
+                  <span aria-hidden="true">×</span>
+                  <span class="sr-only">Close</span>
+                </a>
               </div>
             </div>
           </div>
-        </div>');
-        $i = $i+1;
-        };
-    ?>
+        </div>
+        '); 
+        $i = $i+1; }; 
+                  }
+
+        ?>
       </div>
     </section>
     <footer
@@ -275,11 +252,9 @@
         <p class="text-xs-center">Copyright (c) 2017 NSS IIT Bombay</p>
       </div>
     </footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script src="./js/tether.min.js"></script>
+    <script src="./js/script.js"></script>
+
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/script.min.js"></script>
 
     <script src="./mobirise-gallery/script.js"></script>
 
@@ -288,4 +263,6 @@
       <a style="text-align: center;"><i class="mbr-arrow-up-icon"></i></a>
     </div>
   </body>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
+  <script src="./js/tether.min.js"></script>
 </html>

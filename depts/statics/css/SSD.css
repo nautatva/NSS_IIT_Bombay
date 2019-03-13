@@ -158,7 +158,8 @@ ul.social-buttons li a:active {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-.copyright {
+.copyright,
+.quicklinks a {
   color: #67acf0;
 }
 .SSD {
