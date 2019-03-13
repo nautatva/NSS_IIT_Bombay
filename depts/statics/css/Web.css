@@ -1,22 +1,22 @@
 header {
-  background-color: #fed136;
+  background-color: #ae00ff;
 }
 a {
-  color: #fed136;
+  color: #650194;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #7605aa;
 }
 .text-primary {
-  color: #fed136;
+  color: #650194;
 }
 .btn-primary {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #650194;
+  border-color: #650194;
 
   text-transform: uppercase;
   font-weight: 700;
@@ -27,8 +27,8 @@ a.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #7605aa;
+  border-color: #7645aa;
 }
 
 .btn-primary.disabled,
@@ -46,17 +46,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #650194;
+  border-color: #650194;
 }
 .btn-primary .badge {
-  color: #fed136;
+  color: #650194;
   background-color: white;
 }
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #650194;
+  border-color: #650194;
 
   text-transform: uppercase;
   font-weight: 700;
@@ -70,8 +70,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: #7605aa;
+  border-color: #7645aa;
 }
 .btn-xl.disabled,
 .btn-xl[disabled],
@@ -88,25 +88,25 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #650194;
+  border-color: #650194;
 }
 .btn-xl .badge {
-  color: #fed136;
+  color: #650194;
   background-color: white;
 }
 .navbar-custom .navbar-brand {
-  color: #fed136;
+  color: #650194;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #fec503;
+  color: #7605aa;
 }
 .navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #650194;
+  border-color: #650194;
 
   text-transform: uppercase;
   color: white;
@@ -114,42 +114,42 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: #650194;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #fed136;
+  color: #e1a1ff;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #fed136;
+  background-color: #650194;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: #7605aa;
 }
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #650194;
   box-shadow: none;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #650194;
 }
 ::-moz-selection {
   text-shadow: none;
-  background: #fed136;
+  background: #650194;
 }
 ::selection {
   text-shadow: none;
-  background: #fed136;
+  background: #650194;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(116, 2, 145, 0.64);
   position: absolute;
   width: 100%;
   height: 43%;
@@ -160,25 +160,24 @@ ul.social-buttons li a:active {
 }
 .copyright,
 .quicklinks a {
-  color: #ffa500;
+  color: #7700ff;
 }
 
-.EO {
-  /* background-color: bisque; */
+.Web {
   background: -webkit-linear-gradient(
-    137deg,
-    rgb(246, 147, 98),
-    rgb(250, 248, 112)
+    90deg,
+    rgb(105, 22, 237),
+    rgb(35, 20, 90)
   );
-  background: linear-gradient(137deg, rgb(246, 147, 98), rgb(250, 248, 112));
+  background: linear-gradient(90deg, rgb(105, 22, 237), rgb(35, 20, 90));
 }
 
 .department-color {
-  color: #984408;
+  color: #7700ff;
 }
 .lead a:hover {
-  color: #ffc031;
+  color: #7700ff;
 }
 .dropdown-menu {
-  background: #ecbb0f;
+  background: #5e0fec;
 }

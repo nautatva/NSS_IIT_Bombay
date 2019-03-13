@@ -13,6 +13,8 @@
 
 .carousel-inner .active img {
   object-fit: cover;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 .container,
@@ -1262,7 +1264,7 @@ input:-webkit-autofill:hover {
 .mbr-gallery .mbr-gallery-item {
   position: relative;
   display: inline-block;
-  width: 25%;
+  width: 23%;
 }
 
 @media (max-width: 768px) {
@@ -1424,7 +1426,7 @@ input:-webkit-autofill:hover {
 
 .mbr-gallery .modal-body img,
 .mbr-slider > .container img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .mbr-gallery .modal .close {
@@ -1488,6 +1490,9 @@ input:-webkit-autofill:hover {
   -ms-transform: none;
   -o-transform: none;
   transform: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .mbr-slider .carousel-inner > .active,

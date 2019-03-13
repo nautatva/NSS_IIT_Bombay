@@ -220,24 +220,24 @@
                 $currentImg = $modalDialog.find('.carousel-item.prev > img, .carousel-item.next > img').eq(0);
             }
 
-            var lbW = $currentImg[0].naturalWidth;
-            var lbH = $currentImg[0].naturalHeight;
+            // var lbW = $currentImg[0].naturalWidth;
+            // var lbH = $currentImg[0].naturalHeight;
 
             // height change
-            if (wndW / wndH > lbW / lbH) {
-                var needH = wndH - bottomPadding * 2;
-                setWidth = needH * lbW / lbH;
-            }
+            // if (wndW / wndH > lbW / lbH) {
+            //     var needH = wndH - bottomPadding * 2;
+            //     setWidth = needH * lbW / lbH;
+            // }
 
-            // width change
-            else {
-                setWidth = wndW - bottomPadding * 2;
-            }
-            // check for maw width
-            setWidth = setWidth >= lbW ? lbW : setWidth;
+            // // width change
+            // else {
+            //     setWidth = wndW - bottomPadding * 2;
+            // }
+            // // check for maw width
+            // setWidth = setWidth >= lbW ? lbW : setWidth;
 
-            // set top to vertical center
-            setTop = (wndH - setWidth * lbH / lbW) / 2;
+            // // set top to vertical center
+            // setTop = (wndH - setWidth * lbH / lbW) / 2;
 
             $modalDialog.css({
                 width: parseInt(setWidth),

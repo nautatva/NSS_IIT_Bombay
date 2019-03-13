@@ -163,7 +163,7 @@ h4 {
   .navbar-custom .nav li a {
     text-align: left;
   }
-  .restrict600{
+  .restrict600 {
     width: 100%;
     padding: 0;
   }
@@ -191,4 +191,10 @@ nav .GC-nav:hover {
 }
 nav .SSD-nav:hover {
   color: #3196ff !important;
+}
+nav .Web-nav:hover {
+  color: #7700ff !important;
+}
+nav .Media-nav:hover {
+  color: #b1422f !important;
 }
