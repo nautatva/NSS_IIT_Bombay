@@ -49,6 +49,7 @@
   margin-bottom: 50px;
   position: relative;
   /* float: left; */
+  padding: 50px;
 }
 
 .slider-callback {
