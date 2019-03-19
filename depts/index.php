@@ -223,7 +223,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/nursery/Nursery"
+                    href="https://gymkhana.iitb.ac.in/~nss/tem/nursery/"
                   >
                    Nursery For All</a
                   >
