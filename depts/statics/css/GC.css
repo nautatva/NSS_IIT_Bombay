@@ -1,4 +1,4 @@
-header{
+header {
   background-color: #48c740;
 }
 a {
@@ -152,7 +152,7 @@ ul.social-buttons li a:active {
   background: rgba(97, 232, 88, 0.9);
   position: absolute;
   width: 100%;
-  height: 43%;
+  height: 225px;
   opacity: 0;
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
@@ -161,12 +161,7 @@ ul.social-buttons li a:active {
 .copyright {
   color: #48c740;
 }
-.GC {
-  background-color: beige;
-}
 
-.department-color {
-}
 .lead a:hover {
   color: #1b9419;
 }

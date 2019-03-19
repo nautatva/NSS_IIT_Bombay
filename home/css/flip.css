@@ -65,13 +65,15 @@
 }
 
 /* checks */
-
 .introTable img {
   object-fit: cover;
   width: 100%;
   height: calc(32vh - 16px);
   object-fit: cover;
   object-position: top;
+}
+.face .correction{
+  object-position: center;
 }
 
 .introTable td {
@@ -82,6 +84,7 @@
   justify-content: center;
   align-items: center;
 }
+
 #introImg {
   width: 53%;
   min-width: 330px;
