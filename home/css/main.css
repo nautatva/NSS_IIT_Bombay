@@ -132,6 +132,7 @@
   justify-content: center;
   align-items: center;
   padding: 75px 0;
+  background-color: #80808045;
   /* background-color: blue;
   background-image: url('../../assets/NSS/NSScandles.jpg'); */
 }
@@ -151,8 +152,8 @@
 }
 #departments .deptButtons a {
   display: inline-block;
-  border: 1px solid #fff;
-  background-color: #fff;
+  /* border: 1px solid #fff;
+  background-color: #fff; */
   text-transform: uppercase;
   font-size: 18px;
   padding: 10px 20px;
