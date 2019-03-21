@@ -23,7 +23,7 @@
   <body>
     <div class="se-pre-con"></div>
 
-    <!-- <?php include("./navbar.php"); ?> -->
+    <?php include("../common/navbar/navbar.php");?>
 
     <section
       class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel"
@@ -163,11 +163,17 @@
                   '); $j = 0; foreach($subfolder as $myimg){ if($myimg[0] ==
                   "."){ continue; } $imgdir = $dir.$myimg; if($j==0){ echo('
                   <div class="carousel-item active" style="height: 100vh;">
-                    <img alt="NSS IIT Bombay picture collection" src="'.$imgdir.'" />
+                    <img
+                      alt="NSS IIT Bombay picture collection"
+                      src="'.$imgdir.'"
+                    />
                   </div>
                   '); $j+=1; } else{ echo('
                   <div class="carousel-item">
-                    <img alt="NSS IIT Bombay picture collection" src="'.$imgdir.'" />
+                    <img
+                      alt="NSS IIT Bombay picture collection"
+                      src="'.$imgdir.'"
+                    />
                   </div>
                   ' ); $j+=1;} }; echo('
                 </div>
@@ -198,60 +204,10 @@
             </div>
           </div>
         </div>
-        '); 
-        $i = $i+1; }; 
-                  }
-
-        ?>
+        '); $i = $i+1; }; } ?>
       </div>
     </section>
-    <footer
-      class="mbr-small-footer mbr-section mbr-section-nopadding"
-      id="page2-footer1-0"
-      style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-xs-center">
-            <div>
-              <a
-                class="btn btn-social"
-                title="Twitter"
-                target="_blank"
-                href="https://twitter.com/nss_iitb"
-                ><i class="socicon socicon-twitter"></i
-              ></a>
-              <a
-                class="btn btn-social"
-                title="Facebook"
-                target="_blank"
-                href="https://www.facebook.com/nssiitbombay?fref=ts"
-                ><i class="socicon socicon-facebook"></i
-              ></a>
-              <a
-                class="btn btn-social"
-                title="YouTube"
-                target="_blank"
-                href="https://www.youtube.com/channel/UCPtcaL4JLfIq2fUGORmn6Yg"
-                ><i class="socicon socicon-youtube"></i
-              ></a>
-              <a
-                class="btn btn-social"
-                title="WordPress"
-                target="_blank"
-                href="https://nssiitbblog.wordpress.com/"
-                ><span
-                  class="socicon socicon-wordpress mbr-iconfont mbr-iconfont-btn"
-                ></span
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <p class="text-xs-center">Copyright (c) 2017 NSS IIT Bombay</p>
-      </div>
-    </footer>
+    <?php include("../common/footer/footer.php");?>
     <script src="./js/script.js"></script>
 
     <script src="./js/bootstrap.min.js"></script>
@@ -265,4 +221,8 @@
   </body>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
   <script src="./js/tether.min.js"></script>
+  <script>
+    includeNav();
+    includeHTML();
+  </script>
 </html>

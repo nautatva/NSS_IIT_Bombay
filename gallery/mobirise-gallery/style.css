@@ -63,7 +63,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 150px;
   background: -webkit-linear-gradient(left, #554346, #45505b) !important;
   background: -moz-linear-gradient(left, #554346, #45505b) !important;
   background: -o-linear-gradient(left, #554346, #45505b) !important;
@@ -146,6 +146,7 @@
 
 .mbr-gallery-item> div {
   position: relative;
+  height: 150px;
 }
 
 .mbr-gallery-item--p1 {

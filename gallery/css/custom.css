@@ -1281,6 +1281,8 @@ input:-webkit-autofill:hover {
 
 .mbr-gallery .mbr-gallery-item img {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
   opacity: 1;
   -webkit-transition: 0.2s opacity ease-in-out;
   transition: 0.2s opacity ease-in-out;
