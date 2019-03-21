@@ -400,7 +400,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </div>
               </div>
               <img
-                src="' . $row['thumbnail'] . '"
+                src="' . $row['thumbnail']. '"
                 class="img-responsive"
                 alt=""
               />
@@ -430,8 +430,12 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                         <!-- Project Details Go Here -->
                         <h2>' . $row['initiative'] . '</h2>
                         <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                        <img class="img-responsive img-centered" src='.
-                        $row['thumbnail'] .' alt="">
+                        '.($row['initiative']!="Video Making"?"<img":"<video width='80%' autoplay='autoplay' controls='controls'><source type='video/mp4'").'
+                         class="img-responsive img-centered" src='.
+                        ($row['gif'] ? $row['gif'] : $row['thumbnail']) .' alt="">
+                        
+                       '. ($row['initiative']!="Video Making"?"":"</source></video>").'
+                        
                         <p>' . $row['des_long'] . '</p>
                         <button
                           type="button"

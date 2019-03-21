@@ -2801,7 +2801,3 @@ html.is-builder :not([data-app-remove-it]).card-text + .card-btn {
   text-align: center;
   padding: 0;
 }
-
-a{
-  color: white;
-}
