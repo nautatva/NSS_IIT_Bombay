@@ -24,7 +24,8 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     <link rel="stylesheet" href="./fontello/icon.css" />
   </head>
 
-  <body>
+  <body style="background-image: url('./1.jpg');">
+    <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php");?>
     <link rel="stylesheet" href="./css/team.css" />
     <h1 class="title">

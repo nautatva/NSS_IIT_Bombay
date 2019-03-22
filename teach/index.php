@@ -3,6 +3,7 @@
   <head>
    
     <title>Let's teach!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
       body {
         font-family: 'Open Sans', sans-serif;
@@ -68,6 +69,7 @@
   </head>
 
   <body>
+  <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php");?>
     <section class="portal">
       <div>
