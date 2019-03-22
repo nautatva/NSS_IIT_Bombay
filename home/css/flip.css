@@ -72,7 +72,7 @@
   object-fit: cover;
   object-position: top;
 }
-.face .correction{
+.face .correction {
   object-position: center;
 }
 
@@ -110,5 +110,11 @@
   }
   .main {
     justify-content: center;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+  #introImg {
+    width: 39%;
+    min-width: 250px;
   }
 }

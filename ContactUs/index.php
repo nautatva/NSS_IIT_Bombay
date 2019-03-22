@@ -51,7 +51,7 @@
 
 <body>
     <div class="se-pre-con"></div>
-    
+    <script src="../common/jquery.min.js"></script>
 <?php include("../common/navbar/navbar.php"); ?>
 
     <section class="engine"><a rel="external" href="https://mobirise.com">best bootstrap website building software</a></section>

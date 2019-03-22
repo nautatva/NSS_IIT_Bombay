@@ -125,6 +125,7 @@ header .intro-text .intro-heading {
   margin-bottom: 25px;
   font-family: 'Great Vibes', cursive;
   letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 @media (min-width: 768px) {
   header .intro-text {

@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="./et-line-font-plugin/style.css" />
 
     <link rel="stylesheet" href="./mobirise-gallery/style.css" />
-
-    <script src="./js/jquery.min.js"></script>
+    <script src="./jquery-2.2.4.min.js"></script>
+    <!-- <script src="./js/jquery.min.js"></script> -->
   </head>
   <body>
     <div class="se-pre-con"></div>
@@ -220,6 +220,7 @@
     </div>
   </body>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
+
   <script src="./js/tether.min.js"></script>
   <script>
     includeNav();
