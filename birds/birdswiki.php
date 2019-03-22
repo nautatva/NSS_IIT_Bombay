@@ -199,6 +199,11 @@ $string = str_replace(' ', '', $page);
     includeHTML();
   </script>
 
+  <script>
+    includeNav();
+    includeHTML();
+  </script>
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
         </section>
         <!-- font awesome -->
