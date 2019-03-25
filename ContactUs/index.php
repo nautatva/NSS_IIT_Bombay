@@ -15,25 +15,14 @@
     <link rel="stylesheet" href="assets/tether/tether.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
-    <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+    <!-- <link rel="stylesheet" href="assets/animate.css/animate.min.css"> -->
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-72569683-5', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+ 
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -50,9 +39,8 @@
 </head>
 
 <body>
-    <div class="se-pre-con"></div>
-    <script src="../common/jquery.min.js"></script>
-<?php include("../common/navbar/navbar.php"); ?>
+  
+  <?php include("../common/navbar/navbar.php"); ?>
 
     <section class="engine"><a rel="external" href="https://mobirise.com">best bootstrap website building software</a></section>
     <section class="mbr-section mbr-after-navbar" id="index-form1-0" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
@@ -131,7 +119,6 @@
 
     <?php include("../common/footer/footer.php");?>
 
-    <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/tether/tether.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/smooth-scroll/SmoothScroll.js"></script>
