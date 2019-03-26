@@ -217,7 +217,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/cloth-donation/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/donation/"
                     >Make a Donation</a
                   >
                 </li>
