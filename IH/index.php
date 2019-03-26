@@ -40,7 +40,7 @@
     </section>
 <?php
 $file = fopen("invisiblehumans.txt","r");
-for ($i=1; $i <= 45; $i++) {
+for ($i=1; $i <= 46; $i++) {
 $line = fgets($file);
 $img = "<div class='mbr-table-cell mbr-valign-top col-md-6'>
 <div class='mbr-figure'><img src='../assets/InvisibleHumans/$i.jpg' alt='Invisible Humans'></div>
