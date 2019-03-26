@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Let's teach!</title>
+    <title>Cloth-donation Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/portals/style.css" />
   </head>
@@ -12,10 +12,11 @@
     <section class="portal">
       <div>
         <img class="mainImg" src="./main.jpg" />
+
         <div class="mainPortal">
           <div class="more">
             <p>
-              Hi there!
+              Hi there! What's in your mind...
             </p>
             <a href="../home/">Go to homepage</a>
           </div>
@@ -63,13 +64,12 @@
       </div>
     </section>
     <?php include("../common/footer/footer.php");?>
-
     <?php
 function test(){
 include('../dbconfig.php');
 $sql="SELECT * FROM QueryPortalNOCS WHERE mostcommonname='$page'" ;
 $ldap = $_POST["ldap"];
-$req = 'Teach';
+$req = 'Cloth Donation Portal';
 $qry = $_POST["query"];
 $sql = "INSERT INTO `QueryPortalNOCS` (ID, `LDAPID`, `Request Type`, `Query`) 
         VALUES (NULL, '$ldap','$req', '$qry' )";
