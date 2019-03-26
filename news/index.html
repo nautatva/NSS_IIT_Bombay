@@ -20,15 +20,17 @@
     <script>
       $(document).ready(function() {
         //your code for stuff should go here
-        $('#Fullscreen').css('height', $(document).outerWidth() + 'px');
+        // $('#Fullscreen').css('height', $(document).outerHeight() - 100 + 'px');
         //for when you click on an image
         $('.myImg').click(function() {
           var src = $(this).attr('src'); //get the source attribute of the clicked image
           $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
           $('#Fullscreen').fadeIn();
+          $('#navHide').fadeOut();
         });
         $('#Fullscreen').click(function() {
           $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image.
+          $('#navHide').fadeIn();
         });
       });
     </script>
@@ -54,7 +56,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <div w3-include-nav="../common/navbar/navbar.html"></div>
+    <div w3-include-nav="../common/navbar/navbar.html" id="navHide"></div>
 
     <section
       class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel"
