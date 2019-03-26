@@ -329,7 +329,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/IH">
                     Invisible Humans of IIT Bombay
                   </a>
                 </li>
@@ -479,7 +479,12 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                       echo('
                       <tr>
                 <td>
-                  <span class="name-contact"><li>'.$name.'</li></span>
+                  <span class="name-contact"><ul style="
+                  padding: 0;
+              "><li style="
+                  list-style-position: outside;
+                  margin-left: 1em;
+                  ">'.$name.'</li></ul></span>
                 </td>
                 <td>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
@@ -492,7 +497,41 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </td>
                 </li> 
                 </tr>
-                '); $head = mysqli_fetch_assoc( $heads ); } ?>
+                '); $head = mysqli_fetch_assoc( $heads ); } 
+
+                if ($dept=='SSD') {
+                  //NIC
+                  $sql2="SELECT * FROM Coreteam1819 WHERE dept = 'NIC' ORDER BY name" ;
+                  $heads = $conn->query($sql2); 
+                  $head = mysqli_fetch_assoc( $heads );
+                  while ($head) {
+                    $name=$head['name'];
+      $contact=$head['contact'];
+                    echo('
+                    <tr>
+              <td>
+                <span class="name-contact"><ul style="
+                padding: 0;
+            "><li style="
+                list-style-position: outside;
+                margin-left: 1em;
+                ">'.$name.'</li></ul></span>
+              </td>
+              <td>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                &nbsp; &nbsp; &nbsp;
+              </td>
+              <td>
+                <span class="name-contact"
+                  ><a href="tel: +91-$contact">'.$contact.'</a></span
+                >
+              </td>
+              </li> 
+              </tr>
+              '); $head = mysqli_fetch_assoc( $heads ); } 
+                }
+                
+                ?>
               </table>
             </div>
 
@@ -508,7 +547,12 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
         (
           '<tr>
                 <td>
-                  <span class="name-contact"><li>'.$name.'</li></span>
+                  <span class="name-contact"><ul style="
+                  padding: 0;
+              "><li style="
+                  list-style-position: outside;
+                  margin-left: 1em;
+                  ">'.$name.'</li></ul></span>
                 </td>
                 <td>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
@@ -521,7 +565,41 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </td>
                 </li> 
                 </tr>
-                ' ); $aa = mysqli_fetch_assoc( $AAs ); } ?>
+                ' ); $aa = mysqli_fetch_assoc( $AAs ); }
+                
+                if ($dept=='SSD') {
+                  //NIC
+                  $sql3="SELECT * FROM AA1819 WHERE dept = 'NIC' ORDER BY name" ;
+                  $AAs = $conn->query($sql3);
+                  $aa = mysqli_fetch_assoc( $AAs );
+                        while ($aa) {
+        $name=$aa['name'];
+        $contact=$aa['contact'];
+        echo
+        (
+          '<tr>
+                <td>
+                  <span class="name-contact"><ul style="
+                  padding: 0;
+              "><li style="
+                  list-style-position: outside;
+                  margin-left: 1em;
+                  ">'.$name.'</li></ul></span>
+                </td>
+                <td>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                </td>
+                <td>
+                  <span class="name-contact"
+                    ><a href="tel: +91-$contact">'.$contact.'</a></span
+                  >
+                </td>
+                </li> 
+                </tr>
+                ' ); $aa = mysqli_fetch_assoc( $AAs ); } 
+                }
+                ?>
               </table>
             </div>
           </div>

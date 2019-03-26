@@ -86,8 +86,17 @@
 }
 .card .wrapper:hover .content {
   -webkit-transform: translateY(-80%);
-  transform: translateY(calc(-100% + 100px));
+  transform: translateY(calc(-100% + 4em));
   transition: all 0.5s ease;
+}
+.card .line1 {
+  transform: translateY(calc(4px + 10em));
+}
+.card .line2 {
+  transform: translateY(calc(4px + 8em));
+}
+.card .line3 {
+  transform: translateY(calc(4px + 6em));
 }
 .card .data {
   position: absolute;
@@ -96,6 +105,7 @@
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
 }
+
 .card .data .content {
   padding: 1em;
   position: relative;
@@ -110,6 +120,7 @@
 }
 .card .title {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .card .text {
   margin: 0;
@@ -155,8 +166,6 @@
 }
 .card .data {
   color: #fff;
-  -webkit-transform: translateY(calc(70px + 4em));
-  transform: translateY(calc(70px + 4em));
 }
 .card .title a {
   color: #fff;
@@ -198,7 +207,13 @@
   .card .cardimg img {
     width: 320px;
   }
-  .card .data {
-    transform: translateY(calc(10px + 4em));
+  .card .line1 {
+    transform: translateY(calc(4px + 7em));
+  }
+  .card .line2 {
+    transform: translateY(calc(4px + 5em));
+  }
+  .card .line3 {
+    transform: translateY(calc(4px + 3em));
   }
 }
