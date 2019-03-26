@@ -90,13 +90,12 @@
   transition: all 0.5s ease;
 }
 .card .line1 {
-  transform: translateY(calc(4px + 10em));
+  transform: translateY(calc(2em));
 }
 .card .line2 {
-  transform: translateY(calc(4px + 8em));
 }
 .card .line3 {
-  transform: translateY(calc(4px + 6em));
+  transform: translateY(calc(-2em));
 }
 .card .data {
   position: absolute;
@@ -104,6 +103,7 @@
   width: 100%;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transform: translateY(calc(4px + 8em));
 }
 
 .card .data .content {
