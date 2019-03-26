@@ -27,7 +27,7 @@
                 <input
                   style="border: 1px solid #888888"
                   type="text"
-                  name="ldap"
+                  name="name"
                 />
               </div>
               <div>
@@ -35,7 +35,7 @@
                 <input
                   style="border: 1px solid #888888"
                   type="text"
-                  name="ldap"
+                  name="contact"
                   placeholder="Preferably whatsapp"
                 />
               </div>
@@ -44,7 +44,7 @@
                 <input
                   style="border: 1px solid #888888"
                   type="text"
-                  name="ldap"
+                  name="email"
                 />
               </div>
               <div>
@@ -52,11 +52,12 @@
                 <textarea
                   maxlength="300"
                   style="height:70px;border: 1px solid #888888;"
-                  name="query"
+                  name="description"
                   id="query"
                   placeholder="Any specifics interests?"
                 ></textarea>
               </div>
+              <input type="submit">
             </form>
           </div>
         </div>
@@ -67,12 +68,12 @@
     <?php
 function test(){
 include('../dbconfig.php');
-$sql="SELECT * FROM QueryPortalNOCS WHERE mostcommonname='$page'" ;
-$ldap = $_POST["ldap"];
-$req = 'Teach';
-$qry = $_POST["query"];
-$sql = "INSERT INTO `QueryPortalNOCS` (ID, `LDAPID`, `Request Type`, `Query`) 
-        VALUES (NULL, '$ldap','$req', '$qry' )";
+$name = $_POST["name"];
+$contact = $_POST["contact"];
+$email = $_POST["email"];
+$description= $_POST["description"];
+$sql = "INSERT INTO `portalTeach` (ID, `name`, `contact`, `email`,`description`) 
+        VALUES (NULL, '$name','$contact', '$email', '$description' )";
 
 $res=$conn->query($sql); if ($res === TRUE) { echo "New request created
     successfully"; } else { echo "Error"; } $conn->close(); }
