@@ -175,6 +175,11 @@ footer p.footer-links a {
   border-radius: 3px;
   transition: all 0.5s 0.3s ease;
 }
+@media (max-width: 800px) {
+  #footer-icons .slider {
+    display: none;
+  }
+}
 
 #footer-icons .slider p {
   display: none;

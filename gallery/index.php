@@ -24,12 +24,15 @@
     <div class="se-pre-con"></div>
 
     <?php include("../common/navbar/navbar.php");?>
-
     <section
-      class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel"
-      id="Gallery-gallery3-0"
+      class="mbr-gallery"
+      
       data-filter="false"
-      style="background-image: url(./vood.jpg) ; padding-top: 1.5rem; padding-bottom: 1.5rem;display:inline-items;"
+      style="background-image: url(./bg.jpg) ;background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ padding-top: 1.5rem; padding-bottom: 1.5rem;display:inline-items;"
     >
       <div
         class="container"

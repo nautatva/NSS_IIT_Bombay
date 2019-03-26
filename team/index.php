@@ -24,7 +24,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     <link rel="stylesheet" href="./fontello/icon.css" />
   </head>
 
-  <body style="background-image: url('./1.jpg');">
+  <body style="background-image: url('./bg.jpg');">
     <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php");?>
     <link rel="stylesheet" href="./css/team.css" />
@@ -51,10 +51,10 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
               <a href="'.$details['fb'].'">
                 <i class="icon" aria-hidden="true">&#xf09a;</i>
               </a>
-              <a href="'.$details['contact'].'">
+              <a href="tel:'.$details['contact'].'">
                 <i class="icon" aria-hidden="true">&#xe801;</i>
               </a>
-              <a href="'.$details['email'].'">
+              <a href="mailto:'.$details['email'].'">
                 <i class="icon" aria-hidden="true">&#xe800;</i>
               </a>
             </div>
