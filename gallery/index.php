@@ -26,7 +26,6 @@
     <?php include("../common/navbar/navbar.php");?>
     <section
       class="mbr-gallery"
-      
       data-filter="false"
       style="background-image: url(./bg.jpg) ;background-attachment: fixed;
   background-position: center;
@@ -41,21 +40,14 @@
       >
         <div class="row">
           <div class="col-xs-12">
-            <h3 class="mbr-section-title display-2">Gallery</h3>
-          </div>
-          <div class="row" style="margin-right: 30px; margin-left: 30px;">
-            <div class="col-xs-12 col-md-6">
-              <h4>
-                <a href="./Memoirs.html" style="color: #202020; ">Memoirs</a>
-              </h4>
-            </div>
-            <div class="col-xs-12 col-md-6" style="text-align: right;">
-              <h4>
-                <a href="./HoIITB.html" target="_blank" style="color: #202020; "
-                  >Invisible Humans of IIT Bombay</a
-                >
-              </h4>
-            </div>
+            <h3
+              class="mbr-section-title display-2"
+              style="
+    text-align: center;
+"
+            >
+              Gallery
+            </h3>
           </div>
         </div>
 
