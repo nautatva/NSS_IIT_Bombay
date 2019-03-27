@@ -3,8 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+       <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Memoirs NSS IIT Bombay</title>
     <style>
       body {
         margin: 2rem;

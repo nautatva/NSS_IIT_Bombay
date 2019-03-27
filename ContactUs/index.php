@@ -7,9 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Contact Us</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/images/147455559147662-1-128x128-55.png" type="image/x-icon">
-    <meta name="description" content="">
+
     <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
     <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
     <link rel="stylesheet" href="assets/tether/tether.min.css">
@@ -23,6 +45,12 @@
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
  
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/NSS/logo192.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/NSS/logo128.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../assets/NSS/logo128.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../assets/NSS/logo192.png">
+
 
     <script>
         (function (i, s, o, g, r, a, m) {

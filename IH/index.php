@@ -6,7 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Mobirise v3.6.4, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+ <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/images/147455559147662-1-128x128-55.png" type="image/x-icon">
     <meta name="description" content="President">
     <title>Invisible Humans of IIT Bombay</title>

@@ -2,7 +2,29 @@
 <html lang="en">
   <head>
     <title>Let's teach!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/portals/style.css" />
   </head>
 
