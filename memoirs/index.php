@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       <link
+    <link
       rel="icon"
       type="image/png"
       sizes="192x192"
@@ -26,8 +26,8 @@
       href="../assets/NSS/logo192.png"
     />
 
- <meta name="viewport" content="width=device-width, initial-scale=1" />
- <title>Memoirs NSS IIT Bombay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memoirs NSS IIT Bombay</title>
     <style>
       body {
         margin: 2rem;
@@ -46,9 +46,9 @@
         transform: scaleY(-1);
       }
     </style>
+    <script src="../common/jquery.min.js"></script>
   </head>
   <body>
-    <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php"); ?>
 
     <link rel="stylesheet" href="./carousal.css" />

@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>Cloth-donation Portal</title>
-       <link
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
       rel="icon"
       type="image/png"
       sizes="192x192"
@@ -24,12 +25,11 @@
       sizes="192x192"
       href="../assets/NSS/logo192.png"
     />
- <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/portals/style.css" />
+    <script src="../common/jquery.min.js"></script>
   </head>
 
   <body>
-    <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php");?>
     <section class="portal">
       <div>
@@ -78,7 +78,7 @@
                   name="date"
                 />
               </div>
-              <input type="submit">
+              <input type="submit" />
             </form>
           </div>
         </div>

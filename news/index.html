@@ -39,25 +39,7 @@
     <link rel="stylesheet" href="./assets/custom.css" />
 
     <link rel="stylesheet" href="./assets/style.css" />
-    <script src="../common/jquery.min.js"></script>
-    <script src="../common/common.js"></script>
-    <script>
-      $(document).ready(function() {
-        //your code for stuff should go here
-        // $('#Fullscreen').css('height', $(document).outerHeight() - 100 + 'px');
-        //for when you click on an image
-        $('.myImg').click(function() {
-          var src = $(this).attr('src'); //get the source attribute of the clicked image
-          $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
-          $('#Fullscreen').fadeIn();
-          $('#navHide').fadeOut();
-        });
-        $('#Fullscreen').click(function() {
-          $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image.
-          $('#navHide').fadeIn();
-        });
-      });
-    </script>
+
     <style>
       #Fullscreen {
         width: 100%;
@@ -77,6 +59,7 @@
         margin: 0 auto;
       }
     </style>
+    <script src="../common/jquery.min.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -339,7 +322,22 @@
     <!-- footer -->
     <div w3-include-html="../common/footer/footer.html"></div>
   </body>
-
+  <script src="../common/common.js"></script>
+  <script>
+    $(document).ready(function() {
+      //for when you click on an image
+      $('.myImg').click(function() {
+        var src = $(this).attr('src'); //get the source attribute of the clicked image
+        $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
+        $('#Fullscreen').fadeIn();
+        $('#navHide').fadeOut();
+      });
+      $('#Fullscreen').click(function() {
+        $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image.
+        $('#navHide').fadeIn();
+      });
+    });
+  </script>
   <script>
     includeNav();
     includeHTML();

@@ -18,7 +18,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-       <link
+    <link
       rel="icon"
       type="image/png"
       sizes="192x192"
@@ -40,21 +40,38 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
       sizes="192x192"
       href="../assets/NSS/logo192.png"
     />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Team 2018-19 NSS IIT Bombay</title>
     <!-- <link href="./main.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./fontello/icon.css" />
 
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/NSS/logo192.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="../assets/NSS/logo128.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="../assets/NSS/logo128.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="../assets/NSS/logo192.png">
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <script src="../common/jquery.min.js"></script>
   </head>
 
   <body style="background-image: url('./bg.jpg');">
-    <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php");?>
     <link rel="stylesheet" href="./css/team.css" />
     <h1 class="title">
@@ -63,7 +80,8 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     <?php
     foreach ($mydepts as $q) {
       $code = $q['deptcode'];
-      $sql1 = $conn->query("SELECT * FROM Coreteam WHERE (dept='$code' AND year = '$year') ORDER BY Name "); echo('
+      $sql1 = $conn->query("SELECT * FROM Coreteam WHERE (dept='$code' AND year
+    = '$year') ORDER BY Name "); echo('
     <h1 class="dtitle hideme">'.$q['deptname'].'</h1>
     <div class="card hideme">
       '); while($details = $sql1->fetch_assoc()){ echo('
