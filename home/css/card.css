@@ -90,12 +90,13 @@
   transition: all 0.5s ease;
 }
 .card .line1 {
-  transform: translateY(calc(2em));
+  transform: translateY(calc(4px + 10em)) !important;
 }
 .card .line2 {
+  
 }
 .card .line3 {
-  transform: translateY(calc(-2em));
+  transform: translateY(calc(4px + 6em)) !important;
 }
 .card .data {
   position: absolute;

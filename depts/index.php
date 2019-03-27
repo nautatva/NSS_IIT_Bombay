@@ -463,7 +463,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
         id="EO-content6-1"
         style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;"
       >
-        <div class="container">
+        <!-- <div class="container"> -->
           <div class="text-center">
             <h2 class="section-heading">Meet our team</h2>
           </div>
@@ -479,58 +479,20 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                       echo('
                       <tr>
                 <td>
-                  <span class="name-contact"><ul style="
+                  <ul style="
                   padding: 0;
-              "><li style="
-                  list-style-position: outside;
-                  margin-left: 1em;
-                  ">'.$name.'</li></ul></span>
+              "><li class="name">'.$name.'</li></ul>
                 </td>
                 <td>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                   &nbsp; &nbsp; &nbsp;
                 </td>
-                <td>
-                  <span class="name-contact"
-                    ><a href="tel: +91-$contact">'.$contact.'</a></span
-                  >
+                <td class="contact">
+                  <a href="tel: +91-$contact">'.$contact.'</a>
                 </td>
                 </li> 
                 </tr>
                 '); $head = mysqli_fetch_assoc( $heads ); } 
-
-                if ($dept=='SSD') {
-                  //NIC
-                  $sql2="SELECT * FROM Coreteam1819 WHERE dept = 'NIC' ORDER BY name" ;
-                  $heads = $conn->query($sql2); 
-                  $head = mysqli_fetch_assoc( $heads );
-                  while ($head) {
-                    $name=$head['name'];
-      $contact=$head['contact'];
-                    echo('
-                    <tr>
-              <td>
-                <span class="name-contact"><ul style="
-                padding: 0;
-            "><li style="
-                list-style-position: outside;
-                margin-left: 1em;
-                ">'.$name.'</li></ul></span>
-              </td>
-              <td>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                &nbsp; &nbsp; &nbsp;
-              </td>
-              <td>
-                <span class="name-contact"
-                  ><a href="tel: +91-$contact">'.$contact.'</a></span
-                >
-              </td>
-              </li> 
-              </tr>
-              '); $head = mysqli_fetch_assoc( $heads ); } 
-                }
-                
                 ?>
               </table>
             </div>
@@ -547,63 +509,93 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
         (
           '<tr>
                 <td>
-                  <span class="name-contact"><ul style="
+                <ul style="
                   padding: 0;
-              "><li style="
-                  list-style-position: outside;
-                  margin-left: 1em;
-                  ">'.$name.'</li></ul></span>
+              "><li class="name">'.$name.'</li></ul>
                 </td>
                 <td>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                   &nbsp; &nbsp; &nbsp;
                 </td>
-                <td>
-                  <span class="name-contact"
-                    ><a href="tel: +91-$contact">'.$contact.'</a></span
-                  >
+                <td class="contact">
+                  <a href="tel: +91-$contact">'.$contact.'</a>
                 </td>
                 </li> 
                 </tr>
                 ' ); $aa = mysqli_fetch_assoc( $AAs ); }
                 
-                if ($dept=='SSD') {
-                  //NIC
-                  $sql3="SELECT * FROM AA1819 WHERE dept = 'NIC' ORDER BY name" ;
-                  $AAs = $conn->query($sql3);
-                  $aa = mysqli_fetch_assoc( $AAs );
-                        while ($aa) {
-        $name=$aa['name'];
-        $contact=$aa['contact'];
-        echo
-        (
-          '<tr>
-                <td>
-                  <span class="name-contact"><ul style="
-                  padding: 0;
-              "><li style="
-                  list-style-position: outside;
-                  margin-left: 1em;
-                  ">'.$name.'</li></ul></span>
-                </td>
-                <td>
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-                  &nbsp; &nbsp; &nbsp;
-                </td>
-                <td>
-                  <span class="name-contact"
-                    ><a href="tel: +91-$contact">'.$contact.'</a></span
-                  >
-                </td>
-                </li> 
-                </tr>
-                ' ); $aa = mysqli_fetch_assoc( $AAs ); } 
-                }
+              
                 ?>
               </table>
             </div>
           </div>
-        </div>
+
+<?php
+          if ($dept=='SSD') {
+            echo('<div class="team">
+            <div class="lead">
+              <h4>NIC Head</h4>
+              <table>');
+            
+            //NIC
+            $sql2="SELECT * FROM Coreteam1819 WHERE dept = 'NIC' ORDER BY name" ;
+            $heads = $conn->query($sql2); 
+            $head = mysqli_fetch_assoc( $heads );
+            while ($head) {
+              $name=$head['name'];
+$contact=$head['contact'];
+              echo('
+              <tr>
+        <td>
+          <ul style="
+          padding: 0;
+      "><li class="name">'.$name.'</li></ul>
+        </td>
+        <td>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+          &nbsp; &nbsp; &nbsp;
+        </td>
+        <td class="contact">
+         <a href="tel: +91-$contact">'.$contact.'</a>
+        </td>
+        </li> 
+        </tr>
+        '); $head = mysqli_fetch_assoc( $heads ); } 
+        echo('</table></div>');
+        echo(' <div class="lead">
+              <h4>Activity Associates - NIC</h4>
+              <table>');
+
+
+            $sql3="SELECT * FROM AA1819 WHERE dept = 'NIC' ORDER BY name" ;
+            $AAs = $conn->query($sql3);
+            $aa = mysqli_fetch_assoc( $AAs );
+                  while ($aa) {
+  $name=$aa['name'];
+  $contact=$aa['contact'];
+  echo
+  (
+    '<tr>
+          <td>
+          <ul style="
+            padding: 0;
+        "><li class="name">'.$name.'</li></ul></span>
+          </td>
+          <td>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            &nbsp; &nbsp; &nbsp;
+          </td>
+          <td class="contact">
+            <a href="tel: +91-$contact">'.$contact.'</a>
+          </td>
+          </li> 
+          </tr>
+          ' ); $aa = mysqli_fetch_assoc( $AAs ); }
+          echo('</table></div>'); 
+          }
+
+?>
+        <!-- </div> -->
       </div>
     </section>
 
