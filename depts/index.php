@@ -7,29 +7,28 @@ $dept = strtoupper($_GET['dept']);
 $year = '1819';
 if ($dept=='EO') {
     $name = "Educational Outreach";
+    $tabname = $name;
 }
 else if($dept=='GC'){
     $name = "Green Campus";
+    $tabname = $name;
 }
 else if($dept=='SSD'){
   $dept = 'SSD';
   $name = "Sustainable Social Development";
+  $tabname = $name;
 }
 else if($dept=='MEDIA'){
   $dept = 'Media';
   $name = "Media and Design";
+  $tabname = $name;
 }
 else if($dept=='WEB'){
   $dept = 'Web';
   $name = "";
-}
-
-if ($dept=='WEB') {
   $tabname = "Web";
 }
-else {
-  $tabname = $name;
-}
+
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept' ORDER BY orderOnPage " ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
@@ -42,7 +41,29 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <meta name="description" content="" />
     <meta name="author" content="" />
