@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Gallery</title>
-       <link
+    <link
       rel="icon"
       type="image/png"
       sizes="192x192"
@@ -27,7 +27,7 @@
       sizes="192x192"
       href="../assets/NSS/logo192.png"
     />
- <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="description" content="" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -40,7 +40,6 @@
 
     <link rel="stylesheet" href="./mobirise-gallery/style.css" />
     <script src="./jquery-2.2.4.min.js"></script>
-    <!-- <script src="./js/jquery.min.js"></script> -->
   </head>
   <body>
     <div class="se-pre-con"></div>
@@ -225,18 +224,17 @@
       </div>
     </section>
     <?php include("../common/footer/footer.php");?>
-    <script src="./js/script.js"></script>
-
-    <script src="./js/bootstrap.min.js"></script>
-
-    <script src="./mobirise-gallery/script.js"></script>
 
     <input name="animation" type="hidden" />
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up">
       <a style="text-align: center;"><i class="mbr-arrow-up-icon"></i></a>
     </div>
   </body>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
+  <script src="./js/script.js"></script>
+
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script src="./mobirise-gallery/script.js"></script>
 
   <script src="./js/tether.min.js"></script>
   <script>
