@@ -76,11 +76,11 @@
                   maxlength="300"
                   style="height:70px;border: 1px solid #888888;"
                   name="description"
-                  id="query"
+                  id="description"
                   placeholder="Any specifics interests?"
                 ></textarea>
               </div>
-              <input type="submit" />
+              <input type="submit" name="submit" value="Submit" />
             </form>
           </div>
         </div>
@@ -94,12 +94,27 @@ $name = $_POST["name"];
 $contact = $_POST["contact"];
 $email = $_POST["email"];
 $description= $_POST["description"];
-$sql = "INSERT INTO `portalNursery` (ID, `name`, `contact`, `email`,`description`) 
-        VALUES (NULL, '$name','$contact', '$email', '$description' )";
+$sql = "INSERT INTO `nursery` (`Name`, `ContactNo`, `email`,`description`) 
+        VALUES ('$name','$contact', '$email', '$description' )";
 
-$res=$conn->query($sql); if ($res === TRUE) { echo "New request created
-    successfully"; } else { echo "Error"; } $conn->close(); }
-    if(array_key_exists('submit',$_POST)){ test(); } ?>
+
+$res=$conn->query($sql);
+
+if ($res === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error";
+}
+
+$conn->close();
+}
+if(array_key_exists('submit',$_POST)){
+    test();
+}
+?>
+
+
+
   </body>
   <script>
     includeNav();
