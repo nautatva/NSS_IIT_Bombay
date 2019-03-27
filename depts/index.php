@@ -68,30 +68,9 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="../assets/NSS/logo192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="../assets/NSS/logo128.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="128x128"
-      href="../assets/NSS/logo128.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="../assets/NSS/logo192.png"
-    />
-
     <title><?php echo $tabname ?> - NSS, IIT Bombay</title>
+
+    <meta name="theme-color" content="">
 
     <link
       rel="stylesheet"
