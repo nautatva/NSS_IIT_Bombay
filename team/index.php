@@ -4,8 +4,9 @@ $username = "nss";
 $password = "nssiitb@2015";
 $db = "nss";
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
+$year = '1819';
 
-$depts=$conn->query("SELECT distinct dept FROM Coreteam1819 ") ; $mydepts = [];
+$depts=$conn->query("SELECT distinct dept FROM Coreteam ") ; $mydepts = [];
 $t=0; while($mydept = $depts->fetch_assoc()){ switch ($mydept['dept']) { case
 'OC': $name = 'Overall Coordinators'; break; case 'EO': $name = 'Educational
 Outreach'; break; case 'SSD': $name = 'Sustainable Social Development'; break;
@@ -34,8 +35,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
     <?php
     foreach ($mydepts as $q) {
       $code = $q['deptcode'];
-      $sql1 = $conn->query("SELECT * FROM Coreteam1819 WHERE dept='$code' ORDER
-    BY Name "); echo('
+      $sql1 = $conn->query("SELECT * FROM Coreteam WHERE (dept='$code' AND year = '$year') ORDER BY Name "); echo('
     <h1 class="dtitle hideme">'.$q['deptname'].'</h1>
     <div class="card hideme">
       '); while($details = $sql1->fetch_assoc()){ echo('
