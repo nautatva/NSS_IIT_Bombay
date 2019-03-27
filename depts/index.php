@@ -4,6 +4,7 @@ $username = "nss";
 $password = "nssiitb@2015";
 $db = "nss";
 $dept = strtoupper($_GET['dept']);
+$year = '1819';
 if ($dept=='EO') {
     $name = "Educational Outreach";
 }
@@ -32,8 +33,8 @@ else {
 $conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept' ORDER BY orderOnPage " ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
-$sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept' ORDER BY name" ;
-$sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
+$sql2="SELECT * FROM Coreteam WHERE dept = '$dept' AND year = '$year' ORDER BY name" ;
+$sql3="SELECT * FROM AAs WHERE dept = '$dept' AND year = '$year' ORDER BY name" ;
 $result = $conn->query($sql); $basic = $conn->query($sql1); $heads =
 $conn->query($sql2); $AAs = $conn->query($sql3); ?>
 <!DOCTYPE html>
@@ -531,14 +532,14 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
           </div>
 
 <?php
-          if ($dept=='SSD') {
+          if ($dept=='SSD' && $year == '1819') {
             echo('<div class="team">
             <div class="lead">
               <h4>NIC Head</h4>
               <table>');
             
             //NIC
-            $sql2="SELECT * FROM Coreteam1819 WHERE dept = 'NIC' ORDER BY name" ;
+            $sql2="SELECT * FROM Coreteam WHERE dept = 'NIC' AND year = '$year' ORDER BY name" ;
             $heads = $conn->query($sql2); 
             $head = mysqli_fetch_assoc( $heads );
             while ($head) {
@@ -567,7 +568,7 @@ $contact=$head['contact'];
               <table>');
 
 
-            $sql3="SELECT * FROM AA1819 WHERE dept = 'NIC' ORDER BY name" ;
+            $sql3="SELECT * FROM AAs WHERE dept = 'NIC' AND year = '$year' ORDER BY name" ;
             $AAs = $conn->query($sql3);
             $aa = mysqli_fetch_assoc( $AAs );
                   while ($aa) {
