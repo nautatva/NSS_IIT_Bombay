@@ -78,7 +78,7 @@
                   name="date"
                 />
               </div>
-              <input type="submit" />
+              <input type="submit" value="Submit" name="submit" />
             </form>
           </div>
         </div>
@@ -92,12 +92,25 @@ $name = $_POST["name"];
 $contact = $_POST["contact"];
 $email = $_POST["email"];
 $date= $_POST["date"];
-$sql = "INSERT INTO `portalDonation` (ID, `name`, `contact`, `email`,`date`) 
-        VALUES (NULL, '$name','$contact', '$email', '$date' )";
+$sql = "INSERT INTO `clothdonation` (`Name`, `ContactNo`, `email`,`prefdate`) 
+        VALUES ('$name','$contact', '$email', '$date' )";
 
-$res=$conn->query($sql); if ($res === TRUE) { echo "New request created
-    successfully"; } else { echo "Error"; } $conn->close(); }
-    if(array_key_exists('submit',$_POST)){ test(); } ?>
+
+$res=$conn->query($sql);
+
+if ($res === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error";
+}
+
+$conn->close();
+}
+if(array_key_exists('submit',$_POST)){
+    test();
+}
+    
+?>
   </body>
   <script>
     includeNav();
