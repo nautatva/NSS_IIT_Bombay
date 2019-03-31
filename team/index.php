@@ -90,7 +90,6 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
           <img src="'.$details['photo'].'" alt="'.$details['name'].'" />
           <div class="team-hover">
             <div class="desk">
-              <h4>Hi There !</h4>
               <p>"'.$details['intro'].'"</p>
             </div>
             <div class="s-link">

@@ -28,11 +28,7 @@
       href="../assets/NSS/logo192.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/147455559147662-1-128x128-55.png"
-      type="image/x-icon"
-    />
+    
 
     <link rel="stylesheet" href="assets/et-line-font-plugin/style.css" />
     <link
