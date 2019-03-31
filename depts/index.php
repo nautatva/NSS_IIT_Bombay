@@ -98,8 +98,6 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
     <!-- custom CSS -->
     <link href="./statics/css/custom.css" rel="stylesheet" />
 
-    <!-- caroual CSS -->
-    <link href="../statics/css/slideshow.css" rel="stylesheet">
     <!-- Colors -->
   </head>
 
@@ -296,7 +294,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs/">
                     Contact Us
                   </a>
                 </li>
@@ -310,7 +308,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               <ul class="dropdown-menu">
                 <!-- Impacting lives -->
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/Memoirs.php"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/memoirs"
                     >Memoirs</a
                   >
                 </li>

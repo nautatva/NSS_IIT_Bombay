@@ -27,11 +27,7 @@
       href="../assets/NSS/logo192.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="assets/images/147455559147662-1-128x128-55.png"
-      type="image/x-icon"
-    />
+   
     <meta name="description" content="President" />
     <title>Invisible Humans of IIT Bombay</title>
     <link rel="stylesheet" href="assets/et-line-font-plugin/style.css" />
@@ -78,13 +74,13 @@
     </section>
     <?php
 $file = fopen("invisiblehumans.txt","r");
-for ($i=46; $i >= 1; $i--) { $line = fgets($file); $img = "
+for ($i=46; $i >= 1; $i--) { $line = fgets($file); $img = '
     <div class="mbr-table-cell mbr-valign-top col-md-6">
       <div class="mbr-figure">
-        <img src="../assets/InvisibleHumans/$i.jpg" alt="Invisible Humans" />
+        <img src="../assets/InvisibleHumans/'.$i.'.jpg" alt="Invisible Humans" />
       </div>
     </div>
-    "; if($i%2==0){ echo("
+    '; if($i%2==0){ echo('
 
     <section
       class="mbr-section mbr-after-navbar"
@@ -98,16 +94,16 @@ for ($i=46; $i >= 1; $i--) { $line = fgets($file); $img = "
               class="mbr-table-cell mbr-right-padding-md-up col-md-6 text-xs-center text-md-right"
             >
               <div class="lead">
-                $line
+                '.$line.'
               </div>
             </div>
-            $img
+            '.$img.'
           </div>
         </div>
       </div>
     </section>
 
-    "); } else{ echo("
+    '); } else{ echo('
 
     <section
       class="mbr-section mbr-after-navbar"
@@ -117,12 +113,12 @@ for ($i=46; $i >= 1; $i--) { $line = fgets($file); $img = "
       <div class="container">
         <div class="row">
           <div class="mbr-table-md-up">
-            $img
+          '.$img.'
             <div
               class="mbr-table-cell mbr-right-padding-md-up col-md-6 text-xs-center text-md-right"
             >
               <div class="lead">
-                $line
+                '.$line.'
               </div>
             </div>
           </div>
@@ -130,7 +126,7 @@ for ($i=46; $i >= 1; $i--) { $line = fgets($file); $img = "
       </div>
     </section>
 
-    "); } } ?>
+    '); } } ?>
     <section
       class="mbr-section mbr-section__container"
       id="page7-header3-0"
@@ -160,7 +156,7 @@ for ($i=46; $i >= 1; $i--) { $line = fgets($file); $img = "
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/tether/tether.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <!-- <script src="assets/smooth-scroll/SmoothScroll.js"></script> -->
   <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>

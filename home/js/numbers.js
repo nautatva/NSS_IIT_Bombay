@@ -10,7 +10,7 @@ function addCommas(nStr) {
   return x1 + x2;
 }
 
-function increaseNumber(str, number,increament) {
+function increaseNumber(str, number, increament) {
   let variable = 0;
   setInterval(function() {
     if (variable < number) {
@@ -28,13 +28,13 @@ let once = 0;
 // finalNumber = 4;
 // var nextIn;
 function numbers() {
-  if (once==0) {
+  if (once == 0) {
     once = 1;
-    increaseNumber('.volunteers', 20133,1043);
+    increaseNumber('.volunteers', 20133, 1043);
     increaseNumber('.children', 3230, 233);
-    increaseNumber('.followers',13380,1233);
-    increaseNumber('.initiatives',30,1);
-    increaseNumber('.subscribers',92352,5342)
+    increaseNumber('.followers', 13380, 1233);
+    increaseNumber('.initiatives', 30, 1);
+    increaseNumber('.subscribers', 96352, 5342);
   }
 }
 
