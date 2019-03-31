@@ -1,2 +1,2 @@
 
-<?php header("Location: https://gymkhana.iitb.ac.in/~nss/tem/depts?dept=media"); ?>
+<?php header("Location: https://gymkhana.iitb.ac.in/~nss/depts?dept=media"); ?>

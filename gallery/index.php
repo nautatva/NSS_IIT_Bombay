@@ -34,7 +34,7 @@
 
     <link rel="stylesheet" href="./css/custom.css" />
 
-    <link rel="stylesheet" href="./slider.css" />
+    <!-- <link rel="stylesheet" href="./slider.css" /> -->
 
     <link rel="stylesheet" href="./et-line-font-plugin/style.css" />
 
@@ -72,7 +72,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <!-- <div class="box">
           <ul class="menu">
             <li>
               <div
@@ -131,7 +131,7 @@
               </div>
             </li>
           </ul>
-        </div>
+        </div> -->
         <div>
           <?php
         $parentdirs = ["../assets/gallery/EO/","../assets/gallery/GC/","../assets/gallery/SSD/"]; 

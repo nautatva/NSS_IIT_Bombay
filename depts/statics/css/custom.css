@@ -123,6 +123,8 @@ table {
   font-size: 1.07rem;
   font-weight: 300;
   flex: 1 0 300px;
+  max-width: 90vw;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

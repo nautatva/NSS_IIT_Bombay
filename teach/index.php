@@ -37,7 +37,7 @@
         <div class="mainPortal">
           <div class="more">
             <p>
-              Hi there!
+            
             </p>
             <a href="../home/">Go to homepage</a>
           </div>
@@ -50,6 +50,7 @@
                   style="border: 1px solid #888888"
                   type="text"
                   name="name"
+                  placeholder="Name"
                 />
               </div>
               <div>
@@ -67,6 +68,7 @@
                   style="border: 1px solid #888888"
                   type="text"
                   name="email"
+                  placeholder="Email"
                 />
               </div>
               <div>
@@ -107,6 +109,8 @@ if ($res === TRUE) {
 }
 
 $conn->close();
+
+
 }
 if(array_key_exists('submit',$_POST)){
     test();

@@ -16,6 +16,31 @@
 |    Contact Us - not optimized    | php  |  [x]   |  [x]   |
 | Invisible Humans - not optimized | php  |  [x]   |  [x]   |
 
+Old pages:
+
+Artistic Impact Winners-2016.html	
+dept pages
+BingSiteAuth.xml			artimp
+Cashless.html				
+		google248bda5f4a6e632b.html
+greenopedia
+
+Gallery.php				mail.php
+HoIITB.php				names.php
+Media.php				navbar.php
+Memoirs.php				nocs
+NIC.php					nsstest
+Publicity.php				olidwd
+Rules.pdf				page8.html
+SSD.php					reports
+Team.html				robots.txt
+Team.php				sitemap.xml
+Template for navbar.txt			tem
+Tutorials.html				upload.html
+UPI.html				upload.php
+USSD.html				uploadportal
+Vikas.html				uploads
+VikasEcoG.jpg				vood.jpg
 edits:
 
 - depts:

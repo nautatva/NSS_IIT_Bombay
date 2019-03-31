@@ -127,7 +127,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
           <ul class="nav navbar-nav navbar-right nav-distribute">
             <li class="hidden"><a href="#page-top"></a></li>
             <li class="page-scroll">
-              <a href="https://gymkhana.iitb.ac.in/~nss/tem/home/">Home</a>
+              <a href="https://gymkhana.iitb.ac.in/~nss/home/">Home</a>
             </li>
             <li>
               <a class="page-scroll" type="button" data-toggle="dropdown"
@@ -137,35 +137,35 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 <li>
                   <a
                     class="EO-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/EO/"
                     >Educational Outreach</a
                   >
                 </li>
                 <li>
                   <a
                     class="GC-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/GC/"
                     >Green Campus</a
                   >
                 </li>
                 <li>
                   <a
                     class="SSD-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/SSD/"
                     >Sustainable Social Development</a
                   >
                 </li>
                 <li>
                   <a
                     class="Media-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/Media/"
                     >Media and Design</a
                   >
                 </li>
                 <li>
                   <a
                     class="Web-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/Web/"
                     >Web</a
                   >
                 </li>
@@ -235,17 +235,17 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/teach/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/teach/"
                     >Let's Teach!</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/donation/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/donation/"
                     >Make a Donation</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/nursery/">
+                  <a href="https://gymkhana.iitb.ac.in/~nss/nursery/">
                     Nursery For All</a
                   >
                 </li>
@@ -263,27 +263,27 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               ></a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/team/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/team/"
                     >Current Team</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/history/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/history/"
                     >History of NSS IITB</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/news"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/news"
                     >Media Coverage</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/SoC/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/SoC/"
                     >Stories of Change</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/experiences/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/experiences/"
                     >My NSS Experiences</a
                   >
                 </li>
@@ -291,7 +291,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                     <a href="#">Words from OC</a>
                   </li> -->
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/gallery/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/gallery/"
                     >Gallery</a
                   >
                 </li>
@@ -321,36 +321,36 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1617.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1617.pdf"
                     >Annual Report 2016-17</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1516.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1516.pdf"
                     >Annual Report 2015-16</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1415.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1415.pdf"
                     >Annual Report 2014-15</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1314.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1314.pdf"
                     >Annual Report 2013-14</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1213.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1213.pdf"
                     >Annual Report 2012-13</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/IH">
+                  <a href="https://gymkhana.iitb.ac.in/~nss/IH">
                     Invisible Humans of IIT Bombay
                   </a>
                 </li>
