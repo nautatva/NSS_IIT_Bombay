@@ -31,7 +31,7 @@ function numbers() {
   if (once == 0) {
     once = 1;
     increaseNumber('.volunteers', 20133, 1043);
-    increaseNumber('.children', 3230, 233);
+    increaseNumber('.children', 49230, 2333);
     increaseNumber('.followers', 13380, 1233);
     increaseNumber('.initiatives', 30, 1);
     increaseNumber('.subscribers', 96352, 5342);

@@ -8,6 +8,8 @@
 }
 
 #flip td {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
   flex: 1 0 0;
 }
 #flip .full,
@@ -16,11 +18,19 @@
   height: 100%;
 }
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #introtd {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #introImg {
@@ -33,6 +43,7 @@
   transform: rotateX(-180deg);
 }
 .card1 {
+  -o-transition: 0.5s;
   transition: 0.5s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -57,6 +68,7 @@
 }
 .card1 .back {
   -webkit-transform: rotatex(-180deg);
+  -ms-transform: rotatex(-180deg);
   transform: rotatex(-180deg);
   background: blue;
   background: white;
@@ -66,23 +78,35 @@
 
 /* checks */
 .introTable img {
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
   height: calc(32vh - 16px);
   object-fit: cover;
+  -o-object-position: top;
   object-position: top;
   cursor: default;
 }
 .face .correction {
+  -o-object-position: center;
   object-position: center;
 }
 
 .introTable td {
   width: 32vw;
   height: calc(32vh - 17px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -110,6 +134,8 @@
     width: 100% !important;
   }
   .main {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
