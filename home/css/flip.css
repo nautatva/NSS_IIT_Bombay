@@ -71,6 +71,7 @@
   height: calc(32vh - 16px);
   object-fit: cover;
   object-position: top;
+  cursor: default;
 }
 .face .correction {
   object-position: center;
