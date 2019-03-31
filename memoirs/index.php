@@ -74,6 +74,9 @@
 
     <section class="responsive-slider">
       <ul class="rslides" id="slider">
+      <li>
+          <img src="./memoirs/14.png" />
+        </li>
         <?php
   for ($i=1; $i <= 32; $i++) { 
     echo
@@ -89,7 +92,7 @@
     (
       ' 
         <li>
-          <img src="./memoirs/'.$i.'jpg" />
+          <img src="./memoirs/'.$i.'.jpg" />
         </li>
       ' ); } ?>
       </ul>
