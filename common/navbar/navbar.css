@@ -57,6 +57,8 @@ body {
   left: 0;
   display: block;
   background: #020304;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -80,11 +82,15 @@ body {
 
 #nav input:checked + label span:first-child {
   opacity: 1;
+  -webkit-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
   transform: rotate(405deg);
   background: white;
 }
 #nav input:checked + label span:last-child {
   opacity: 1;
+  -webkit-transform: rotate(-405deg);
+  -ms-transform: rotate(-405deg);
   transform: rotate(-405deg);
   background: white;
 }
@@ -96,14 +102,22 @@ body {
   width: 100%;
   height: 100px;
   z-index: 3;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
   overflow: hidden;
 }
 
 #nav input ~ nav > ul > li {
   opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
 }
 #nav input ~ nav > ul > li > a {
@@ -117,16 +131,24 @@ body {
 }
 #nav input:checked ~ nav {
   height: 100%;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
 }
 #nav input:checked ~ nav > ul > li {
   opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 #nav input:checked ~ #colorchange h1,
 #nav input:checked ~ #colorchange h1:visited {
   color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 
@@ -135,7 +157,11 @@ body {
 }
 #nav input:checked ~ #colorchange:hover {
   color: white;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
 
@@ -180,9 +206,16 @@ body {
   font-size: 16px;
 }
 .cbp-hrmenu .cbp-hrsub-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
   flex-direction: row !important;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 /* first level ul style */
@@ -192,8 +225,14 @@ body {
   max-width: 70em;
   margin: 0 auto;
   padding: 0 1.875em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-height: 95vh;
 }
@@ -228,6 +267,7 @@ body {
   background-image: url('https://gymkhana.iitb.ac.in/~nss/common/collage.jpeg');
   width: 100%;
   left: 0;
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
 }
 

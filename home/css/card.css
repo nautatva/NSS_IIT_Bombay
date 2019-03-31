@@ -14,8 +14,13 @@
 
 .cards {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -27,6 +32,8 @@
   /* max-width: 80%; */
 }
 .cardimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -57,45 +64,54 @@
   font-weight: 700;
   font-family: 'Open Sans';
   -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 .card .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
   height: 500px;
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
 .card .wrapper .cardimg img {
   width: 360px;
   height: 500px;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .card .wrapper:hover .cardimg img {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 .card .wrapper:hover .content {
   -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(calc(-100% + 4em));
   transform: translateY(calc(-100% + 4em));
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .card .line1 {
+  -webkit-transform: translateY(calc(4px + 10em)) !important;
+  -ms-transform: translateY(calc(4px + 10em)) !important;
   transform: translateY(calc(4px + 10em)) !important;
 }
 .card .line2 {
-  
 }
 .card .line3 {
+  -webkit-transform: translateY(calc(4px + 6em)) !important;
+  -ms-transform: translateY(calc(4px + 6em)) !important;
   transform: translateY(calc(4px + 6em)) !important;
 }
 .card .data {
@@ -103,7 +119,12 @@
   top: 265px;
   width: 100%;
   transition: -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(calc(4px + 8em));
+  -ms-transform: translateY(calc(4px + 8em));
   transform: translateY(calc(4px + 8em));
 }
 
@@ -132,11 +153,13 @@
 }
 .card input[type='checkbox']:checked + .menu-content {
   -webkit-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
   transform: translateY(-60px);
 }
 
 .card .wrapper:hover .menu-content span {
   -webkit-transform: translate(-50%, -10px);
+  -ms-transform: translate(-50%, -10px);
   transform: translate(-50%, -10px);
   opacity: 1;
 }
@@ -162,6 +185,8 @@
   position: relative;
 }
 .card .menu-content span {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
@@ -189,11 +214,15 @@
   right: 0;
   top: 50%;
   -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .card .button:hover::after {
   -webkit-transform: translate(5px, -50%);
+  -ms-transform: translate(5px, -50%);
   transform: translate(5px, -50%);
   opacity: 1;
 }
@@ -209,12 +238,18 @@
     width: 320px;
   }
   .card .line1 {
+    -webkit-transform: translateY(calc(4px + 7em)) !important;
+    -ms-transform: translateY(calc(4px + 7em)) !important;
     transform: translateY(calc(4px + 7em)) !important;
   }
   .card .data {
+    -webkit-transform: translateY(calc(4px + 5em));
+    -ms-transform: translateY(calc(4px + 5em));
     transform: translateY(calc(4px + 5em));
   }
   .card .line3 {
+    -webkit-transform: translateY(calc(4px + 3em)) !important;
+    -ms-transform: translateY(calc(4px + 3em)) !important;
     transform: translateY(calc(4px + 3em)) !important;
   }
 }
