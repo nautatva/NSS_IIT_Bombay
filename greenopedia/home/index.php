@@ -110,4 +110,14 @@
 
     gtag('config', 'UA-105828259-2');
   </script>
+    <link
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+    rel="stylesheet"
+  />
+  <style>
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+    
 </html>

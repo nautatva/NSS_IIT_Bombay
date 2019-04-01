@@ -1,18 +1,16 @@
-@import url(<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">);
-@import url(<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">);
-
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
 }
 
-:root{
-    --steelgreen: #575B52;
-    --olivegreen: #58592B;
-    --greygreen: #8A8B73;
-    --darklemon: #BDBB99;
-    --lightlemon: #D9D6BA;
+:root {
+  --steelgreen: #575b52;
+  --olivegreen: #58592b;
+  --greygreen: #8a8b73;
+  --darklemon: #bdbb99;
+  --lightlemon: #d9d6ba;
 }
 
 /*
@@ -26,13 +24,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -40,12 +38,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -60,7 +58,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -68,9 +66,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -78,7 +76,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -86,31 +84,15 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -121,7 +103,7 @@ textarea {
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -134,17 +116,17 @@ textarea {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
 }
 
 /*
@@ -155,15 +137,15 @@ textarea {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    -webkit-clip-path: none;
-    clip-path: none;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
 
 /*
@@ -171,7 +153,7 @@ textarea {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -188,12 +170,12 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: ' '; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -203,14 +185,14 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -220,185 +202,183 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: ' (' attr(href) ')';
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: ' (' attr(title) ')';
+  }
 
-    /*
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+    display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .logo {
-    font-size: 3em;
-    font-family: 'Merriweather', serif;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+  font-size: 3em;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 .nav-link {
-    font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 400;
-font-size: 17px;}
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
 
 .imgbox {
-    margin-top: 3%;
-    padding-right: 2vh;
-    height:350px; 
-    width: 420px;
-    float: right; 
-    max-width: 100%;
-    /*clear: left;*/
+  margin-top: 3%;
+  padding-right: 2vh;
+  height: 350px;
+  width: 420px;
+  float: right;
+  max-width: 100%;
+  /*clear: left;*/
 }
 
 .blog_des {
-    font-size: 25px;
-    position: relative;
-    top: 0.8vh;
-    font-size: 5 em;
-    line-height: 1.2em;
-    position: relative;
-    margin-top: 0vh;
-    font-family: 'Source Sans Pro', serif;
-      font-weight: 400;
-      text-align: left;
-      color: var(--steelgreen);
-      font-kerning: normal;
-      letter-spacing: 0.02em;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    
+  font-size: 25px;
+  position: relative;
+  top: 0.8vh;
+  font-size: 5 em;
+  line-height: 1.2em;
+  position: relative;
+  margin-top: 0vh;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  text-align: left;
+  color: var(--steelgreen);
+  font-kerning: normal;
+  letter-spacing: 0.02em;
+  margin-left: 1vh;
+  margin-right: 1vh;
 }
 
-.natureimg{
-    background-size: cover;
-    background-position: center;
-    background-image: url('../img/nature.jpg');
-    width: auto;
-    height: 100%;
+.natureimg {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../img/nature.jpg');
+  width: auto;
+  height: 100%;
 }
 
 .btn-green {
-    width: 100%;
-    padding: 1.2vh;
-    border-radius: 0px;
-    background: var(--olivegreen);
-    border: none;
-    color: #fff;
-    height: 5vh;
-    margin-top: 2vh;
-    font-family: 'Merriweather';
-    font-size: 1.4em;
-    font-weight: 100;
+  width: 100%;
+  padding: 1.2vh;
+  border-radius: 0px;
+  background: var(--olivegreen);
+  border: none;
+  color: #fff;
+  height: 5vh;
+  margin-top: 2vh;
+  font-family: 'Merriweather';
+  font-size: 1.4em;
+  font-weight: 100;
 }
 
-.alphabet{
-    font-family: 'Merriweather';
-    font-size: 2.1em;
-    font-weight: 400;
-    color: var(--olivegreen);
-    margin-left: 2vh;
-    padding-top: 20px;
-    margin-bottom: 0px;
-    padding-bottom: 0vh;
-    border-bottom: 1px solid var(--olivegreen);
+.alphabet {
+  font-family: 'Merriweather';
+  font-size: 2.1em;
+  font-weight: 400;
+  color: var(--olivegreen);
+  margin-left: 2vh;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0vh;
+  border-bottom: 1px solid var(--olivegreen);
 }
 
-
-.alphabet-footer{
-    font-family: 'Merriweather';
-    font-size: 1.8em;
-    text-align: center;
-    font-weight: 400;
-    color: var(--darklemon);
-    padding-left: 2vh;
-    padding-bottom: 0vh;
-    border-bottom: 1px solid var(--darklemon);
+.alphabet-footer {
+  font-family: 'Merriweather';
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 400;
+  color: var(--darklemon);
+  padding-left: 2vh;
+  padding-bottom: 0vh;
+  border-bottom: 1px solid var(--darklemon);
 }
 
-.list{
-    font-family: 'Source Sans Pro';
-    font-size: 1.9em;
-    font-weight: 400;
-    color: var(--greygreen);
-    padding-left: 1vh;
-
+.list {
+  font-family: 'Source Sans Pro';
+  font-size: 1.9em;
+  font-weight: 400;
+  color: var(--greygreen);
+  padding-left: 1vh;
 }
 
-.list > a{
-    color: var(--olivegreen);
+.list > a {
+  color: var(--olivegreen);
 }
 
-.foot_top{
-    width: 100%;
-    background-color: var(--steelgreen);
-    height: 10vh;
+.foot_top {
+  width: 100%;
+  background-color: var(--steelgreen);
+  height: 10vh;
 }
-    
+
 /*.social{
     margin-left: 2vh;
     margin-right: 2vh;
@@ -426,23 +406,20 @@ font-size: 17px;}
 }
 */
 
-.parentofcentered-div{
-    width: %100;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.parentofcentered-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.centered-div{
-    width: 80%;
-    height: auto;
+.centered-div {
+  width: 80%;
+  height: auto;
 }
 
-
-
-
-.container-fluid-footer{
+.container-fluid-footer {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -468,14 +445,14 @@ font-size: 17px;}
     margin-left: -15px;
   }
 }
-.container-fluid-footer{
+.container-fluid-footer {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
 }
 @media screen and (min-width: 768px) {
   .container,
-  .container-fluid-footer{
+  .container-fluid-footer {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -483,68 +460,62 @@ font-size: 17px;}
 .container-fluid-footer:before,
 .container-fluid-footer:after,
 .container-fluid-footer:after,
-
-
-
-
-
 #myFooter {
   background-color: #373a48;
-  color:white;
+  color: white;
 }
 
-
-#myFooter{
-    color: white;
-    font-weight: bold;
-    margin-top: 30px;
+#myFooter {
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
 }
 
-#myFooter a:hover, #myFooter a:focus{
+#myFooter a:hover,
+#myFooter a:focus {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
-#myFooter .myCols{
+#myFooter .myCols {
   text-align: center;
 }
 
-#myFooter .social-networks{
+#myFooter .social-networks {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-#myFooter .social-networks a{
-    font-size: 32px;
-    margin-right: 5px;
-    margin-left: 5px;
-    color: #f9f9f9;
-    padding: 10px;
-    transition: 0.2s;
+#myFooter .social-networks a {
+  font-size: 32px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #f9f9f9;
+  padding: 10px;
+  transition: 0.2s;
 }
 
-#myFooter .social-networks a:hover{
+#myFooter .social-networks a:hover {
   text-decoration: none;
-
 }
 
-#myFooter .facebook:hover{
-  color:#0077e2;
+#myFooter .facebook:hover {
+  color: #0077e2;
 }
 
-#myFooter .youtube:hover{
-  color:#ef1a1a;
+#myFooter .youtube:hover {
+  color: #ef1a1a;
 }
 
-#myFooter .twitter:hover{
+#myFooter .twitter:hover {
   color: #00aced;
 }
 
-#myFooter .wordpress:hover{
-  color: #21759A;
+#myFooter .wordpress:hover {
+  color: #21759a;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   #myFooter {
     text-align: center;
   }

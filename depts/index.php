@@ -319,31 +319,31 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1617.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1617.pdf" target="_blank"
                     >Annual Report 2016-17</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1516.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1516.pdf" target="_blank"
                     >Annual Report 2015-16</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1415.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1415.pdf" target="_blank"
                     >Annual Report 2014-15</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1314.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1314.pdf" target="_blank"
                     >Annual Report 2013-14</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1213.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1213.pdf" target="_blank"
                     >Annual Report 2012-13</a
                   >
                 </li>

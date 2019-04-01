@@ -73,7 +73,7 @@ $(function(){
               <?php 
               echo '<iframe src="https://www.youtube.com/embed/'.$params["v"].'?list='.$params["list"].'" frameborder="0" allowfullscreen></iframe></div>';
              ?>
-              <a class="text-more-info text-primary-hover" target="_blank" href=<?php echo $ytube;?>>Watch on Youtube</a> 
+              <a class="text-more-info text-primary-hover" target="_blank" href=<?php echo $ytube;?>>Watch on YouTube</a> 
 
             </div>
 
@@ -143,4 +143,13 @@ $(function(){
     <script type="text/javascript" src="https://gymkhana.iitb.ac.in/~nss/olidwd/js/template-scripts.js"></script>   
     
    </body>
+   <link
+ href="https://fonts.googleapis.com/css?family=Montserrat"
+ rel="stylesheet"
+/>
+<style>
+ body{
+   font-family: 'Montserrat', sans-serif;
+ }
+</style>
 </html>

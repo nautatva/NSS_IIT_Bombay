@@ -33,7 +33,7 @@
             <div>
             	<div style="padding-left: 5%; padding-right: 5%; padding-top: 1%;">
 	                <div class="navbar-header">
-				      <a class="navbar-brand logo" style="font-size: 28px; margin-top: -5px; margin-left: 25px; color: #575B52" href="#" style="/*font-family: 'Merriweather', sans-serif*/">NSS IIT Bombay</a>
+				      <a class="navbar-brand logo" style="font-size: 28px; margin-top: -5px; margin-left: 25px; color: #575B52" href="https://gymkhana.iitb.ac.in/~nss/home/" style="/*font-family: 'Merriweather', sans-serif*/">NSS IIT Bombay</a>
 				    </div>
 				    <ul class="nav navbar-nav navbar-right">
 		  		        <li class="active nav-link"><a href="./home">Greenopedia</a></li>
@@ -186,4 +186,13 @@ $string = str_replace(' ', '', $page);
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
+    <link
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+    rel="stylesheet"
+  />
+  <style>
+    body{
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </html>

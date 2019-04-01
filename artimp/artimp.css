@@ -1,21 +1,9 @@
 body {
   padding-top: 50px;
-}
-/* nav{
- visibility: hidden;
-} */
-/*  */
-
-/*  */
-
-/*  */
-
-/*  */
-
-* {
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
+
 #grad1 {
   /* width: 100%; */
   max-height: 1000px;
@@ -66,17 +54,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.initiatives{
+.initiatives {
   padding-top: 50px;
 }
 
-.themes{
+.themes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.themes li{
+.themes li {
   margin-right: 25px;
 }
 /* @media (max-width: 768px) {
@@ -313,8 +301,7 @@ body {
   width: 100%;
 }
 
-.buttonText{
+.buttonText {
   display: flex;
   flex-direction: column;
-  
 }

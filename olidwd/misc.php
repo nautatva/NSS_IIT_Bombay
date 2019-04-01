@@ -172,4 +172,13 @@ $(function(){
     <script type="text/javascript" src="https://gymkhana.iitb.ac.in/~nss/olidwd/js/template-scripts.js"></script>   
     
    </body>
+   <link
+ href="https://fonts.googleapis.com/css?family=Montserrat"
+ rel="stylesheet"
+/>
+<style>
+ body{
+   font-family: 'Montserrat', sans-serif;
+ }
+</style>
    </html>
