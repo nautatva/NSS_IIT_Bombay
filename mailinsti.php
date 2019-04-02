@@ -26,9 +26,7 @@ $query =  $_GET['query'];
   $mail->Host = "smtp-auth.iitb.ac.in";
   $mail->Port = 25; // or 465
   $mail->IsHTML(true);
-  $mail->Username = "160040008";
-  $mail->Password = "indian@31";
-  $mail->SetFrom("160040008@iitb.ac.in");
+ 
   $mail->Subject = $query + 'portal';
   $mail->Body = "Name:" + $_GET['name'] + "\n" +  "Email:" + $_GET['email'] + "\n" + "phone:" + $_GET['phone'] + "\n" + "Body:" + $_GET['body'];
   
