@@ -75,7 +75,7 @@
       </div>
       <div class="clearfix"></div>
     </div>
-    <?php include_once('listTrees.php');?>
+    <?php include_once('./listTrees.php');?>
     <div stlye="padding=5px; background:lightgrey">
       <u
         class="head3"

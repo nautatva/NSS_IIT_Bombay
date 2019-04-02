@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="./custom/home.css">
     <?php
-include('dbconfig.php');
+include('../../dbconfig.php');
     $SQL="SELECT mostcommonname FROM greenopedia ORDER BY mostcommonname";
     $result = $conn->query($SQL);
     $last = '';

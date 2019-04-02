@@ -1,8 +1,5 @@
 <?php
-$host ="10.105.177.5";
-$username = "nss";
-$password = "nssiitb@2015";
-$db = "nss";
+include("../dbconfig.php");
 $dept = strtoupper($_GET['dept']);
 $year = '1819';
 if ($dept=='EO') {
@@ -28,8 +25,12 @@ else if($dept=='WEB'){
   $name = "";
   $tabname = "Web";
 }
+else {
+  http_response_code(404);
+  include 'error/404.php';
+  exit;
+}
 
-$conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
 $sql="SELECT * FROM department_data WHERE department = '$dept' ORDER BY orderOnPage " ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
 $sql2="SELECT * FROM Coreteam WHERE dept = '$dept' AND year = '$year' ORDER BY name" ;

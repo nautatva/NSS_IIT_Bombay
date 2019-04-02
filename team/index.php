@@ -1,9 +1,5 @@
 <?php
-$host ="10.105.177.5";
-$username = "nss";
-$password = "nssiitb@2015";
-$db = "nss";
-$conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
+include("../dbconfig.php");
 $year = '1819';
 
 $depts=$conn->query("SELECT distinct dept FROM Coreteam ") ; $mydepts = [];
@@ -17,7 +13,7 @@ $name = 'Web & Finance'; break; } $y = array('deptcode' => $mydept['dept'],
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
     <link
       rel="icon"
       type="image/png"

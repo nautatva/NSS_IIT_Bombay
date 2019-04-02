@@ -85,7 +85,7 @@
 
 <?php
 function test(){
-include('dbconfig.php');
+include('../dbconfig.php');
 $sql="SELECT * FROM QueryPortalNOCS WHERE mostcommonname='$page'" ;
 $ldap = $_POST["ldap"];
 $req = 'General';
