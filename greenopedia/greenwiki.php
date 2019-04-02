@@ -51,7 +51,7 @@
 if (isset($_GET['page'])) {
 
 $page=$_GET['page'];
-include('dbconfig.php');
+include('../dbconfig.php');
 $SQL="SELECT * FROM greenopedia WHERE mostcommonname='$page'" ;
 $result = $conn->query($SQL);
 

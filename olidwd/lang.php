@@ -68,7 +68,7 @@ $(function(){
               <div class="margin"> 
               <div class="text-center text-size-30"> All <?php echo $_GET["l"];?> Videos </div>
               <div class ="text-center  text-size-24">             <?php   
-            include('dbconfig.php');
+            include('../dbconfig.php');
             $conn= mysqli_connect($host, $username, $password, $db);
             $class = $_GET['c'];
             $sql = "SELECT * FROM Folderlink WHERE LANG='".$_GET['l']."'";
@@ -96,7 +96,7 @@ $(function(){
         <?php
 
 
-            include('dbconfig.php');
+            include('../dbconfig.php');
             // if(is_set["page"])
             $conn= mysqli_connect($host, $username, $password, $db);
             if(!isset($_GET["page"])){
