@@ -5,6 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Gallery</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta name="description" content="" />
@@ -12,24 +34,25 @@
 
     <link rel="stylesheet" href="./css/custom.css" />
 
-    <link rel="stylesheet" href="./slider.css" />
+    <!-- <link rel="stylesheet" href="./slider.css" /> -->
 
     <link rel="stylesheet" href="./et-line-font-plugin/style.css" />
 
     <link rel="stylesheet" href="./mobirise-gallery/style.css" />
     <script src="./jquery-2.2.4.min.js"></script>
-    <!-- <script src="./js/jquery.min.js"></script> -->
   </head>
   <body>
     <div class="se-pre-con"></div>
 
     <?php include("../common/navbar/navbar.php");?>
-
     <section
-      class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel"
-      id="Gallery-gallery3-0"
+      class="mbr-gallery"
       data-filter="false"
-      style="background-image: url(./vood.jpg) ; padding-top: 1.5rem; padding-bottom: 1.5rem;display:inline-items;"
+      style="background-image: url(./bg.jpg) ;background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ padding-top: 1.5rem; padding-bottom: 1.5rem;display:inline-items;"
     >
       <div
         class="container"
@@ -38,25 +61,18 @@
       >
         <div class="row">
           <div class="col-xs-12">
-            <h3 class="mbr-section-title display-2">Gallery</h3>
-          </div>
-          <div class="row" style="margin-right: 30px; margin-left: 30px;">
-            <div class="col-xs-12 col-md-6">
-              <h4>
-                <a href="./Memoirs.html" style="color: #202020; ">Memoirs</a>
-              </h4>
-            </div>
-            <div class="col-xs-12 col-md-6" style="text-align: right;">
-              <h4>
-                <a href="./HoIITB.html" target="_blank" style="color: #202020; "
-                  >Invisible Humans of IIT Bombay</a
-                >
-              </h4>
-            </div>
+            <h3
+              class="mbr-section-title display-2"
+              style="
+    text-align: center;
+"
+            >
+              Gallery
+            </h3>
           </div>
         </div>
 
-        <div class="box">
+        <!-- <div class="box">
           <ul class="menu">
             <li>
               <div
@@ -115,7 +131,7 @@
               </div>
             </li>
           </ul>
-        </div>
+        </div> -->
         <div>
           <?php
         $parentdirs = ["../assets/gallery/EO/","../assets/gallery/GC/","../assets/gallery/SSD/"]; 
@@ -208,18 +224,17 @@
       </div>
     </section>
     <?php include("../common/footer/footer.php");?>
-    <script src="./js/script.js"></script>
-
-    <script src="./js/bootstrap.min.js"></script>
-
-    <script src="./mobirise-gallery/script.js"></script>
 
     <input name="animation" type="hidden" />
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up">
       <a style="text-align: center;"><i class="mbr-arrow-up-icon"></i></a>
     </div>
   </body>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
+  <script src="./js/script.js"></script>
+
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script src="./mobirise-gallery/script.js"></script>
 
   <script src="./js/tether.min.js"></script>
   <script>

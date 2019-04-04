@@ -2,9 +2,32 @@
 <html lang="en">
   <head>
     <title>Stories of Change - NSS, IIT Bombay</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style type="text/css">
+      /* same in experiences and SoC */
       body {
         font-size: 100%;
         font-family: 'Montserrat', sans-serif;
@@ -30,7 +53,7 @@
         font-size: 60px;
         color: white;
         font-weight: 600;
-        /* margin-top: 80px; */
+        text-align: center;
       }
 
       .blocks {
@@ -43,9 +66,10 @@
         -webkit-transition: box-shadow 0.2s;
         -moz-transition: box-shadow 0.2s;
         transition: box-shadow 0.2s;
-        width: 60%;
+        max-width: 1024px;
         margin: auto;
       }
+
       .name {
         color: #a9c056;
         font-size: 1.5rem;
@@ -63,20 +87,22 @@
         text-align: justify;
         min-height: 250px;
       }
-
+      .photo-img {
+        max-width: 100%;
+        max-height: 250px;
+      }
       .block:nth-of-type(2n + 1) .description .photo-img {
-        height: 250px;
         float: left;
         padding-right: 20px;
       }
       .block:nth-of-type(2n) .description .photo-img {
-        height: 250px;
         float: right;
         padding-left: 20px;
+        max-width: 100%;
+        max-height: 250px;
       }
     </style>
     <script src="../common/jquery.min.js"></script>
-    <script src="../common/common.js"></script>
   </head>
 
   <body>
@@ -117,10 +143,10 @@
             your most valuable events. For instance, some may find their time in
             the military to be of utmost importance to them, while others
             sometimes find that their experience as a parent was the most
-            rewarding one they’ve had. Personally though, I consider my time in
+            rewarding one they've had. Personally though, I consider my time in
             green campus as my most valuable experience yet. On the first Day,
             completely drenched in rain ,all the Members of the NSS, GC reached
-            Campus Hub for a “Sapling Collection Drive”.Apart from being a fun
+            Campus Hub for a "Sapling Collection Drive".Apart from being a fun
             activity, I met some of my best friends in the institute right here
             in Green Campus. My most memorable experience was the visit to
             Sameer Hills. We took water and manure with us and climbed all the
@@ -191,7 +217,7 @@
     <!-- footer -->
     <div w3-include-html="../common/footer/footer.html"></div>
   </body>
-
+  <script src="../common/common.js"></script>
   <script>
     includeNav();
     includeHTML();

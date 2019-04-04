@@ -1,39 +1,40 @@
 <?php
-$host ="10.105.177.5";
-$username = "nss";
-$password = "nssiitb@2015";
-$db = "nss";
+include("../dbconfig.php");
 $dept = strtoupper($_GET['dept']);
+$year = '1819';
 if ($dept=='EO') {
     $name = "Educational Outreach";
+    $tabname = $name;
 }
 else if($dept=='GC'){
     $name = "Green Campus";
+    $tabname = $name;
 }
 else if($dept=='SSD'){
   $dept = 'SSD';
   $name = "Sustainable Social Development";
+  $tabname = $name;
 }
 else if($dept=='MEDIA'){
   $dept = 'Media';
   $name = "Media and Design";
+  $tabname = $name;
 }
 else if($dept=='WEB'){
   $dept = 'Web';
   $name = "";
-}
-
-if ($dept=='WEB') {
   $tabname = "Web";
 }
 else {
-  $tabname = $name;
+  http_response_code(404);
+  include 'error/404.php';
+  exit;
 }
-$conn = mysqli_connect($host, $username, $password, $db)  or die("Couldn't connect to Server");
+
 $sql="SELECT * FROM department_data WHERE department = '$dept' ORDER BY orderOnPage " ;
 $sql1="SELECT * FROM department_basics WHERE department = '$dept'" ;
-$sql2="SELECT * FROM Coreteam1819 WHERE dept = '$dept' ORDER BY name" ;
-$sql3="SELECT * FROM AA1819 WHERE dept = '$dept' ORDER BY name" ;
+$sql2="SELECT * FROM Coreteam WHERE dept = '$dept' AND year = '$year' ORDER BY name" ;
+$sql3="SELECT * FROM AAs WHERE dept = '$dept' AND year = '$year' ORDER BY name" ;
 $result = $conn->query($sql); $basic = $conn->query($sql1); $heads =
 $conn->query($sql2); $AAs = $conn->query($sql3); ?>
 <!DOCTYPE html>
@@ -41,17 +42,36 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/NSS/logo192.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="../assets/NSS/logo128.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="../assets/NSS/logo128.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="../assets/NSS/logo192.png">
-
     <title><?php echo $tabname ?> - NSS, IIT Bombay</title>
+
+    <meta name="theme-color" content="">
 
     <link
       rel="stylesheet"
@@ -79,8 +99,6 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
     <!-- custom CSS -->
     <link href="./statics/css/custom.css" rel="stylesheet" />
 
-    <!-- caroual CSS -->
-    <!-- <link href="../statics/css/slideshow.css" rel="stylesheet"> -->
     <!-- Colors -->
   </head>
 
@@ -108,7 +126,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
           <ul class="nav navbar-nav navbar-right nav-distribute">
             <li class="hidden"><a href="#page-top"></a></li>
             <li class="page-scroll">
-              <a href="https://gymkhana.iitb.ac.in/~nss/tem/home/">Home</a>
+              <a href="https://gymkhana.iitb.ac.in/~nss/home/">Home</a>
             </li>
             <li>
               <a class="page-scroll" type="button" data-toggle="dropdown"
@@ -118,31 +136,35 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 <li>
                   <a
                     class="EO-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/EO/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/EO/"
                     >Educational Outreach</a
                   >
                 </li>
                 <li>
                   <a
                     class="GC-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/GC/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/GC/"
                     >Green Campus</a
                   >
                 </li>
                 <li>
                   <a
                     class="SSD-nav"
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/depts/SSD/"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/SSD/"
                     >Sustainable Social Development</a
                   >
                 </li>
                 <li>
-                  <a class="Media-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Media/"
+                  <a
+                    class="Media-nav"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/Media/"
                     >Media and Design</a
                   >
                 </li>
                 <li>
-                  <a class="Web-nav" href="https://gymkhana.iitb.ac.in/~nss/tem/depts/Web/"
+                  <a
+                    class="Web-nav"
+                    href="https://gymkhana.iitb.ac.in/~nss/depts/Web/"
                     >Web</a
                   >
                 </li>
@@ -212,20 +234,18 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/teach/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/teach/"
                     >Let's Teach!</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/cloth-donation/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/donation/"
                     >Make a Donation</a
                   >
                 </li>
                 <li>
-                  <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/nursery/"
-                  >
-                   Nursery For All</a
+                  <a href="https://gymkhana.iitb.ac.in/~nss/nursery/">
+                    Nursery For All</a
                   >
                 </li>
                 <li>
@@ -242,27 +262,27 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               ></a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/team/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/team/"
                     >Current Team</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/history/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/history/"
                     >History of NSS IITB</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/news"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/news"
                     >Media Coverage</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/SoC/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/SoC/"
                     >Stories of Change</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/experiences/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/experiences/"
                     >My NSS Experiences</a
                   >
                 </li>
@@ -270,12 +290,12 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                     <a href="#">Words from OC</a>
                   </li> -->
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/tem/gallery/"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/gallery/"
                     >Gallery</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs/">
                     Contact Us
                   </a>
                 </li>
@@ -289,7 +309,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               <ul class="dropdown-menu">
                 <!-- Impacting lives -->
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/Memoirs.php"
+                  <a href="https://gymkhana.iitb.ac.in/~nss/memoirs"
                     >Memoirs</a
                   >
                 </li>
@@ -300,36 +320,36 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1617.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1617.pdf" target="_blank"
                     >Annual Report 2016-17</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1516.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1516.pdf" target="_blank"
                     >Annual Report 2015-16</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1415.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1415.pdf" target="_blank"
                     >Annual Report 2014-15</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1314.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1314.pdf" target="_blank"
                     >Annual Report 2013-14</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://gymkhana.iitb.ac.in/~nss/tem/assets/annual_report/AR1213.pdf"
+                    href="https://gymkhana.iitb.ac.in/~nss/assets/annual_report/AR1213.pdf" target="_blank"
                     >Annual Report 2012-13</a
                   >
                 </li>
                 <li>
-                  <a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.php">
+                  <a href="https://gymkhana.iitb.ac.in/~nss/IH">
                     Invisible Humans of IIT Bombay
                   </a>
                 </li>
@@ -347,32 +367,35 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
     
                     $department = mysqli_fetch_assoc( $basic );
                     echo('
- 
-    <header id="welcome" class="scrollify full" style="background-image:url('.$department['main_image'].')">');
-   
-     echo('
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">' . $department['name'] . '</div>
-        <div class="intro-heading">
-          <div id="typed-strings">
-            <span>' . $department['one_liner'] . '</span>
+
+    <header id="welcome" class="scrollify full"
+      style="background-image:url('.$department['main_image'].')">');
+
+      echo('
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">' . $department['name'] . '</div>
+          <div class="intro-heading">
+            <div id="typed-strings">
+              <span>' . $department['one_liner'] . '</span>
+            </div>
+            <span id="typed"></span>
           </div>
-          <span id="typed"></span>
+        </div>
+
+        <h4 class="section-subheading department-description restrict600">
+          ' . $department['description'] . '
+        </h4>
+
+        <div>
+          <div class="space-between restrict600">
+            <a href="#initiatives" class="page-scroll btn btn-xl"
+              >Initiatives</a
+            >
+            <a href="#team" class="page-scroll btn btn-xl">Team</a>
+          </div>
         </div>
       </div>
-
-      <h4 class="section-subheading department-description restrict600">
-        ' . $department['description'] . '
-      </h4>
-
-      <div>
-        <div class="space-between restrict600">
-          <a href="#initiatives" class="page-scroll btn btn-xl">Initiatives</a>
-          <a href="#team" class="page-scroll btn btn-xl">Team</a>
-        </div>
-      </div>
-    </div>
     </header>
     '); ?>
 
@@ -388,71 +411,74 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
                         while( $row = mysqli_fetch_assoc( $result ) ){
                           if ($row['orderOnPage']!=0) {
                             $i = $i+1;
-                            echo('<div class="portfolio-item">
-            <a
-              href="#portfolioModal'.$i.'"
-              class="portfolio-link"
-              data-toggle="modal"
+                            echo('
+            <div class="portfolio-item">
+              <a
+                href="#portfolioModal'.$i.'"
+                class="portfolio-link"
+                data-toggle="modal"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  src="' . $row['thumbnail']. '"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="portfolio-caption">
+                  <h4>' . $row['initiative'] . '</h4>
+                  <p class="text-muted">' . $row['des_short'] . '</p>
+                </div>
+              </a>
+            </div>
+            '); $a=$a.'
+            <div
+              class="portfolio-modal modal fade"
+              id="portfolioModal'.$i.'"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
             >
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                src="' . $row['thumbnail']. '"
-                class="img-responsive"
-                alt=""
-              />
-              <div class="portfolio-caption">
-                <h4>' . $row['initiative'] . '</h4>
-                <p class="text-muted">' . $row['des_short'] . '</p>
-              </div>
-            </a>
-          </div>
-          '); $a=$a.'
-          <div
-            class="portfolio-modal modal fade"
-            id="portfolioModal'.$i.'"
-            tabindex="-1"
-            role="dialog"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                  <div class="lr"><div class="rl"></div></div>
-                </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                        <h2>' . $row['initiative'] . '</h2>
-                        <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
-                        '.($row['initiative']!="Video Making"?"<img":"<video width='80%' autoplay='autoplay' controls='controls'><source type='video/mp4'").'
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="close-modal" data-dismiss="modal">
+                    <div class="lr"><div class="rl"></div></div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                          <!-- Project Details Go Here -->
+                          <h2>' . $row['initiative'] . '</h2>
+                          <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+
+                          '.($row['initiative']!="Video Making"?"<img":"<video width='80%' autoplay='autoplay' controls='controls'><source type='video/mp4'").'
                          class="img-responsive img-centered" src='.
                         ($row['gif'] ? $row['gif'] : $row['thumbnail']) .' alt="">
                         
                        '. ($row['initiative']!="Video Making"?"":"</source></video>").'
-                        
-                        <p>' . $row['des_long'] . '</p>
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          data-dismiss="modal"
-                        >
-                          <i class="fa fa-times"></i> Close
-                        </button>
+
+                          <p>' . $row['des_long'] . '</p>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-dismiss="modal"
+                          >
+                            <i class="fa fa-times"></i> Close
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            '; }} ?>
+            <!-- portfolio item closed -->
           </div>
-          '; }} ?>
-          <!-- portfolio item closed -->
         </div>
       </div>
     </section>
@@ -463,68 +489,145 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
         id="EO-content6-1"
         style="background-color: rgb(255, 255, 255); padding-top: 20px; padding-bottom: 20px;"
       >
-        <div class="container">
-          <div class="text-center">
-            <h2 class="section-heading">Meet our team</h2>
-          </div>
-          <div class="team">
-            <div class="lead">
-              <h4>Department Heads</h4>
-              <table>
-                <?php
+
+        <div class="text-center">
+          <h2 class="section-heading">Meet our team</h2>
+        </div>
+        <div class="team">
+          <div class="lead">
+            <h4>Department Heads</h4>
+            <table>
+              <?php
                     $head = mysqli_fetch_assoc( $heads );
                     while ($head) {
                       $name=$head['name'];
         $contact=$head['contact'];
                       echo('
-                      <tr>
+              <tr>
                 <td>
-                  <span class="name-contact"><li>'.$name.'</li></span>
+                  <ul
+                    style="
+                  padding: 0;
+              "
+                  >
+                    <li class="name">'.$name.'</li>
+                  </ul>
                 </td>
                 <td>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                   &nbsp; &nbsp; &nbsp;
                 </td>
-                <td>
-                  <span class="name-contact"
-                    ><a href="tel: +91-$contact">'.$contact.'</a></span
-                  >
+                <td class="contact">
+                  <a href="tel: +91-$contact">'.$contact.'</a>
                 </td>
-                </li> 
-                </tr>
-                '); $head = mysqli_fetch_assoc( $heads ); } ?>
-              </table>
-            </div>
+              </tr>
+              '); $head = mysqli_fetch_assoc( $heads ); }
+              ?>
+            </table>
+          </div>
 
-            <div class="lead">
-              <h4>Activity Associates</h4>
-              <table>
-                <?php
+          <div class="lead">
+            <h4>Activity Associates</h4>
+            <table>
+              <?php
                         $aa = mysqli_fetch_assoc( $AAs );
                         while ($aa) {
         $name=$aa['name'];
         $contact=$aa['contact'];
         echo
-        (
-          '<tr>
+        ('
+              <tr>
                 <td>
-                  <span class="name-contact"><li>'.$name.'</li></span>
+                  <ul
+                    style="
+                  padding: 0;
+              "
+                  >
+                    <li class="name">'.$name.'</li>
+                  </ul>
                 </td>
                 <td>
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                   &nbsp; &nbsp; &nbsp;
                 </td>
-                <td>
-                  <span class="name-contact"
-                    ><a href="tel: +91-$contact">'.$contact.'</a></span
-                  >
+                <td class="contact">
+                  <a href="tel: +91-$contact">'.$contact.'</a>
                 </td>
-                </li> 
-                </tr>
-                ' ); $aa = mysqli_fetch_assoc( $AAs ); } ?>
-              </table>
-            </div>
+              </tr>
+              ' ); $aa = mysqli_fetch_assoc( $AAs ); }
+
+              ?>
+            </table>
           </div>
+        </div>
+
+        <?php
+          if ($dept=='SSD' && $year == '1819') {
+            echo('
+        <div class="team">
+          <div class="lead">
+            <h4>NIC Head</h4>
+            <table>
+              ');
+
+              // NIC 
+              $sql2="SELECT * FROM Coreteam WHERE dept = 'NIC' AND year = '$year' ORDER BY name" ;
+              $heads = $conn->query($sql2); 
+              $head = mysqli_fetch_assoc( $heads ); while ($head) { $name=$head['name'];
+              $contact=$head['contact']; echo('
+              <tr>
+                <td>
+                  <ul
+                    style="
+          padding: 0;
+      "
+                  >
+                    <li class="name">'.$name.'</li>
+                  </ul>
+                </td>
+                <td>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                </td>
+                <td class="contact">
+                  <a href="tel: +91-$contact">'.$contact.'</a>
+                </td>
+              </tr>
+              '); $head = mysqli_fetch_assoc( $heads ); } echo('
+            </table>
+          </div>
+          '); echo('
+          <div class="lead">
+            <h4>Activity Associates - NIC</h4>
+            <table>
+              '); $sql3="SELECT * FROM AAs WHERE dept = 'NIC' AND year = '$year'
+              ORDER BY name" ; $AAs = $conn->query($sql3); $aa =
+              mysqli_fetch_assoc( $AAs ); while ($aa) { $name=$aa['name'];
+              $contact=$aa['contact']; echo ( '
+              <tr>
+                <td>
+                  <ul
+                    style="
+            padding: 0;
+        "
+                  >
+                    <li class="name">'.$name.'</li>
+                  </ul>
+                </td>
+                <td>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                </td>
+                <td class="contact">
+                  <a href="tel: +91-$contact">'.$contact.'</a>
+                </td>
+              </tr>
+              ' ); $aa = mysqli_fetch_assoc( $AAs ); } echo('
+            </table>
+          </div>
+          '); }
+
+          ?>
         </div>
       </div>
     </section>
@@ -537,8 +640,7 @@ $conn->query($sql2); $AAs = $conn->query($sql3); ?>
               >Copyright &copy; NSS, IIT Bombay, 2019</span
             >
           </div>
-          <div class="col-md-4">
-          </div>
+          <div class="col-md-4"></div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
               <li>

@@ -3,8 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <title>Memoirs NSS IIT Bombay</title>
     <style>
       body {
         margin: 2rem;
@@ -23,9 +46,9 @@
         transform: scaleY(-1);
       }
     </style>
+    <script src="../common/jquery.min.js"></script>
   </head>
   <body>
-    <script src="../common/jquery.min.js"></script>
     <?php include("../common/navbar/navbar.php"); ?>
 
     <link rel="stylesheet" href="./carousal.css" />
@@ -51,27 +74,27 @@
 
     <section class="responsive-slider">
       <ul class="rslides" id="slider">
-        <li>
-          <img src="./memoirs/Memoir (1).png" />
+      <li>
+          <img src="./memoirs/14.png" />
         </li>
-        <li>
-          <img src="./memoirs/Memoir (2).png" />
-        </li>
-        <li>
-          <img src="./memoirs/Memoir (3).png" />
-        </li>
-
-        <!-- <?php
-  for ($i=1; $i <= 30; $i++) { 
+        <?php
+  for ($i=1; $i <= 32; $i++) { 
     echo
     (
-      ' -->
-
+      ' 
         <li>
           <img src="./memoirs/Memoir ('.$i.').jpg" />
         </li>
-
-        <!-- ' ); } ?> -->
+        ' ); } ?>
+         <?php
+  for ($i=1; $i <= 13; $i++) { 
+    echo
+    (
+      ' 
+        <li>
+          <img src="./memoirs/'.$i.'.jpg" />
+        </li>
+      ' ); } ?>
       </ul>
     </section>
 
