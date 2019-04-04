@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/home/</loc>
+  <lastmod>2019-03-31T09:32:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/history/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/team/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+<loc>https://gymkhana.iitb.ac.in/~nss/depts?dept=Web</loc>
+  <lastmod>2019-03-31T09:49:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+<loc>https://gymkhana.iitb.ac.in/~nss/depts?dept=GC</loc>
+  <lastmod>2019-03-31T09:49:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+<loc>https://gymkhana.iitb.ac.in/~nss/depts?dept=SSD</loc>
+  <lastmod>2019-03-31T09:49:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+<loc>https://gymkhana.iitb.ac.in/~nss/depts?dept=EO</loc>
+  <lastmod>2019-03-31T09:49:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+<loc>https://gymkhana.iitb.ac.in/~nss/depts?dept=Media</loc>
+  <lastmod>2019-03-31T09:49:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/greenopedia/home/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/olidwd/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/donation/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/teach/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/nursery/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/artimp/</loc>
+  <lastmod>2019-03-31T08:53:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/experiences/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/SoC/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/gallery/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/news/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/artimp/assets/rules_art_imp.pdf</loc>
+  <lastmod>2019-03-31T08:53:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/artimp/winners/</loc>
+  <lastmod>2019-03-31T08:53:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/ContactUs/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/IH/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://gymkhana.iitb.ac.in/~nss/memoirs/</loc>
+  <lastmod>2019-03-31T10:03:56+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+</urlset>

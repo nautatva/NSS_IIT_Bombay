@@ -1,0 +1,81 @@
+.winnerHeader{
+    border: 7px;
+    border-style: double;
+    border-radius: 5px;
+    border-color: indianred;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #c8000080;
+}
+.winners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.winner {
+    background-color: white;
+    flex: 1 0 0;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    border: 2px;
+    border-radius: 5px;
+    border-color: #328a86;
+    border-style: dashed;
+}
+
+.winner>img {
+    width: 95%;
+    height: 40%;
+    border-radius: 5px;
+}
+.winnerDescription{
+    border: 2px;
+    border-radius: 5px;
+    margin: 7px;
+}
+.winnerName{
+    margin-bottom: -11px;
+    background-color: darkkhaki;
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 1.3rem;
+    margin-top: 11px;
+}
+.winnerCollege{
+    margin-bottom: auto;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 1rem;
+}
+@media only screen and (min-device-width : 0px) and (max-device-width : 540px){
+    .winner{
+        min-width: 90%;
+    }
+    .winnerDescription{
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+}
+@media only screen and (min-device-width : 540px) and (max-device-width : 768px){
+    .winner{
+        min-width: 42%;
+    }
+    .winnerDescription{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 2056px){
+    .winner{
+        min-width: 27%;
+    }
+}
+

@@ -1,1 +1,1 @@
-<?php header("Location: https://gymkhana.iitb.ac.in/~nss/tem/depts?dept=Web"); ?>
+<?php header("Location: https://gymkhana.iitb.ac.in/~nss/depts?dept=Web"); ?>
