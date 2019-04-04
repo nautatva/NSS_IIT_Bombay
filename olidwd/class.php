@@ -45,7 +45,7 @@ $(function(){
               <div class="text-center text-size-30"> All Class <?php echo $_GET["c"];?> Videos </div>
               <div class ="text-center  text-size-24">
              <?php   
-              include('../dbconfig.php');
+              include('../../dbconfig.php');
             $conn= mysqli_connect($host, $username, $password, $db);
             $class = $_GET['c'];
             if($class == 9 || $class == 10)
@@ -76,7 +76,7 @@ $(function(){
           
         <?php
 
-            include('../dbconfig.php');
+            include('../../dbconfig.php');
             // if(is_set["page"])
             $conn= mysqli_connect($host, $username, $password, $db);
             if(!isset($_GET["page"])){

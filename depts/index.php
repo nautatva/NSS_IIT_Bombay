@@ -1,5 +1,5 @@
 <?php
-include("../dbconfig.php");
+include("../../dbconfig.php");
 $dept = strtoupper($_GET['dept']);
 $year = '1819';
 if ($dept=='EO') {

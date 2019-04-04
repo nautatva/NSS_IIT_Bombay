@@ -12,8 +12,7 @@ echo ("<div><div><div>");
     
         if ($last != $current) {
             if ($no%6==0) {
-                echo( "
-                </div></div><div class='clearfix'>" );
+                echo( " </div></div><div class='clearfix'>" );
             }
             echo 
             (

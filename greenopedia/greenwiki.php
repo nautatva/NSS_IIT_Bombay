@@ -8,11 +8,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="img/favicon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" href="./img/favicon.png" />
-
+        <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../assets/NSS/logo192.png"
+    />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -51,7 +68,7 @@
 if (isset($_GET['page'])) {
 
 $page=$_GET['page'];
-include('../dbconfig.php');
+include('../../dbconfig.php');
 $SQL="SELECT * FROM greenopedia WHERE mostcommonname='$page'" ;
 $result = $conn->query($SQL);
 
@@ -81,7 +98,7 @@ $string = str_replace(' ', '', $page);
             <div class="container-fluid">
                 <div class="col-md-5">
                     <div class = "imgbox" style="padding-bottom: 30px;">
-                        <div class = "natureimg" style="background-image: url(<?php echo("./img/$string.jpg"); ?>);"></div>
+                        <div class = "natureimg" style="background-image: url(<?php echo("../assets/greenopedia/$string.jpg"); ?>);"></div>
                     </div>
                 </div>
                 <div class="col-md-6">

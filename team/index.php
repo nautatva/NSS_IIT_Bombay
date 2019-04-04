@@ -1,5 +1,5 @@
 <?php
-include("../dbconfig.php");
+include("../../dbconfig.php");
 $year = '1819';
 
 $depts=$conn->query("SELECT distinct dept FROM Coreteam ") ; $mydepts = [];

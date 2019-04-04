@@ -2,7 +2,7 @@
             $sub = $_GET['sub'];
             $lang = $_GET['lang'];
             $class = $_GET['class'];
-            include('../dbconfig.php');
+            include('../../dbconfig.php');
             
              $conn= mysqli_connect($host, $username, $password, $db);
             $sql = "SELECT * FROM Folderlink WHERE CLASS=".$class." AND SUB = '".$sub."' AND LANG = '".$lang."'";
@@ -88,7 +88,7 @@ $(function(){
 
 
 
-            include('../dbconfig.php');
+            include('../../dbconfig.php');
            
             $conn= mysqli_connect($host, $username, $password, $db);
             if(!isset($_GET["page"])){

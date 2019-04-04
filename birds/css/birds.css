@@ -23,16 +23,51 @@
     opacity: 0.85;
     z-index: 2;
 } */
+
+body{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+.shortDetailsContent, .detailsContent, .largeDetailsContent {
+  font-family: 'Montserrat',sans-serif;
+}
+.titleContent, .shortTitleContent, .largeTitleContent{
+    font-family: 'Montserrat',sans-serif;
+    font-style: bold;
+}
+
+/* Main CSS Stars */
+.detailsContent::first-letter { 
+    font-size: 160%;
+    text-transform: uppercase;
+  }
+.shortDetailsContent::first-letter { 
+    font-size: 160%;
+    text-transform: uppercase;
+  }
+.largeDetailsContent::first-letter { 
+    font-size: 160%;
+    text-transform: uppercase;
+  }
 .birdName{
+    z-index: 1;
+    opacity: 0.9;
     font-family: monospace;
     text-align: center;
+    background-color: #23335e;
     font-size: 4rem;
-    background-color: #000000;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    text-shadow: #d04087 0px 3px 8px;
+    box-shadow: 0px 3px 7px grey;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    color: white;
 }
 #content{
     color: black;
@@ -43,15 +78,19 @@
 .moderateContent{
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     text-align: left;
     padding: 1rem;
     background-color: #ddd;
-    border-left: 1rem solid #23335e ;
-    border-radius: 0.5rem;
+    border-left: 1rem solid #23335e;
     background-color: white;
     margin: 1rem;
     vertical-align: top;
+    box-shadow: 0px 0px 5px;
+}
+.moderateContentMain{
+    display: flex;
+    flex-direction: row;
 }
 .moderateContentLayoutOne{
     display: flex;
@@ -61,30 +100,31 @@
     padding-top: 1rem;
 }
 .titleContent{
-    width: 50%;
-    font-size: 21px;
+    font-size: 2.3rem;
     font-weight: bold;
     border-bottom: 0.2rem solid #23335e;
 }
 .detailsContent{
-    width: 70%; 
+    width: 95%; 
     padding-left: inherit;
+    font-size: 1.7rem;
 }
 .shortContentLayout{
     display: flex;
 }
 .birdImage{
+    margin-top: 1rem;
     width: auto;
     vertical-align: middle;
    text-align: center;
 }
 #img{
     border: 5px solid white;
-    border-radius: 0.7rem;
     vertical-align: middle;
     display: inline-block;
     width: 100%;
     max-height: 50vh;
+    box-shadow: 0px 0px 3px;
 }
 .shortContentLayoutOne{
     margin-top: 1rem;
@@ -99,18 +139,18 @@
     padding: 1rem;
     background-color: #fff;
     border-left: 1rem solid #d04087;
-    border-radius: 0.5rem;
     margin: 1rem;
     vertical-align: top;
+    box-shadow: 0px 0px 5px;
 }
 .shortTitleContent{
-    width: 50%;
-    font-size: 21px;
+    font-size: 2.3rem;
     font-weight: bold;
     border-bottom: 0.2rem solid #d04087;
 }
 .shortDetailsContent{
     padding-left: inherit;
+    font-size: 1.7rem;
 }
 
 
@@ -128,24 +168,21 @@
     padding: 1rem;
     background-color: #ddd;
     background-color: #fff;
-    border-left: 1rem solid #23335e;   
-    border-radius: 0.5rem; 
+    border-left: 1rem solid #23335e;
     margin: 1rem;
     vertical-align: top;
+    box-shadow: 0px 0px 5px;
 }
 .largeTitleContent{
-    width: 50%;
     border-bottom: 0.2rem solid #23335e;
-    font-size: 21px;
+    font-size: 2.3rem;
     font-weight: bold;
 }
 .largeDetailsContent{
     padding-left: inherit;
+    font-size: 1.7rem;
 }
 @media screen and (max-width: 480px){
-    .birdName{
-        background-color: maroon;
-    }
     .titleContent{
         width: auto;
     }
@@ -157,11 +194,17 @@
     }
     #img{
         border: 5px solid white;
-        border-radius: 0.7rem;
         vertical-align: middle;
         display: inline-block;
-        width: 90%;
+        width: 95%;
         max-height: 50vh;
+    }
+    .moderateContentMain{
+        display: flex;
+        flex-direction: column;
+    }
+    .moderateContent{
+        width: auto;
     }
     .shortContentLayout{
         display: block;
@@ -177,8 +220,7 @@
         padding: 1rem;
         background-color: #ddd;
         background-color: #fff;
-        border-left: 1rem solid #23335e;   
-        border-radius: 0.5rem; 
+        border-left: 1rem solid #23335e;
         margin: 1rem;
         vertical-align: top;
     }

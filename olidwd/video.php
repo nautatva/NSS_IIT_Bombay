@@ -5,7 +5,7 @@
 
 <?php 
 $id = $_GET['id'];
-include('../dbconfig.php');
+include('../../dbconfig.php');
 $conn= mysqli_connect($host, $username, $password, $db);
 $sql = "SELECT * FROM OLI WHERE id=".$id;
 $result = mysqli_query($conn, $sql);

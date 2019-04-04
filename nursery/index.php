@@ -91,7 +91,7 @@
     <?php include("../common/footer/footer.php");?>
     <?php
 function test(){
-include('../dbconfig.php');
+include('../../dbconfig.php');
 $name = $_POST["name"];
 $contact = $_POST["contact"];
 $email = $_POST["email"];

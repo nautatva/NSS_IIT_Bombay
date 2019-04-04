@@ -66,7 +66,7 @@ $(function(){
           
         <?php
 
-            include('../dbconfig.php');
+            include('../../dbconfig.php');
             // if(is_set["page"])
             $conn= mysqli_connect($host, $username, $password, $db);
             if(!isset($_GET["page"])){
