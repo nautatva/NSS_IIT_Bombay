@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="./custom/home.css">
+<link rel="stylesheet" type="text/css" href="../custom/home.css">
     <?php
-include('dbconfig.php');
+include('../dbconfig.php');
     $SQL="SELECT commonname FROM birds_of_iitbombay ORDER BY commonname";
     $result = $conn->query($SQL);
     $last = '';
@@ -28,10 +28,11 @@ echo ("<div><div><div>");
         }
         echo
         (
-            "<a href='./birdswiki.php?page=$mostcommon'>$mostcommon</a> <br />"
+            "<a href='../birdswiki.php?page=$mostcommon'>$mostcommon</a> <br />"
         );
         
         
     }
+    echo("</div>       </div>       </div>       <div class='clearfix'></div>");
     $conn->close();
 ?>

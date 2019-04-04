@@ -1,5 +1,5 @@
 <?php
-include("../dbconfig.php");
+include("../../dbconfig.php");
     $SQL="SELECT * FROM QueryPortalNOCS ORDER BY ID DESC";
     $result = $conn->query($SQL);
 ?>
@@ -70,7 +70,7 @@ include("../dbconfig.php");
     </table>
     <?php
         function func(){
-           include("../../dbconfig.php");
+           include("../../../dbconfig.php");
         $mykey = key($_POST);
         $myval = $_POST[$mykey];
         if($myval == 'Mark_as_Done'){

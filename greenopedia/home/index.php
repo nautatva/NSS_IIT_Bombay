@@ -18,12 +18,27 @@
       href="custom/css/bootstrap.min.css"
     />
 
-    <!-- Favicon -->
     <link
       rel="icon"
-      href="./img/favicon.png"
-      sizes="160x160"
       type="image/png"
+      sizes="192x192"
+      href="../../assets/NSS/logo192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="128x128"
+      href="../../assets/NSS/logo128.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="../../assets/NSS/logo192.png"
     />
 
     <!-- Meta data -->
@@ -33,7 +48,7 @@
     <meta property="og:title" content="Home &middot; Greenopedia" />
     <meta
       property="og:image"
-      content="https://gymkhana.iitb.ac.in/~nss/greenopedia/home/img/Main.jpg"
+      content="https://gymkhana.iitb.ac.in/~nss/greenopedia/home/Main.jpg"
     />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="450" />
@@ -50,18 +65,12 @@
     <?php include_once('./navbar.php'); ?>
     <div class="clearfix"></div>
     <div style="background-color: #D9D6BA;">
-      <picture class="col-sm-6">
-        <source
-          style=" max-width:100%;"
-          type="image/webp"
-          srcset="./img/Main.webp"
-        />
         <img
+          class="col-sm-6"
           style=" max-width:100%;"
-          src="./img/Main.jpg"
+          src="../Main.jpg"
           alt="Institute campus"
         />
-      </picture>
 
       <div class="col-sm-4">
         <p class="head3">Greenopedia</p>

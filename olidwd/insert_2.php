@@ -1,5 +1,5 @@
 <?php
-include('../dbconfig.php');
+include('../../dbconfig.php');
 $conn= mysqli_connect($host, $username, $password, $db);
 echo mysqli_connect_error();
 $csvFile = fopen('drive.csv', 'r');

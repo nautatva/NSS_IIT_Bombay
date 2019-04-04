@@ -8,15 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
-        <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="img/favicon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" href="./img/favicon.png" />
-
+        <link rel="stylesheet" href="./css/birds.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="./css/scrollToTop.css">
+        <link rel="stylesheet" href="./css/common/fontello/icon.css">
 
-    	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
         <!-- Bootstrap -->
   		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,17 +25,18 @@
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
-    <body background="./assets/zen-birds-twitter-background.jpg">  
+    <body style="background-image: url('https://gymkhana.iitb.ac.in/~nss/team/bg.jpg');">  
+
     <!-- Scroll to top -->
-    <a class="scrollToTop" href="#" title="Click for Top">
-      <span
-        ><i class="icon icon-up-open-mini"><b>↑</b></i></span
-      >
+    <a class="scrollToTop Vinvert" href="#" title="Click for Top">
+      <span><i class="icon icon-up-open-mini"><b> &#xe802; click here to go top</b></i></span>
     </a>
-    <script type="text/javascript" src="../home/js/scrollTop.js"></script>
 
     <!-- navbar -->
-    <div w3-include-nav="../common/navbar/navbar.html"></div>
+    
+    <div w3-include-nav="../../birds/common/navbar/navbar.html"></div>
+    <!-- <link rel="import" href="common/navbar/navbar.html"> -->
+    <!-- <link rel="import" href="common/footer/footer.html"> -->
 
 
 <!-- PHP SQL -->
@@ -50,6 +52,7 @@ $result = $conn->query($SQL);
 	// output data of each row
     while($row = $result->fetch_assoc()) 
     {
+    $commonname=$row["commonname"];
     $scientificName=$row["Scientific Name"];
     $family=$row["Family"];
     $identification=$row["Identification"];
@@ -62,7 +65,8 @@ $result = $conn->query($SQL);
     $diet=$row["Diet"];
     $food=$row["Food"];
     $call=$row["Call (Identification of Voice)"];
-    $lifeSpan=$row["Average Lifespan in Wild"];}
+    $lifeSpan=$row["Average Lifespan in Wild"];
+  }
 } else {
     echo "please try again";
 }
@@ -76,13 +80,9 @@ $string = str_replace(' ', '', $page);
             <video src="./assets/Birds Flying video background.mp4" autoplay="true" loop="true"></video>
         </div> -->
       <div class="birdName">
-        <span style="font-size:4.5rem;">P</span>URPLE RUMPED SUNBIRD
+        <span style="font-size:4.5rem;"><?php echo $commonname; ?>
       </div>
       <div class="partOne-content">
-        <div class="moderateContent">
-          <div class="titleContent">Average Lifespan in Wild</div>
-          <div class="detailsContent"><?php echo $lifeSpan; ?></div>
-        </div>
         <div class="shortContentLayout">
           <div class="shortContentLayoutOne">
             <div class="shortContent">
@@ -119,6 +119,25 @@ $string = str_replace(' ', '', $page);
               <div class="shortDetailsContent"><?php echo $populationTrend; ?></div>
             </div>
           </div>
+        </div>
+        <div class="moderateContentMain">
+        <div class="moderateContent">
+          <div class="titleContent">Average Lifespan in Wild</div>
+          <div class="detailsContent"><?php echo $lifeSpan; ?></div>
+        </div>
+        <div class="moderateContent">
+          <div class="titleContent">Identification Sound</div>
+          <div class="detailsContent">
+            <audio controls style="margin-top: 1rem;">
+              <source src="horse.ogg" type="audio/ogg">
+              <source src="http://www.evilhat.com/fudge/robsounds/barkingdogs.mp3" preload="auto" controls='controls' type="audio/mpeg">Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <div class="moderateContent">
+          <div class="titleContent">Diet</div>
+          <div class="detailsContent"><?php echo $diet; ?></div>
+        </div>
         </div>
       </div>
 
@@ -178,13 +197,11 @@ $string = str_replace(' ', '', $page);
         </div>
       </div>
     </section>
-        
-    <link rel="stylesheet" href="../home/css/footer.css" />
-    <link rel="stylesheet" href="../home/fontello/icon.css" />
+  
     <!-- footer -->
-    <div w3-include-html="../common/footer/footer.html"></div>
+    <div w3-include-nav="../../birds/common/footer/footer.html"></div>
 
-  <script src="../home/js/plugin.js"></script>
+  <!-- <script src="homeNew/js/plugin.js"></script>
   <script>
     $(function() {
       $('#slider').responsiveSlides({
@@ -195,15 +212,24 @@ $string = str_replace(' ', '', $page);
         namespace: 'slider-callback'
       });
     });
-    includeNav();
     includeHTML();
   </script>
 
   <script>
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    var el = content.querySelector('#nav');
+    document.body.appendChild(el.cloneNode(true));
+    includeHTML();
+  </script> -->
+  <script>
     includeNav();
     includeHTML();
-  </script>
+ </script>
 
+  <script type="text/javascript" src="../../birds/common/common.js"></script>
+
+<!-- W3-Include-html  JS Script code-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
         </section>
         <!-- font awesome -->

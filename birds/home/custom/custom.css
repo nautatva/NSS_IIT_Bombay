@@ -1,0 +1,24 @@
+#descriptionIndex{
+    font-size: 10px;
+    width: 50%;
+    padding-right: 10px;
+}
+#descriptionImageIndex{
+    height: 51vh;
+}
+
+@media (max-width: 768px) {
+    #descriptionIndex{
+        font-size: 10px;
+        width: 100%;
+        padding-right: 15px;
+    }
+    #descriptionImageIndex{
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
+    #descitptionImageIndex{
+        height: max-content;
+    }
+}

@@ -1,0 +1,42 @@
+/* Statistics */
+
+.statistics-section {
+  background-color: gray;
+  padding: 150px;
+}
+
+.statistics-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.statistics {
+  margin: 8px;
+  flex: 0 0 150px;
+}
+
+.statistics.block .statistics-icon,
+.statistics.block .statistics-content,
+.statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.statistics-icon img {
+  height: 70px;
+  width: auto;
+}
+
+.statistics-content {
+  color: white;
+}
+
+.statistics-content > h5 {
+  margin: 0px;
+  font-size: 40px;
+}
