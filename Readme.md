@@ -1,9 +1,16 @@
+## Official github repo for NSS IIT Bombay website
+### How to clone this repo over slow internet connections:
+`git clone --depth=1 https://github.com/nautatva/code-static.git`\
+`git fetch --unshallow`
+
+
+Current pages:
 |              Pages               | type | navbar | footer |
 | :------------------------------: | :--: | :----: | :----: |
 |          cloth-donation          | php  |  [x]   |  [x]   |
 |              depts               | php  |  [x]   |  [x]   |
 |           experiences            | html |  [x]   |  [x]   |
-|             gallery              | html |  [ ]   |  [ ]   |
+|     gallery - to be changed      | html |  [ ]   |  [ ]   |
 |             history              | html |  [x]   |  [x]   |
 |               home               | html |  [x]   |  [x]   |
 |             nursery              | php  |  [x]   |  [x]   |
@@ -16,37 +23,17 @@
 |    Contact Us - not optimized    | php  |  [x]   |  [x]   |
 | Invisible Humans - not optimized | php  |  [x]   |  [x]   |
 
-Old pages:
 
-Artistic Impact Winners-2016.html	
-dept pages
-BingSiteAuth.xml			artimp
-Cashless.html				
-		google248bda5f4a6e632b.html
-greenopedia
-
-Gallery.php				mail.php
-HoIITB.php				names.php
-Media.php				navbar.php
-Memoirs.php				nocs
-NIC.php					nsstest
-Publicity.php				olidwd
-Rules.pdf				page8.html
-SSD.php					reports
-Team.html				robots.txt
-Team.php				sitemap.xml
-Template for navbar.txt			tem
-Tutorials.html				upload.html
-UPI.html				upload.php
-USSD.html				uploadportal
-Vikas.html				uploads
-VikasEcoG.jpg				vood.jpg
-edits:
-
-- depts:
-
-  - SSD:
-    - best out of waste last word eateries - spelling corection
-    - Question marks in SCD
-  - EO:
-    - OLI question marks
+## Old pages
+(to be added):\
+`Cashless.html`\
+`mail.php`\
+`names.php`\
+`nsstest`\
+`page8.html`\
+`Tutorials.html`\
+`UPI.html`\
+`USSD.html`\
+`uploadportal upload.html upload.php uploads` (for upload of volunteer)\ `essays`\
+`VikasEcoG.jpg`\
+`vood.jpg`\
