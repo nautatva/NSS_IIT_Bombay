@@ -114,6 +114,27 @@ $conn->close();
 }
 if(array_key_exists('submit',$_POST)){
     test();
+
+    $name = $_POST["name"];
+    $contact = $_POST["contact"];
+    $email = $_POST["email"];
+    $description = nl2br($_POST["description"]);
+
+    $query = "teach";
+    $subject = $query + "portal";
+    $body = " -- ".$subject." --
+            <br><br>
+            Name: ".$name." 
+            <br>
+            Contact: ".$contact."
+            <br>
+            Email: ".$email."
+            <br>
+            Message: ".$description."
+            <br><br>
+            PLEASE DO NOT REPLY TO THIS MAIL";
+
+    include('../../mailinsti.php'); 
 }
 ?>
 
