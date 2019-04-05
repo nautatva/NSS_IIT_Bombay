@@ -101,15 +101,39 @@ $sql = "INSERT INTO `clothdonation` (`Name`, `ContactNo`, `email`,`prefdate`)
 $res=$conn->query($sql);
 
 if ($res === TRUE) {
+    echo "<script type='text/javascript'>alert('Thank you for the response. We will reach back shortly!');</script>";
     echo "New record created successfully";
 } else {
+     echo "<script type='text/javascript'>alert('Please try again :(');</script>";
     echo "Error";
 }
 
 $conn->close();
 }
+
 if(array_key_exists('submit',$_POST)){
     test();
+
+    $name = $_POST["name"];
+    $contact = $_POST["contact"];
+    $email = $_POST["email"];
+    $date= $_POST["date"];
+
+    $query = "donation";
+    $subject = $query + "portal";
+    $body = " -- ".$subject." --
+            <br><br>
+            Name: ".$name." 
+            <br>
+            Contact: ".$contact."
+            <br>
+            Email: ".$email."
+            <br>
+            Preferred Date: ".$date."
+            <br><br>
+            PLEASE DO NOT REPLY TO THIS MAIL";
+
+    include('../../mailinsti.php'); 
 }
     
 ?>
