@@ -1,10 +1,12 @@
 ## Official github repo for NSS IIT Bombay website
+
 ### How to clone this repo over slow internet connections:
+
 `git clone --depth=1 https://github.com/nautatva/code-static.git`\
 `git fetch --unshallow`
 
-
 Current pages:
+
 |              Pages               | type | navbar | footer |
 | :------------------------------: | :--: | :----: | :----: |
 |          cloth-donation          | php  |  [x]   |  [x]   |
@@ -23,8 +25,8 @@ Current pages:
 |    Contact Us - not optimized    | php  |  [x]   |  [x]   |
 | Invisible Humans - not optimized | php  |  [x]   |  [x]   |
 
-
 ## Old pages
+
 (to be added):\
 `Cashless.html`\
 `mail.php`\
@@ -34,6 +36,7 @@ Current pages:
 `Tutorials.html`\
 `UPI.html`\
 `USSD.html`\
-`uploadportal upload.html upload.php uploads` (for upload of volunteer)\ `essays`\
+`uploadportal upload.html upload.php uploads` (for upload of volunteer)\
+`essays`\
 `VikasEcoG.jpg`\
-`vood.jpg`\
+`vood.jpg`
