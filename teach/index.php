@@ -121,7 +121,7 @@ if(array_key_exists('submit',$_POST)){
     $description = nl2br($_POST["description"]);
 
     $query = "teach";
-    $subject = $query + "portal";
+    $subject = "".$query." portal";
     $body = " -- ".$subject." --
             <br><br>
             Name: ".$name." 

@@ -53,7 +53,7 @@
 					</div>
 
 					<div class="visible">
-						<form style="font-size:20px;color:#0088cc; margin-left:25px;" method="POST" onsubmit="return check()">
+						<form style="font-size:20px;color:#0088cc; margin-left:25px;" method="POST">
 							<table>
 								<tr>
 									<td style="width: 100rem;">
@@ -104,7 +104,21 @@ if ($res === TRUE) {
 $conn->close();
 }
 if(array_key_exists('submit',$_POST)){
-    test();
+		test();
+		
+		$name = $_POST["ldap"];
+    $description = nl2br($_POST["query"]);
+
+    $query = "NOCS";
+    $subject = "".$query." portal response";
+    $body = "
+            LDAP: ".$name." 
+            <br>
+            Message: ".$description."
+            <br><br>
+            PLEASE DO NOT REPLY TO THIS MAIL";
+
+    include('../../mailinsti.php'); 
 }
        ?>
 </body>

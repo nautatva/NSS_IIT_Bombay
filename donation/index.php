@@ -120,9 +120,8 @@ if(array_key_exists('submit',$_POST)){
     $date= $_POST["date"];
 
     $query = "donation";
-    $subject = $query + "portal";
-    $body = " -- ".$subject." --
-            <br><br>
+    $subject = "".$query." portal";
+    $body = " 
             Name: ".$name." 
             <br>
             Contact: ".$contact."
