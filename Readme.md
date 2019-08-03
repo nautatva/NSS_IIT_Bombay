@@ -1,6 +1,6 @@
 ## Official github repo for NSS IIT Bombay website
-### This website was during tenure 2018-19
-### View the current website at http://gymkhana.iitb.ac.in/~nss/
+- This website was during tenure 2018-19
+- View the current website at http://gymkhana.iitb.ac.in/~nss/
 
 ### How to clone this repo over slow internet connections:
 
