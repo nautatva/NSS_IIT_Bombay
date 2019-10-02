@@ -1,6 +1,7 @@
 ## Official github repo for NSS IIT Bombay website
 - This website was during tenure 2018-19
-- View the current website at http://gymkhana.iitb.ac.in/~nss/
+- View the current website at https://nautatva.github.io/NSS_IIT_Bombay/
+- As github does not support PHP, redirected to the website on gymkhana servers. The site might have been changed.
 
 ### How to clone this repo over slow internet connections:
 
