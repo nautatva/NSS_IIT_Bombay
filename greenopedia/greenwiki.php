@@ -194,6 +194,7 @@ $string = str_replace(' ', '', $page);
                 <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
             </div>
+            <p style="text-align: center;background-color: #373a48;padding: 0 0 20px 0;margin: 0;">Made by <a href="https://nautatva.github.io/" style="color: aquamarine;"> Nautatva </a></p>
         </footer>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
