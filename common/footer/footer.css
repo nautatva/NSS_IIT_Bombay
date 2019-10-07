@@ -247,3 +247,7 @@ footer p.footer-links a {
   text-align: center;
   font-size: 14px;
 }
+
+.copyright a{
+  color: aquamarine;
+}
