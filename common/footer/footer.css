@@ -242,7 +242,7 @@ footer p.footer-links a {
   transition: all 1s 0.2s ease;
 }
 
-#copyright {
+.copyright {
   color: white;
   text-align: center;
   font-size: 14px;
