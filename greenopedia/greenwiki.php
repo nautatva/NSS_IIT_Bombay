@@ -50,13 +50,13 @@
             <div>
             	<div style="padding-left: 5%; padding-right: 5%; padding-top: 1%;">
 	                <div class="navbar-header">
-				      <a class="navbar-brand logo" style="font-size: 28px; margin-top: -5px; margin-left: 25px; color: #575B52" href="https://gymkhana.iitb.ac.in/~nss/home/" style="/*font-family: 'Merriweather', sans-serif*/">NSS IIT Bombay</a>
+				      <a class="navbar-brand logo" style="font-size: 28px; margin-top: -5px; margin-left: 25px; color: #575B52" href="https://nautatva.github.io/NSS_IIT_Bombay/home/" style="/*font-family: 'Merriweather', sans-serif*/">NSS IIT Bombay</a>
 				    </div>
 				    <ul class="nav navbar-nav navbar-right">
 		  		        <li class="active nav-link"><a href="./home">Greenopedia</a></li>
 				        <li><a href="https://gymkhana.iitb.ac.in/~nss/GC.php">Green Campus</a>
 	                    </li>
-				        <li><a href="https://gymkhana.iitb.ac.in/~nss/Team.html">About Us</a>
+				        <li><a href="https://nautatva.github.io/NSS_IIT_Bombay/team/">About Us</a>
 	                        </li>
 				        <li><a href="https://gymkhana.iitb.ac.in/~nss/ContactUs.html" style="margin-right: 0px;">Contact Us</a></li>
 				    </ul>
