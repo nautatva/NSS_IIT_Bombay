@@ -1,6 +1,7 @@
 <?php
 include('../../dbconfig.php');
 $conn= mysqli_connect($host, $username, $password, $db);
+$conn->set_charset('utf8');
 $csvFile = fopen('oli.csv', 'r');
 fgetcsv($csvFile);
 while(($line = fgetcsv($csvFile)) !== FALSE){
