@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/*========COLOR PRESETS=========*/
+/*============NAVBAR============*/
+.container{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  -webkit-tap-highlight-color: transparent;
+}
+#navImg{
+  margin-top: -15px;
+  margin-bottom: -15px;
+  width: 70px;
+  margin-left: 0;
+  height: 70px;
+  padding-left: 0px !important;
+}
+nav {    
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  position: relative;
+  box-shadow: 0px 2px 5px;
+}
+  /*============FIRST LEVEL============*/
+  nav :before, nav :after {
+    content: " ";
+    display: table; }
+  nav :after {
+    clear: both; }
+  nav ul {
+    z-index: 5;
+    background: #efefef;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    position: relative; }
+  nav > ul {
+  box-shadow: 0 0px 28px white;
+    padding: 0;
+    margin-top: 0px; }
+  nav ul:after {
+    content: "";
+    clear: both;
+    display: block; }
+  nav li {
+    padding-top: 13.2px;
+    padding-bottom: 13.2px;
+    float: left;
+    position: relative; 
+  }
+  #navImgli{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+    nav li a {
+      font-size: 1.2rem;
+      line-height: 1rem !important;
+      list-style: none;
+      text-decoration: none;
+      padding: 20px;
+      display: block;
+      color: #757575; }
+      .submenu ul{
+        z-index: 2;
+      }
+  nav li:hover, nav .submenu.openSub {
+    box-shadow: 0 0px 6px white;
+    background: #4b545f;
+    cursor: pointer; }
+  nav li:hover a, nav .submenu.openSub {
+    color: #fff; }
+  nav .submenu-button {
+    float: right;
+    padding-left: 5px;
+    position: relative; }
+  nav .submenu-button::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 9px;
+    height: 1px;
+    background: #757575;
+    z-index: 99;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s; }
+  nav .submenu-button::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 1px;
+    display: block;
+    width: 1px;
+    height: 9px;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    background: #757575;
+    z-index: 99; }
+  nav li:hover .submenu-button::before,
+  nav li:hover .submenu-button::after,
+  nav .active .submenu-button::before,
+  nav .active .submenu-button::after {
+    background: #fff; }
+
+.submenu.openSub a {
+  color: #fff; }
+#statement{
+  float: right;
+  background:  #4b545f;
+}
+#statement>a{
+  color: white;
+}
+/*==============MINUS SYMBOL==========*/
+/*==============CLOSE SYMBOL==========*/
+.openSub .submenu-button::after, .openSub .submenu-button::before {
+  -webkit-transform: rotate(135deg); }
+
+.toggleMenu {
+  display: none;
+  list-style: none;
+  position: relative;
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #efefef;
+  color: #757575;
+  cursor: pointer; 
+}
+.toggleMenu::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 31px;
+  height: 2px;
+  background: #000000;
+}
+.toggleMenu::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  display: block;
+  width: 22px;
+  height: 5px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+/*============SECOND LEVEL============*/
+.submenu ul {
+  max-height: 80vh;
+  display: none;
+  overflow-x: auto !important;
+  overflow-y: scroll !important;
+  background: #626d7c;
+  padding: 0;
+  position: absolute;
+  top: 100%; 
+}
+.submenu li {
+  float: none;
+  border-top: 1px solid #6d7a8a;
+  border-bottom: 1px solid #56616d;
+  position: relative;
+}
+
+.submenu li a {
+  padding: 15px 20px;
+  width: max-content;
+  color: #fff; }
+
+.submenu li a:hover {
+  background: #4b545f; }
+
+/*============THIRD LEVEL============*/
+/*ul ul ul {
+  position: absolute;
+  left: 100%;
+  top:0;
+}*/
+/*============MAKING RESPONSIVE============*/
+@media screen and (max-width: 600px) {
+  .toggleMenu {
+    display: block;
+  }
+
+  .submenu ul {
+    max-height: 37vh;
+    overflow: scroll !important;
+    z-index: 2;
+    position: relative;
+  }
+
+  .submenu li a {
+    width: unset;
+    padding: 20px; }
+
+  .submenu-button {
+    padding-right: 10px; }
+
+  nav ul {
+    display: none;}
+  nav > ul {
+    z-index: 5;
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+    border-top: 1px solid rgba(120, 120, 120, 0.15); }
+  nav ul li {
+    float: none;
+    border-top: 1px solid rgba(120, 120, 120, 0.15); }
+  nav li:hover .submenu-button::after,
+  nav li:hover .submenu-button::before,
+  nav .active .submenu-button::before,
+  nav .active .submenu-button::after {
+    background-color: #fff; } 
+    nav li {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      float: left;
+      position: relative; }
+    #navImgli{
+      display: none;
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    #statement{
+      position: absolute;
+      bottom: 8rem;
+    }
+  }
+
+/*# sourceMappingURL=demo-styles.css.map */

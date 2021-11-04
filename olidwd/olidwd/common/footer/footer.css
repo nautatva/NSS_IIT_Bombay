@@ -1,0 +1,110 @@
+#sectionFooter{
+  background: aliceblue;
+  margin-top: 7rem;
+  box-shadow: 0px -5px 14px black;
+}
+  section #services {
+    text-align: center;
+    transform: translatez(0);
+  }
+  section #services li {
+    width: 120px;
+    height: 140px;
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+  }
+  section #services li a {
+    color: white;
+  }
+  section #services li div:hover {
+    transform: rotate(360deg);
+    border-radius: 100px;
+  }
+  #facebook{
+    color:#3b5998!important;
+  }
+  #twitter{
+    color: #1da1f2 !important;
+  }
+  #youtube{
+    color: #fd1d1d!important;
+  }
+  #LinkedIn{
+    color:  #0077B5!important;
+  }
+  #Instagram>i{
+    border-radius: 50px;
+    background: linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d)!important;
+  }
+  #InstagramSpan{
+    color: #c13584!important;
+  }
+  section>p{
+    margin-bottom: 0 !important;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 7px;
+  }
+  @media only screen and (max-width: 2000px) and (min-width: 770px){
+    section #services li div {
+      
+    background-color: white;
+    border-radius: 2px black;
+    box-shadow: 0px 0px 4px black;
+      width: 120px;
+      height: 120px;
+      font-size: 3.4em;
+      text-align: center;
+      line-height: 120px;
+      transition: all 0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    }
+    section #services li span {
+    width: 120px;
+    height: 20px;
+    display: block;
+    padding: 15px 0px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+  @media screen and (max-width: 769px){
+    #sectionFooter{
+      /* margin-top: 10rem; */
+    }
+    
+  section>p{
+    font-size: 1rem;
+  }
+  section #services {
+    transform: translatez(0);
+  }
+  section #services li {
+    width: 12%;
+    height: 12%;
+    display: inline-block;
+    margin: 3%;
+    list-style: none;
+  }
+  section #services li div {
+    width: auto;
+    height: 28%;
+    background-color: white;
+    border-radius: 2px black;
+    box-shadow: 0px 0px 4px black;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  }
+  section #services li div:hover {
+    transform: rotate(360deg);
+    border-radius: 100px;
+  }
+  section #services li span {
+    margin-left: -10%;
+    padding: 0px 0px;
+    color: black;
+  }
+}

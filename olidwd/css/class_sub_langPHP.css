@@ -1,0 +1,11 @@
+@media screen and (max-width: 720px){
+        .homeHead{
+            height: 20vh !important;
+            overflow: scroll;
+        }
+    }
+@media only screen and (max-width: 1024px) and (min-width: 600px){
+    .homeHeadTitle{
+        margin-top: 6rem !important;
+    }
+}

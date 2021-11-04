@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lovers+Quarrel|Cinzel+Decorative|Tinos|Prata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+body{
+    font-family: Roboto,sans-serif !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+#tags ul li {
+  display: inline;
+}
+
+.image-frame {
+  background-size: cover;
+  padding-top: 90vh;
+  background-image: url(../img/OLI4.png);
+}
+.image-frame .image-caption {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+  background: rgb(0, 0, 50);
+  width: 450px;
+  opacity: 0.6;
+}
+
+.image-caption h2 {
+  font-family: cursive;
+  font-size: 110%;
+  color: white;
+}
+
+.image-caption h2 b {
+  font-size: 130%;
+}
+.homeTitle,.homeDetails{
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+.homeTitle{
+  color: black;
+  font-family: 'Prata', Courier, monospace;
+  font-size: 2rem;
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+  letter-spacing: .0073529412em;
+}
+.homeDetails{
+  color: #494141;
+  font-family: 'Tinos', serif;
+  font-size: 1.3rem;
+}
+.langTitle{
+  border-bottom: 3px solid darkgray;
+  font-family: 'Prata', Courier, monospace;
+  font-size: 3rem;
+  text-align: center;
+}
+.imageTitle{
+  font-size: 20px;
+  text-align: center;
+}
+.theme>div,.margin{
+  background: #efefef;
+}
+@media screen and (max-width: 720px){
+  .s-12,.m-6,.l-3{
+    margin-bottom: 1rem;
+    box-shadow: 0px 1px 5px black;
+  }
+  .image-frame .image-caption {
+    width: 100%;
+  }
+  
+.imageHeading{
+  margin-top: -85vh;
+  color: white;
+}
+.imageHeading>p{
+  font-family: 'Lovers Quarrel', cursive;
+  text-align: center;
+  box-shadow: 0px 0px 100px white;
+  text-shadow: 2px 2px darkblue;
+  padding-top: 5vh;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-size: 5rem;
+  width: 100%;
+  height: 70vh;
+}
+img{
+  padding-left: 16% !important;
+  padding-right: 16% !important;
+}
+  #mobileBG{
+    background-size: cover;
+  }
+  .image-frame {
+  padding-top: 100vh;
+  background: linear-gradient(0deg,rgba(0, 0, 100, 0.7),rgba(0, 9, 9, 0.7)), url(../img/mobileHomepage.jpg);
+  }
+  .homeDetails,.homeTitle{
+    padding-left: 0%;
+    padding-right: 5%;
+  }
+  .image-hover-overlay-content>p{
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .image-hover-overlay-content>p>b{
+    font-size: 16px;
+  }
+  .imageTitle{
+    padding-bottom: 1rem;
+  }
+}
